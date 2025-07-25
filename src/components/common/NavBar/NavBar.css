@@ -1,0 +1,35 @@
+/* Glass background effect */
+.glass-effect {
+  background: rgba(17, 24, 39, 0.6); /* Tailwind: bg-gray-900/60 */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Navigation link base style */
+.nav-link {
+  color: white !important; /* Tailwind: text-gray-300 */
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* On hover */
+.nav-link:hover {
+  color: #67e8f9 !important; /* Tailwind: text-cyan-400 */
+  border-bottom: 2px solid #67e8f9;
+  transform: translateY(-4px);
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Active state (you can toggle this with JS) */
+.nav-link.active {
+  color: #67e8f9;
+  border-bottom: 2px solid #67e8f9;
+}
+
+.visitcount {
+  min-width: 100px;
+}
