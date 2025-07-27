@@ -1,0 +1,24 @@
+.contentSection {
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 1rem;
+    color: white;
+}
+
+.planetCard { 
+    transition: all 0.3s ease; 
+    border: 1px solid transparent; 
+}
+.planetCard:hover { 
+    transform: scale(1.05); 
+    border-color: #67e8f9; 
+}
+.planetCard.active { 
+    border-color: #67e8f9; 
+    box-shadow: 0 0 15px rgba(103, 232, 249, 0.5); 
+}
