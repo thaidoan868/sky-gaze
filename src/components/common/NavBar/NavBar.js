@@ -13,10 +13,9 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { href: "/planets", label: "Planets" },
-    { href: "/astronomy_topics", label: "Astronomy Topics" },
-    { href: "/star_gazing", label: "Star Gazing" },
+    { href: "/astronomy_topics", label: "Univese Discoveries" },
     { href: "/constellations_comets", label: "Constellations comets" },
+    { href: "/star_gazing", label: "Star Gazing" },
     { href: "/observatories", label: "Observatories" },
     { href: "/news", label: "News" },
     { href: "/about_us", label: "About Us" },
