@@ -16,7 +16,7 @@ const Navbar = () => {
     { href: "/planets", label: "Planets" },
     { href: "/astronomy_topics", label: "Astronomy Topics" },
     { href: "/star_gazing", label: "Star Gazing" },
-    { href: "/constellations_comets", label: "Constellations comets" },
+    { href: "/constellations_comets", label: "Constellations & Comets" },
     { href: "/observatories", label: "Observatories" },
     { href: "/news", label: "News" },
     { href: "/about_us", label: "About Us" },

@@ -14,6 +14,7 @@ import AboutUs from "./components/pages/thai/about_us/AboutUs/AboutUs";
 import { Footer } from "./components/common/Footer/Footer";
 import { NotFound } from "./components/pages/thai/not_found/NotFound/NotFound";
 import ScrollToTop from "./components/common/ScrollToTop/ScrollToToop";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   return (
@@ -40,5 +41,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
