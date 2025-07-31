@@ -3,9 +3,6 @@ import { Modal, Card, Row, Col, Button } from 'react-bootstrap';
 import starGazingData from '../../data/starGazing.json';
 import './StarGazing.css';
 
-// ====================================================================
-// COMPONENT CON: WhatToExpect - Phần trượt ngang
-// ====================================================================
 const WhatToExpect = ({ data }) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
@@ -65,8 +62,7 @@ const WhatToExpect = ({ data }) => {
             )}
             <p style={{ fontSize: '1.1rem' }}>{selectedItem.description}</p>
             
-            {/* HIỂN THỊ CHI TIẾT CÁC HÀNH TINH NẾU CÓ */}
-            {selectedItem.subItems && (
+                        {selectedItem.subItems && (
               <div className="mt-4">
                 {selectedItem.subItems.map(planet => (
                   <div key={planet.name} className="d-flex align-items-center mb-3">
@@ -90,10 +86,6 @@ const WhatToExpect = ({ data }) => {
   );
 };
 
-
-// ====================================================================
-// COMPONENT CHÍNH: StarGazing
-// ====================================================================
 const StarGazing = () => {
   const primaryColor = '#67e8f9';
   const orbitronFont = 'Orbitron, sans-serif';
@@ -137,12 +129,11 @@ const StarGazing = () => {
           <h2 className="text-center me-3" style={{ fontFamily: orbitronFont, color: primaryColor }}>
             {starGazingData.whereBest?.title}
           </h2>
-          {/* ĐỔI ICON CHUÔNG THÀNH BÓNG ĐÈN */}
           <Button variant="outline-info" onClick={handleShowTipsModal} className="rounded-circle p-0" style={{ width: '40px', height: '40px' }}>
             <i className="bi bi-lightbulb-fill fs-5"></i>
           </Button>
         </div>
-        {/* MODAL HIỂN THỊ CẢ TIPS VÀ GEAR */}
+        {/* MODAL HIỂN THỊ*/}
         <Modal show={showTipsModal} onHide={handleCloseTipsModal} centered size="lg">
           <Modal.Header closeButton className="bg-dark border-bottom-0">
             <Modal.Title style={{ fontFamily: orbitronFont, color: primaryColor }}>Tips & Gear</Modal.Title>
@@ -202,7 +193,6 @@ const StarGazing = () => {
         </Row>
       </section>
 
-      {/* Phần What to Expect - Sử dụng component con */}
       <WhatToExpect data={starGazingData.whatToExpect} />
 
     </div>
