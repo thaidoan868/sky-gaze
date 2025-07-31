@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 .star-gazing-container {
-  padding-top: 150px; /* Đảm bảo khoảng cách với header */
+  padding-top: 150px !important; 
   padding-bottom: 20px;
 }
 
-/* General Card Styling */
 .card {
   transition: transform 0.2s ease-in-out;
 }
@@ -14,7 +13,6 @@
   transform: translateY(-5px);
 }
 
-/* Specific styles for Stargazing Location Cards */
 .stargazing-location-card {
   border-color: #67e8f9;
   border-radius: 15px;
@@ -39,12 +37,6 @@
     width: 100%;
 }
 
-/*
-=================================
-WHAT TO EXPECT - SCROLLER STYLES
-=================================
-*/
-
 .scroller {
   max-width: 90%;
   margin: auto;
@@ -60,7 +52,6 @@ WHAT TO EXPECT - SCROLLER STYLES
   width: max-content;
 }
 
-/* Chỉ áp dụng animation khi có thuộc tính data-animated */
 .scroller[data-animated="true"] .scroller__inner {
   animation: scroll 40s linear infinite;
 }
