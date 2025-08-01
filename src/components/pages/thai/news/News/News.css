@@ -1,0 +1,12 @@
+.wallpaper {
+    img {
+        width: 100%;
+        aspect-ratio: 7/3;
+        object-fit: cover;
+    }
+}
+h1 {
+    margin-top: 40px;
+    color: white;
+    font-size: 3em;
+}

@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 const Navbar = () => {
   const [visitorCount, setVisitorCount] = useState();
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  useEffect(() => {
-    const count = localStorage.getItem("visitorCount");
-    const updatedCount = count ? parseInt(count) + 1 : 1;
-    localStorage.setItem("visitorCount", updatedCount);
-    setVisitorCount(updatedCount);
-  }, []);
-
+  const location = useLocation().pathname;
   const navLinks = [
     { href: "/astronomy_topics", label: "Univese Discoveries" },
     { href: "/constellations_comets", label: "Constellations comets" },
@@ -21,22 +16,41 @@ const Navbar = () => {
     { href: "/about_us", label: "About Us" },
   ];
 
+  useEffect(() => {
+    const count = localStorage.getItem("visitorCount");
+    const updatedCount = count ? parseInt(count) + 1 : 1;
+    localStorage.setItem("visitorCount", updatedCount);
+    setVisitorCount(updatedCount);
+  }, []);
+
   const toggleMobileMenu = () => setMobileOpen(!mobileOpen);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-effect">
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <Link to="/" className="text-2xl font-orbitron text-white">
+          <Link
+            to="/"
+            className="text-2xl text-white"
+            style={{ textDecoration: "none" }}
+          >
             🌌 Sky Gaze
           </Link>
         </div>
         <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <Link key={link.href} to={link.href} className="nav-link">
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const selectedLink =
+              location === link.href ? "nav-selected-link" : "";
+            return (
+              <Link
+                key={link.href}
+                to={link.href}
+                className={"nav-link " + selectedLink}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </div>
         <div className="flex items-center space-x-4">
           <div className="visitcount text-sm text-gray-400 font-orbitron">
@@ -65,16 +79,23 @@ const Navbar = () => {
       </nav>
       {mobileOpen && (
         <div className="md:hidden bg-gray-800">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              to={link.href}
-              className="block py-2 px-4 text-sm hover:bg-gray-700 nav-link"
-              onClick={() => setMobileOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const selectedLink =
+              location === link.href ? "nav-selected-link" : "";
+            return (
+              <Link
+                key={link.href}
+                to={link.href}
+                className={
+                  "block py-2 px-4 text-sm hover:bg-gray-700 nav-link " +
+                  selectedLink
+                }
+                onClick={() => setMobileOpen(false)}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </div>
       )}
     </header>
