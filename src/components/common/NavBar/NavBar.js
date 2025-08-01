@@ -9,7 +9,7 @@ const Navbar = () => {
   const location = useLocation().pathname;
   const navLinks = [
     { href: "/astronomy_topics", label: "Univese Discoveries" },
-    { href: "/constellations_comets", label: "Constellations comets" },
+    { href: "/constellations_comets", label: "Constellations & Comets" },
     { href: "/star_gazing", label: "Star Gazing" },
     { href: "/observatories", label: "Observatories" },
     { href: "/news", label: "News" },

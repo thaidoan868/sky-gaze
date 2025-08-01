@@ -1,0 +1,153 @@
+{
+  "whenBest": {
+    "title": "When is Best to Stargaze",
+    "sections": [
+      {
+        "heading": "Time of Year",
+        "content": "Winter often offers clearer skies due to lower humidity and more stable air. Summer may have more haze or clouds."
+      },
+      {
+        "heading": "Time of Night",
+        "content": "Just after sunset or before dawn is ideal for observing planets and other celestial objects as the sky is still dark enough and temperatures are more stable."
+      },
+      {
+        "heading": "Moon Phase Impact",
+        "content": "Avoid nights with a full moon, as its bright light will wash out fainter stars and galaxies. New moon or crescent moon nights are best."
+      },
+      {
+        "heading": "Weather Conditions",
+        "content": "Clear, cloudless skies with low humidity and minimal air pollution are ideal. Always check the weather forecast before planning your stargazing trip."
+      }
+    ]
+  },
+  "whereBest": {
+    "title": "Where is Best to Stargaze",
+    "tips": [
+      {
+        "heading": "Avoid Light Pollution",
+        "content": "Move away from cities and densely populated urban areas to escape artificial light that diminishes the visibility of celestial objects. Rural areas or high altitudes typically offer darker skies.",
+        "image": "/images/star_gazing/city-vs-dark-sky.jpg"
+      },
+      {
+        "heading": "Dark Sky Parks",
+        "content": "Look for national parks or preserves designated as 'Dark Sky Parks'. These locations are protected from light pollution and offer excellent viewing conditions.",
+        "image": "/images/star_gazing/clear-night-sky.jpg"
+      }
+    ],
+    "gear": [
+      {
+        "name": "Binoculars",
+        "description": "A great starting point. 7x50 or 10x50 binoculars are excellent for viewing the Moon, star clusters, and the brighter planets.",
+        "icon": "bi-binoculars-fill"
+      },
+      {
+        "name": "Telescope",
+        "description": "For more detailed views of planets, nebulae, and galaxies. A Dobsonian reflector is often recommended for beginners.",
+        "icon": "bi-search"
+      },
+      {
+        "name": "Star Chart or App",
+        "description": "Essential for identifying constellations and finding objects. Apps like Stellarium, SkyView, or Star Walk are very helpful.",
+        "icon": "bi-phone-fill"
+      },
+      {
+        "name": "Red Flashlight",
+        "description": "A flashlight with a red filter helps you see your gear and charts without ruining your night vision.",
+        "icon": "bi-lightbulb-fill"
+      }
+    ],
+    "locations": [
+      {
+        "name": "Aoraki Mackenzie, New Zealand",
+        "description": "One of the best places in the world to stargaze, offering incredibly clear views of the Southern Cross, the Milky Way, and the Aurora Australis.",
+        "image": "/images/star_gazing/place/NewZealand.jpg",
+        "latitude": -44.0264,
+        "longitude": 170.0901
+      },
+      {
+        "name": "Atacama Desert, Chile",
+        "description": "Known for its high altitude, dry air, and minimal light pollution, making it an ideal location for astronomical observation.",
+        "image": "/images/star_gazing/place/Chile.jpg",
+        "latitude": -23.5,
+        "longitude": -69.0
+      },
+      {
+        "name": "Tenerife, Canary Islands, Spain",
+        "description": "Mount Teide National Park is a Starlight Reserve, offering fantastic views of constellations and nebulae from its high volcanic peaks.",
+        "image": "/images/star_gazing/place/Spain.jpg",
+        "latitude": 28.2731,
+        "longitude": -16.6385
+      },
+      {
+        "name": "NamibRand Reserve, Namibia",
+        "description": "One of Africa's largest Dark Sky Reserves, where visitors can experience pristine night skies untouched by light pollution.",
+        "image": "/images/star_gazing/place/Namibia.jpg",
+        "latitude": -25.2667,
+        "longitude": 15.8
+      },
+      {
+        "name": "Jasper National Park, Canada",
+        "description": "The world's second-largest Dark Sky Preserve, offering incredible opportunities to view the Milky Way, stars, and even aurora in winter.",
+        "image": "/images/star_gazing/place/Canada.jpg",
+        "latitude": 52.8732,
+        "longitude": -118.0837
+      }
+    ]
+  },
+  "whatToExpect": {
+    "title": "What to Expect When Stargazing",
+    "items": [
+      {
+        "id": "moon",
+        "title": "The Moon",
+        "description": "The Moon is the brightest and most familiar object in the night sky. With binoculars, you can see craters, mountains, and the 'seas' (dark, flat plains). Its phases change nightly, offering a different view each time you look.",
+        "image": "/images/star_gazing/moon.jpg"
+      },
+      {
+        "id": "planets",
+        "title": "Planets",
+        "description": "Planets shine with a steady light and don't twinkle like stars. Here are some you can often spot:",
+        "subItems": [
+          {
+            "name": "Venus",
+            "description": "Incredibly bright, often seen at dusk or dawn.",
+            "image": "/images/planets/venus1.jpg"
+          },
+          {
+            "name": "Mars",
+            "description": "Known for its distinctive reddish-orange hue.",
+            "image": "/images/planets/mars1.jpg"
+          },
+          {
+            "name": "Jupiter",
+            "description": "The largest planet, you can often see its four largest moons with binoculars.",
+            "image": "/images/planets/jupiter1.jpg"
+          },
+          {
+            "name": "Saturn",
+            "description": "With a small telescope, you can marvel at its famous rings.",
+            "image": "/images/planets/saturn1.jpg"
+          }
+        ]
+      },
+      {
+        "id": "constellations",
+        "title": "Constellations",
+        "description": "Learn to recognize patterns in the stars, known as constellations. Guides like the Big Dipper can help you find other stars and constellations, such as Polaris (the North Star).",
+        "image": "/images/star_gazing/constellation-guide.jpg"
+      },
+      {
+        "id": "milky_way",
+        "title": "The Milky Way",
+        "description": "On a clear, dark night away from city lights, you can see the faint, hazy band of our own galaxy stretching across the sky. It's a breathtaking sight composed of billions of distant stars.",
+        "image": "/images/star_gazing/milky-way.jpg"
+      },
+      {
+        "id": "meteor_showers",
+        "title": "Meteor Showers",
+        "description": "Witness 'shooting stars' as tiny bits of space dust burn up in our atmosphere. Annual showers like the Perseids (August) and Geminids (December) can produce dozens of meteors per hour.",
+        "image": "/images/star_gazing/meteor-shower.jpg"
+      }
+    ]
+  }
+}
