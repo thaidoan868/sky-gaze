@@ -1,0 +1,27 @@
+.card {
+    max-width: 1000px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.74);
+    border-color:  #d6f2f661 !important;
+    background-color: transparent;
+    img {
+        width: 200px;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+    }
+
+    a {
+        font-size: .6em;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.74);
+
+        &:hover {
+            color: #67e8f9b9;
+        }
+    }
+
+    p {
+        font-size: .4em;
+        max-width: 1000px;
+    }
+}
