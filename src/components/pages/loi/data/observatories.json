@@ -1,138 +1,107 @@
 [
-    {
-      "id": "griffith",
-      "name": "Griffith Observatory",
-      "location": "Los Angeles, USA",
-      "image": "/images/observatories/griffith.jpg",
-      "description": "One of the most famous public observatories in the world, offering spectacular views of Los Angeles and the cosmos. It's a gateway to the stars for millions of visitors.",
-      "key_features": [
-        "Zeiss refracting telescope",
-        "Samuel Oschin Planetarium",
-        "Public star parties"
-      ],
-      "website": "http://www.griffithobservatory.org/",
-      "latitude": 34.1184,
-      "longitude": -118.3004
+  {
+    "id": "griffith",
+    "name": "Griffith Observatory",
+    "location": "Los Angeles, USA",
+    "image": "/images/observatories/Griffithobservatory.jpg",
+    "description": "One of the most famous public observatories in the world, offering spectacular views of Los Angeles and the cosmos. It's a gateway to the stars for millions of visitors.",
+    "key_features": ["Zeiss refracting telescope", "Samuel Oschin Planetarium", "Public star parties"],
+    "additional_info": {
+      "Opened": "1935",
+      "Elevation": "346 m (1,135 ft)",
+      "Governed by": "City of Los Angeles"
     },
-    {
-      "id": "mauna_kea",
-      "name": "Mauna Kea Observatory",
-      "location": "Hawaii, USA",
-      "image": "/images/observatories/mauna_kea.jpg",
-      "description": "Located atop a dormant volcano, Mauna Kea is one of the world's premier sites for astronomical research. Its high altitude and clear skies provide unparalleled viewing conditions.",
-      "key_features": [
-        "Home to numerous world-class telescopes",
-        "Submillimeter astronomy",
-        "Infrared astronomy"
-      ],
-      "website": "https://www.maunakeaobservatories.org/",
-      "latitude": 19.8206,
-      "longitude": -155.4681
+    "website": "http://www.griffithobservatory.org/",
+    "latitude": 34.1184, "longitude": -118.3004
+  },
+  {
+    "id": "mauna_kea",
+    "name": "Mauna Kea Observatory",
+    "location": "Hawaii, USA",
+    "image": "/images/observatories/Maunakeaobservatories.jpg",
+    "description": "Located atop a dormant volcano, Mauna Kea is one of the world's premier sites for astronomical research. Its high altitude and clear skies provide unparalleled viewing conditions.",
+    "key_features": ["Home to numerous world-class telescopes", "Submillimeter astronomy", "Infrared astronomy"],
+    "additional_info": {
+      "Opened": "1964",
+      "Elevation": "4,205 m (13,796 ft)",
+      "Managed by": "University of Hawaiʻi"
     },
-    {
-      "id": "royal_greenwich",
-      "name": "Royal Observatory, Greenwich",
-      "location": "London, UK",
-      "image": "/images/observatories/greenwich.jpg",
-      "description": "Best known for being the location of the Prime Meridian, this historic observatory played a crucial role in the history of astronomy and navigation.",
-      "key_features": [
-        "Prime Meridian Line (Longitude 0°)",
-        "Peter Harrison Planetarium",
-        "Historic astronomy clocks"
-      ],
-      "website": "https://www.rmg.co.uk/royal-observatory",
-      "latitude": 51.4769,
-      "longitude": -0.0005
+    "website": "https://www.maunakeaobservatories.org/",
+    "latitude": 19.8206, "longitude": -155.4681
+  },
+  {
+    "id": "royal_greenwich",
+    "name": "Royal Observatory, Greenwich",
+    "location": "London, UK",
+    "image": "/images/observatories/Royalobservatory.jpg",
+    "description": "Best known for being the location of the Prime Meridian, this historic observatory played a crucial role in the history of astronomy and navigation.",
+    "key_features": ["Prime Meridian Line (Longitude 0°)", "Peter Harrison Planetarium", "Historic astronomy clocks"],
+    "additional_info": {
+      "Founded": "1675",
+      "Founder": "King Charles II",
+      "Designation": "UNESCO World Heritage Site"
     },
-    {
-      "id": "vlt",
-      "name": "Very Large Telescope (VLT)",
-      "location": "Atacama Desert, Chile",
-      "image": "/images/observatories/vlt.jpg",
-      "description": "Operated by the European Southern Observatory (ESO), the VLT is the world's most advanced optical instrument, consisting of four large telescopes that can work together.",
-      "key_features": [
-        "Four 8.2-meter unit telescopes",
-        "First direct image of an exoplanet",
-        "Adaptive optics technology"
-      ],
-      "website": "https://www.eso.org/public/teles-instr/paranal-observatory/vlt/",
-      "latitude": -24.6272,
-      "longitude": -70.4042
+    "website": "https://www.rmg.co.uk/royal-observatory",
+    "latitude": 51.4769, "longitude": -0.0005
+  },
+  {
+    "id": "vlt",
+    "name": "Very Large Telescope (VLT)",
+    "location": "Atacama Desert, Chile",
+    "image": "/images/observatories/VLT.jpg",
+    "description": "Operated by the European Southern Observatory (ESO), the VLT is the world's most advanced optical instrument, consisting of four large telescopes that can work together.",
+    "key_features": ["Four 8.2-meter unit telescopes", "First direct image of an exoplanet", "Adaptive optics technology"],
+     "additional_info": {
+      "Operator": "ESO",
+      "First Light": "1998",
+      "Telescope Type": "Reflector"
     },
-    {
-      "id": "alma",
-      "name": "ALMA Observatory",
-      "location": "Atacama Desert, Chile",
-      "image": "/images/observatories/alma.jpg",
-      "description": "The Atacama Large Millimeter/submillimeter Array (ALMA) is a state-of-the-art telescope that studies light from some of the coldest objects in the Universe.",
-      "key_features": [
-        "66 high-precision antennas",
-        "Observes origins of stars and galaxies",
-        "International partnership"
-      ],
-      "website": "https://www.almaobservatory.org/",
-      "latitude": -23.029,
-      "longitude": -67.755
+    "website": "https://www.eso.org/public/teles-instr/paranal-observatory/vlt/",
+    "latitude": -24.6272, "longitude": -70.4042
+  },
+  {
+    "id": "alma",
+    "name": "ALMA Observatory",
+    "location": "Atacama Desert, Chile",
+    "image": "/images/observatories/Almaobservatory.jpg",
+    "description": "The Atacama Large Millimeter/submillimeter Array (ALMA) is a state-of-the-art telescope that studies light from some of the coldest objects in the Universe.",
+    "key_features": ["66 high-precision antennas", "Observes origins of stars and galaxies", "International partnership"],
+    "additional_info": {
+      "Construction": "2003–2013",
+      "Elevation": "5,059 m (16,597 ft)",
+      "Telescope Type": "Radio telescope array"
     },
-    {
-      "id": "arecibo",
-      "name": "Arecibo Observatory",
-      "location": "Arecibo, Puerto Rico",
-      "image": "/images/observatories/arecibo.jpg",
-      "description": "Historically significant for its massive radio telescope, the Arecibo Observatory made groundbreaking discoveries in radio astronomy, planetary science, and SETI (Search for Extraterrestrial Intelligence). Though the main telescope collapsed in 2020, its legacy endures.",
-      "key_features": [
-        "First discovery of an exoplanet (pulsar planet)",
-        "Detailed radar maps of Venus and Mercury",
-        "The Arecibo Message sent to space in 1974"
-      ],
-      "website": "https://www.naic.edu/",
-      "latitude": 18.3443,
-      "longitude": -66.7528
+    "website": "https://www.almaobservatory.org/",
+    "latitude": -23.029, "longitude": -67.755
+  },
+  {
+    "id": "sydney",
+    "name": "Sydney Observatory",
+    "location": "Sydney, Australia",
+    "image": "/images/observatories/Sydneyobservatory.jpg",
+    "description": "A heritage-listed museum and public observatory located on a hill directly overlooking Sydney Harbour. It combines history, science, and stunning views.",
+    "key_features": ["Australia's oldest observatory", "Historic refractor telescope", "3D Space Theatre"],
+    "additional_info": {
+      "Established": "1858",
+      "Function": "Museum, public observatory",
+      "Governed by": "Museum of Applied Arts & Sciences"
     },
-    {
-      "id": "palomar",
-      "name": "Palomar Observatory",
-      "location": "California, USA",
-      "image": "/images/observatories/palomar.jpg",
-      "description": "Home to the famous 200-inch Hale Telescope, which was the largest in the world for 45 years. It has been central to our understanding of the scale of the universe and stellar evolution.",
-      "key_features": [
-        "200-inch (5.1m) Hale Telescope",
-        "Discovery of quasars",
-        "Palomar Observatory Sky Survey (POSS)"
-      ],
-      "website": "https://www.astro.caltech.edu/palomar/",
-      "latitude": 33.3563,
-      "longitude": -116.8649
+    "website": "https://www.maas.museum/sydney-observatory",
+    "latitude": -33.8599, "longitude": 151.2037
+  },
+  {
+    "id": "la_silla",
+    "name": "La Silla Observatory",
+    "location": "Coquimbo, Chile",
+    "image": "/images/observatories/Lasillaobservatory.jpg",
+    "description": "Another major site of the ESO, La Silla has been a bastion of astronomy in the Southern Hemisphere since the 1960s, contributing to countless discoveries.",
+    "key_features": ["ESO 3.6-metre telescope", "Planet Searcher (HARPS)", "Pioneering robotic telescopes"],
+    "additional_info": {
+      "Operator": "ESO",
+      "Established": "1969",
+      "Elevation": "2,400 m (7,900 ft)"
     },
-    {
-      "id": "la_silla",
-      "name": "La Silla Observatory",
-      "location": "Coquimbo, Chile",
-      "image": "/images/observatories/la_silla.jpg",
-      "description": "Another major site of the European Southern Observatory (ESO), La Silla has been a bastion of astronomy in the Southern Hemisphere since the 1960s, contributing to countless discoveries.",
-      "key_features": [
-        "ESO 3.6-metre telescope",
-        "High Accuracy Radial velocity Planet Searcher (HARPS)",
-        "Pioneering robotic telescopes"
-      ],
-      "website": "https://www.eso.org/public/teles-instr/lasilla/",
-      "latitude": -29.2575,
-      "longitude": -70.7327
-    },
-    {
-      "id": "sydney",
-      "name": "Sydney Observatory",
-      "location": "Sydney, Australia",
-      "image": "/images/observatories/sydney.jpg",
-      "description": "A heritage-listed museum and public observatory located on a hill directly overlooking Sydney Harbour. It combines history, science, and stunning views.",
-      "key_features": [
-        "Australia's oldest observatory",
-        "Historic refractor telescope built in 1874",
-        "3D Space Theatre"
-      ],
-      "website": "https://www.maas.museum/sydney-observatory",
-      "latitude": -33.8599,
-      "longitude": 151.2037
-    }
-  ]
-  
+    "website": "https://www.eso.org/public/teles-instr/lasilla/",
+    "latitude": -29.2575, "longitude": -70.7327
+  }
+]

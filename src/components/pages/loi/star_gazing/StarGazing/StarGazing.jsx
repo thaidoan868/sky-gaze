@@ -1,90 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Modal, Card, Row, Col, Button } from 'react-bootstrap';
 import starGazingData from '../../data/starGazing.json';
 import './StarGazing.css';
-
-const WhatToExpect = ({ data }) => {
-  const [showModal, setShowModal] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
-  const scrollerRef = useRef(null);
-
-  const duplicatedItems = data.items ? [...data.items, ...data.items] : [];
-
-  useEffect(() => {
-    if (scrollerRef.current) {
-      scrollerRef.current.setAttribute('data-animated', true);
-    }
-  }, []);
-
-  const handleShowModal = (item) => {
-    setSelectedItem(item);
-    setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-    setSelectedItem(null);
-  };
-
-  return (
-    <section className="my-5">
-      <h2 className="text-center mb-4" style={{ fontFamily: 'Orbitron, sans-serif', color: '#67e8f9' }}>
-        {data.title}
-      </h2>
-      <div className="scroller" ref={scrollerRef}>
-        <div className="scroller__inner">
-          {duplicatedItems.map((item, index) => (
-            <div
-              key={`${item.id}-${index}`}
-              className="scroller-card"
-              onClick={() => handleShowModal(item)}
-            >
-              <h3>{item.title}</h3>
-            </div>
-          ))}
-        </div>
-      </div>
-      {selectedItem && (
-        <Modal show={showModal} onHide={handleCloseModal} centered size="lg">
-          <Modal.Header closeButton className="bg-dark border-bottom-0">
-            <Modal.Title style={{ fontFamily: 'Orbitron, sans-serif', color: '#67e8f9' }}>
-              {selectedItem.title}
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body className="bg-dark text-white">
-            {selectedItem.image && (
-              <img
-                src={process.env.PUBLIC_URL + selectedItem.image}
-                alt={selectedItem.title}
-                className="img-fluid rounded mb-3"
-                style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}
-              />
-            )}
-            <p style={{ fontSize: '1.1rem' }}>{selectedItem.description}</p>
-            
-                        {selectedItem.subItems && (
-              <div className="mt-4">
-                {selectedItem.subItems.map(planet => (
-                  <div key={planet.name} className="d-flex align-items-center mb-3">
-                    <img 
-                      src={process.env.PUBLIC_URL + planet.image} 
-                      alt={planet.name}
-                      style={{ width: '60px', height: '60px', borderRadius: '50%', objectFit: 'cover', marginRight: '15px' }}
-                    />
-                    <div>
-                      <strong style={{ color: '#67e8f9', fontFamily: 'Orbitron, sans-serif' }}>{planet.name}</strong>
-                      <p className="mb-0">{planet.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </Modal.Body>
-        </Modal>
-      )}
-    </section>
-  );
-};
+import pageBackground from '../background/stargazing-bg.jpg'; 
+import WhatToExpect from '../other/WhatToExpect';
 
 const StarGazing = () => {
   const primaryColor = '#67e8f9';
@@ -94,22 +13,32 @@ const StarGazing = () => {
   const handleShowTipsModal = () => setShowTipsModal(true);
   const handleCloseTipsModal = () => setShowTipsModal(false);
 
+  useEffect(() => {
+    const imageUrl = pageBackground;
+    
+    const originalBackground = document.body.style.backgroundImage;
+    const originalBackgroundColor = document.body.style.backgroundColor;
+
+    document.body.style.backgroundImage = `url(${imageUrl})`;
+    document.body.style.backgroundAttachment = 'fixed';
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundPosition = 'center';
+    document.body.style.backgroundColor = 'transparent'; 
+    
+    return () => {
+      document.body.style.backgroundImage = originalBackground || 'none';
+      document.body.style.backgroundColor = originalBackgroundColor || '';
+    };
+  }, []);
+
   const mapsApiKey = 'AIzaSyB9YyC32U0aoUibPZzJpN8BVBq8tnPhLb4';
 
   return (
-    <div>
-      <div className="sky-gazing-wallpaper">
-        <img
-          src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9ub215JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww"
-          alt=""
-        />
-      </div>
     <div className="star-gazing-container container py-5">
       <h1 className="text-center mb-5" style={{ fontFamily: orbitronFont, color: primaryColor }}>
         Stargazing Guide
       </h1>
 
-      {/* Phần When is Best */}
       <section className="my-5">
         <h2 className="text-center mb-4" style={{ fontFamily: orbitronFont, color: primaryColor }}>
           {starGazingData.whenBest?.title}
@@ -130,7 +59,6 @@ const StarGazing = () => {
         </Row>
       </section>
 
-      {/* Phần Where is Best to Stargaze */}
       <section className="my-5">
         <div className="d-flex justify-content-center align-items-center mb-4">
           <h2 className="text-center me-3" style={{ fontFamily: orbitronFont, color: primaryColor }}>
@@ -140,14 +68,12 @@ const StarGazing = () => {
             <i className="bi bi-lightbulb-fill fs-5"></i>
           </Button>
         </div>
-        {/* MODAL HIỂN THỊ*/}
         <Modal show={showTipsModal} onHide={handleCloseTipsModal} centered size="lg">
           <Modal.Header closeButton className="bg-dark border-bottom-0">
             <Modal.Title style={{ fontFamily: orbitronFont, color: primaryColor }}>Tips & Gear</Modal.Title>
           </Modal.Header>
           <Modal.Body className="bg-dark text-white">
             <Row>
-              {/* Cột cho Tips */}
               <Col md={6}>
                 <h5 style={{fontFamily: orbitronFont}}>Essential Tips</h5>
                 {starGazingData.whereBest?.tips?.map((tip) => (
@@ -160,7 +86,6 @@ const StarGazing = () => {
                   </Card>
                 ))}
               </Col>
-              {/* Cột cho Gear */}
               <Col md={6}>
                 <h5 style={{fontFamily: orbitronFont}}>Recommended Gear</h5>
                 {starGazingData.whereBest?.gear?.map((item) => (
@@ -201,7 +126,6 @@ const StarGazing = () => {
       </section>
 
       <WhatToExpect data={starGazingData.whatToExpect} />
-    </div>
     </div>
   );
 };
