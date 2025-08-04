@@ -1,48 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import homeBg from './images/home-bg.jpg';
 import styles from './Home.module.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [tickerText, setTickerText] = useState('');
-  const videoModalRef = useRef(null);
-  const bsVideoModal = useRef(null);
-
-  // This was the older, problematic way of handling the modal
-  const openVideoModal = () => {
-    if (videoModalRef.current) {
-      // This line caused the error because window.bootstrap might not be ready
-      const modal = new window.bootstrap.Modal(videoModalRef.current);
-      bsVideoModal.current = modal;
-      modal.show();
-    }
-  };
-
-  useEffect(() => {
-    const modalElement = videoModalRef.current;
-    if (!modalElement) return;
-
-    const youtubePlayer = modalElement.querySelector('#youtube-player');
-    
-    const handleModalShow = () => {
-        if (youtubePlayer) {
-            youtubePlayer.src = "https://www.youtube.com/embed/PLcE3AI9wwE?autoplay=1&rel=0&loop=1&playlist=PLcE3AI9wwE";
-        }
-    };
-
-    const handleModalHide = () => {
-        if (youtubePlayer) {
-            youtubePlayer.src = "";
-        }
-    };
-
-    modalElement.addEventListener('shown.bs.modal', handleModalShow);
-    modalElement.addEventListener('hidden.bs.modal', handleModalHide);
-
-    return () => {
-      modalElement.removeEventListener('shown.bs.modal', handleModalShow);
-      modalElement.removeEventListener('hidden.bs.modal', handleModalHide);
-    };
-  }, []);
 
   useEffect(() => {
     const getZodiacSign = (day, month) => {
@@ -75,7 +39,7 @@ const Home = () => {
     const intervalId = setInterval(updateTicker, 60000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, []); 
 
   return (
     <>
@@ -89,29 +53,11 @@ const Home = () => {
           <p className="lead text-white-50">
             An interactive journey through the wonders of our universe.
           </p>
-          <button 
-            onClick={openVideoModal} 
-            className={`btn btn-primary btn-lg mt-4 ${styles.startBtn}`}
-          >
+          <Link to="/planets" className={`btn btn-primary btn-lg mt-4 ${styles.startBtn}`}>
             Start Exploring
-          </button>
+          </Link>
         </div>
       </section>
-
-      <div className="modal fade" id="videoModal" tabIndex="-1" aria-hidden="true" ref={videoModalRef}>
-        <div className="modal-dialog modal-xl modal-dialog-centered">
-          <div className="modal-content bg-transparent border-0">
-            <div className="modal-header border-0">
-              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div className="modal-body p-0">
-              <div className="ratio ratio-16x9">
-                <iframe id="youtube-player" src="" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <footer className={`${styles.footer} glass-effect`}>
         <div className="text-white-50 small font-orbitron">{tickerText}</div>

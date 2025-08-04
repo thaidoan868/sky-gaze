@@ -34,13 +34,17 @@ const Planets = () => {
           <div className="col-lg-5">
             <div className="card bg-transparent glass-effect text-white h-100">
               <img src={selectedPlanet.images[0]} className="card-img-top" alt={selectedPlanet.name} style={{height: '250px', objectFit: 'cover'}}/>
-              <div className="card-body text-start">
+              <div className="card-body text-start d-flex flex-column">
                 <h3 className="card-title font-orbitron">{selectedPlanet.name}</h3>
-                <p className="card-text small">{selectedPlanet.description}</p>
-                <ul className="list-unstyled small">
+                {/* Applied a new class for better font styling */}
+                <ul className={`list-unstyled mb-3 ${styles.infoList}`}>
                   <li><strong>Discovery:</strong> {selectedPlanet.discovery}</li>
                   <li><strong>Atmosphere:</strong> {selectedPlanet.atmosphere}</li>
                 </ul>
+                <div className={styles.descriptionContainer}>
+                    {/* Applied a new class for better font styling */}
+                    <p className={styles.descriptionText}>{selectedPlanet.description}</p>
+                </div>
               </div>
             </div>
           </div>
