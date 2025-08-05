@@ -14,7 +14,7 @@ const Navbar = () => {
     { href: "/star_gazing", label: "Star Gazing" },
     { href: "/observatories", label: "Observatories" },
     { href: "/news", label: "News" },
-    { href: "/about_us", label: "About Us" },
+    { href: "/about_us", label: "Contact" },
   ];
 
   useEffect(() => {
