@@ -33,7 +33,6 @@ function App() {
           <Route path="/astronomy_topics" element={<AstronomyTopics />} />
           <Route path="/astronomy-topics/:topicId" element={<TopicDetail />} />
           <Route path="/star_gazing" element={<StarGazing />} />
-          <Route path="/constellations_comets" element={<ConstellationsComets />} />
           <Route path="/constellations" element={<Constellations />} />
           <Route path="/comets" element={<Comets />} />
           <Route path="/observatories" element={<Observatories />} />
@@ -47,4 +46,3 @@ function App() {
   );
 }
 export default App;
-

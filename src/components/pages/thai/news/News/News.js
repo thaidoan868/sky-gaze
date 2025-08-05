@@ -95,7 +95,7 @@ export default function News() {
   ];
 
   return (
-    <div>
+    <div className="news">
       <div className="wallpaper">
         <img
           src="https://www.nasa.gov/wp-content/uploads/2025/05/54492396655-c6ba83df1d-o-1.jpg?w=1536"

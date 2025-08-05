@@ -8,7 +8,7 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation().pathname;
   const navLinks = [
-    { href: "/astronomy_topics", label: "Univese Discoveries" },
+    { href: "/astronomy_topics", label: "Void Theories " },
     { href: "/constellations", label: "Constellations" },
     { href: "/comets", label: "Comets" },
     { href: "/star_gazing", label: "Star Gazing" },
