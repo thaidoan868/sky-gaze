@@ -26,10 +26,7 @@ const WhatToExpect = ({ data }) => {
   };
 
   return (
-    <section className="my-5">
-      <h2 className="text-center mb-4" style={{ fontFamily: 'Orbitron, sans-serif', color: '#67e8f9' }}>
-        {data.title}
-      </h2>
+    <>
       <div className="scroller" ref={scrollerRef}>
         <div className="scroller__inner">
           {duplicatedItems.map((item, index) => (
@@ -44,7 +41,7 @@ const WhatToExpect = ({ data }) => {
         </div>
       </div>
       {selectedItem && (
-        <Modal show={showModal} onHide={handleCloseModal} centered size="lg">
+        <Modal show={showModal} onHide={handleCloseModal} centered size="lg" className="tips-modal">
           <Modal.Header closeButton className="bg-dark border-bottom-0">
             <Modal.Title style={{ fontFamily: 'Orbitron, sans-serif', color: '#67e8f9' }}>
               {selectedItem.title}
@@ -60,13 +57,13 @@ const WhatToExpect = ({ data }) => {
               />
             )}
             <p style={{ fontSize: '1.1rem' }}>{selectedItem.description}</p>
-            
+
             {selectedItem.subItems && (
               <div className="mt-4">
                 {selectedItem.subItems.map(planet => (
                   <div key={planet.name} className="d-flex align-items-center mb-3">
-                    <img 
-                      src={process.env.PUBLIC_URL + planet.image} 
+                    <img
+                      src={process.env.PUBLIC_URL + planet.image}
                       alt={planet.name}
                       style={{ width: '60px', height: '60px', borderRadius: '50%', objectFit: 'cover', marginRight: '15px' }}
                     />
@@ -81,7 +78,7 @@ const WhatToExpect = ({ data }) => {
           </Modal.Body>
         </Modal>
       )}
-    </section>
+    </>
   );
 };
 

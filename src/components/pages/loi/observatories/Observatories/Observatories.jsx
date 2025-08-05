@@ -1,20 +1,18 @@
-import React, { useState, useEffect, useRef } from 'react'; // 1. Thêm useRef
+import React, { useState, useEffect, useRef } from 'react';
 import { Button } from 'react-bootstrap';
 import observatoriesData from '../../data/observatories.json';
 import './Observatories.css';
-// 2. Import hình nền cho trang
 import pageBackground from './background/starfield-bg.jpg';
-import MapView from '../../common/MapView'; // Đảm bảo đã import MapView
+import MapView from '../../common/MapView';
 
 const Observatories = () => {
   const primaryColor = '#67e8f9';
   const orbitronFont = 'Orbitron, sans-serif';
-  const pageRef = useRef(null); // 3. Tạo một ref
+  const pageRef = useRef(null);
 
   const [activeId, setActiveId] = useState(observatoriesData[0]?.id || '');
   const contentRefs = useRef({});
 
-  // 4. Thêm useEffect để quản lý background
   useEffect(() => {
     if (!pageRef.current) return;
 
@@ -57,8 +55,13 @@ const Observatories = () => {
   };
 
   return (
-    // 5. Gắn ref và thêm class 'page-wrapper' vào div chính
     <div ref={pageRef} className="observatories-page-exhibition page-wrapper">
+      <div className="container">
+        <h1 className="text-center page-title" style={{ fontFamily: orbitronFont, color: primaryColor }}>
+          Great Observatories of the World
+        </h1>
+      </div>
+
       <div className="exhibition-layout">
         <nav className="exhibition-nav">
           <ul>
@@ -110,9 +113,9 @@ const Observatories = () => {
                   <h5>Location</h5>
                   <div className="map-container">
                     <MapView
-                        latitude={obs.latitude}
-                        longitude={obs.longitude}
-                        name={obs.name}
+                      latitude={obs.latitude}
+                      longitude={obs.longitude}
+                      name={obs.name}
                     />
                   </div>
                 </div>

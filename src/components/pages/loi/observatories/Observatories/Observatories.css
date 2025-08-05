@@ -122,3 +122,8 @@
   background-attachment: fixed;
   background-position: center;
 }
+
+.page-title {
+  margin-bottom: 3rem;
+  text-shadow: 0 0 10px rgba(103, 232, 249, 0.5);
+}
