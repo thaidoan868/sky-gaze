@@ -12,7 +12,9 @@
       "Governed by": "City of Los Angeles"
     },
     "website": "http://www.griffithobservatory.org/",
-    "latitude": 34.1184, "longitude": -118.3004
+    "latitude": 34.1184,
+    "longitude": -118.3004,
+    "map_url": "https://www.google.com/maps/embed?pb=...2"
   },
   {
     "id": "mauna_kea",
@@ -27,7 +29,9 @@
       "Managed by": "University of Hawaiʻi"
     },
     "website": "https://www.maunakeaobservatories.org/",
-    "latitude": 19.8206, "longitude": -155.4681
+    "latitude": 19.8206,
+    "longitude": -155.4681,
+    "map_url": "https://www.google.com/maps/embed?pb=...3"
   },
   {
     "id": "royal_greenwich",
@@ -42,7 +46,9 @@
       "Designation": "UNESCO World Heritage Site"
     },
     "website": "https://www.rmg.co.uk/royal-observatory",
-    "latitude": 51.4769, "longitude": -0.0005
+    "latitude": 51.4769,
+    "longitude": -0.0005,
+    "map_url": "https://www.google.com/maps/embed?pb=...4"
   },
   {
     "id": "vlt",
@@ -57,7 +63,9 @@
       "Telescope Type": "Reflector"
     },
     "website": "https://www.eso.org/public/teles-instr/paranal-observatory/vlt/",
-    "latitude": -24.6272, "longitude": -70.4042
+    "latitude": -24.6272,
+    "longitude": -70.4042,
+    "map_url": "https://www.google.com/maps/embed?pb=...5"
   },
   {
     "id": "alma",
@@ -72,7 +80,9 @@
       "Telescope Type": "Radio telescope array"
     },
     "website": "https://www.almaobservatory.org/",
-    "latitude": -23.029, "longitude": -67.755
+    "latitude": -23.029,
+    "longitude": -67.755,
+    "map_url": "https://www.google.com/maps/embed?pb=...6"
   },
   {
     "id": "sydney",
@@ -87,7 +97,9 @@
       "Governed by": "Museum of Applied Arts & Sciences"
     },
     "website": "https://www.maas.museum/sydney-observatory",
-    "latitude": -33.8599, "longitude": 151.2037
+    "latitude": -33.8599,
+    "longitude": 151.2037,
+    "map_url": "https://www.google.com/maps/embed?pb=...7"
   },
   {
     "id": "la_silla",
@@ -102,6 +114,8 @@
       "Elevation": "2,400 m (7,900 ft)"
     },
     "website": "https://www.eso.org/public/teles-instr/lasilla/",
-    "latitude": -29.2575, "longitude": -70.7327
+    "latitude": -29.2575,
+    "longitude": -70.7327,
+    "map_url": "https://www.google.com/maps/embed?pb=...8"
   }
 ]
