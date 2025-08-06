@@ -1,0 +1,288 @@
+:root {
+    --space-blue: #0b0c1d;
+    --nebula-purple: #9370db;
+    --star-gold: #ffd700;
+    --text-offwhite: #e0e0e0;
+    --border-color: rgba(147, 112, 219, 0.3);
+}
+
+.comets-page .content-inner {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 1; 
+}
+
+.comets-page .page-title {
+    font-family: "Orbitron", sans-serif;
+    color: var(--text-offwhite);
+    text-shadow: 0 0 10px var(--nebula-purple);
+}
+
+.comet-theory-container {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    background: rgba(11, 12, 29, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.comet-section-title {
+    font-family: "Orbitron", sans-serif;
+    color: var(--nebula-purple);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.text-only-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.theory-content-grid {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.theory-content-grid .theory-text {
+    flex: 2; 
+    min-width: 300px;
+}
+
+.theory-content-grid .comet-section-image-container {
+    flex: 1;
+    min-width: 250px;
+}
+
+.comet-section-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.comet-section-points {
+    list-style: none;
+    padding-left: 0;
+    color: white;
+    opacity: 0.9;
+}
+
+.comet-section-points li {
+    padding-left: 1.5em;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.comet-section-points li::before {
+    content: "✦";
+    color: var(--star-gold);
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.fun-fact-box {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-left: 4px solid var(--star-gold);
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+}
+
+.fun-fact-box h5 {
+    font-family: "Orbitron", sans-serif;
+    color: var(--star-gold);
+    margin-bottom: 0.75rem;
+}
+
+.fun-fact-box p {
+    color: var(--text-offwhite);
+    opacity: 0.9;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(147, 112, 219, 0), var(--border-color), rgba(147, 112, 219, 0));
+    margin: 3rem 0;
+}
+
+.comet-classification-container {
+    padding: 2.5rem;
+    background: rgba(11, 12, 29, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.classification-title {
+    font-family: "Orbitron", sans-serif;
+    color: var(--text-offwhite);
+    text-shadow: 0 0 10px var(--nebula-purple);
+    margin-bottom: 2rem;
+}
+
+.classification-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.classification-tab {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--border-color);
+    background-color: transparent;
+    color: var(--nebula-purple);
+    font-family: "Orbitron", sans-serif;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.classification-tab:hover {
+    background-color: var(--border-color);
+    color: var(--text-offwhite);
+    transform: translateY(-3px);
+}
+
+.classification-tab.active {
+    background-color: var(--nebula-purple);
+    border-color: var(--nebula-purple);
+    color: var(--space-blue);
+    box-shadow: 0 0 15px rgba(147, 112, 219, 0.5);
+}
+
+.classification-description {
+    text-align: center;
+    font-style: italic;
+    color: var(--text-offwhite);
+    opacity: 0.8;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comet-examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.comet-card-artistic {
+    position: relative;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid var(--border-color);
+}
+
+.comet-card-artistic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(147, 112, 219, 0.4);
+}
+
+.comet-card-artistic-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(11, 12, 29, 0.95) 30%, transparent);
+    color: white;
+    text-align: center;
+}
+
+.comet-card-artistic-content h3 {
+    font-family: "Orbitron", sans-serif;
+    margin: 0;
+    font-size: 1.5rem;
+    text-shadow: 0 2px 5px black;
+}
+
+.comet-icon {
+    position: absolute;
+    font-size: 2rem;
+    color: var(--star-gold);
+    opacity: 0.3;
+    animation: sparkle 5s infinite ease-in-out;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.1); }
+}
+
+.comet-icon.icon-1 { top: 15%; left: 5%; }
+.comet-icon.icon-2 { top: 40%; right: 8%; font-size: 1.5rem; animation-delay: 1s; }
+.comet-icon.icon-3 { bottom: 20%; left: 10%; font-size: 2.5rem; animation-delay: 2.5s; }
+
+.comet-modal .modal-content {
+    background-color: var(--space-blue);
+    border: 1px solid var(--border-color);
+    color: var(--text-offwhite);
+    border-radius: 15px;
+}
+
+.modal-header-custom {
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.modal-title-custom {
+    font-family: "Orbitron", sans-serif;
+    color: var(--star-gold);
+}
+
+.modal-body-custom {
+    padding: 2rem;
+}
+
+.modal-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+}
+
+.modal-info {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-offwhite);
+    opacity: 0.9;
+    text-align: center;
+}
+
+.comet-section-content {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.9; 
+}
+
+.comet-section-points {
+    list-style: none;
+    padding-left: 0;
+    color: white;
+    opacity: 0.9;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}

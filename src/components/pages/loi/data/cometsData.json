@@ -1,0 +1,111 @@
+{
+    "theory": {
+      "title": "Comets: The Wandering Snowballs",
+      "sections": [
+        {
+          "id": "what-is-a-comet",
+          "title": "What is a Comet?",
+          "content": "Comets are cosmic snowballs of frozen gases, rock, and dust that orbit the Sun. When frozen, they are the size of a small town. When a comet's orbit brings it close to the Sun, it heats up and spews dust and gases into a giant glowing head larger than most planets. The dust and gases form a tail that stretches away from the Sun for millions of miles.",
+          "image": "/images/comets/theory/what-is-a-comet.jpg",
+          "funFact": {
+          "title": "Fun Fact: Comet Tails",
+          "text": "A comet's tail can be incredibly long, sometimes stretching over 150 million kilometers (about the distance from the Earth to the Sun)! Despite their immense size, you could fly a spaceship right through one without noticing, as the particles are extremely spread out."
+        }
+        },
+        {
+          "id": "early-conceptions",
+          "title": "Early Conceptions of Comets",
+          "content": "For centuries, comets were often seen as bad omens or messengers of doom. Lacking scientific understanding, ancient cultures interpreted their sudden and unpredictable appearances as warnings of disasters, such as plagues, wars, or the death of rulers. Their ethereal beauty was overshadowed by fear and superstition."
+        },
+        {
+          "id": "structure",
+          "title": "Structure of a Comet",
+          "content": "A comet is composed of three main parts: the nucleus, the coma, and the tails.",
+          "image": "/images/comets/theory/comet-structure.jpg",
+          "points": [
+            "**Nucleus:** The solid, core structure made of ice, dust, and rock. It is typically only a few kilometers across.",
+            "**Coma:** As the comet nears the Sun, its ice turns directly into gas, forming a large, glowing cloud around the nucleus. This cloud is the coma.",
+            "**Tails:** Solar wind and radiation pressure push dust and gas away from the coma, forming two distinct tails: a yellowish dust tail that is often curved, and a blueish ion (gas) tail that always points directly away from the Sun."
+          ],
+          "funFact": {
+          "title": "Fun Fact: Dark Nucleus",
+          "text": "Despite being made of ice, a comet's nucleus is one of the darkest objects in the solar system, reflecting only about 4% of the light that hits it. This is because it's covered in a dark, tar-like organic dust."
+        }
+        },
+        {
+          "id": "origin",
+          "title": "Origin and Physical Characteristics",
+          "content": "Comets are believed to be pristine remnants from the formation of our solar system about 4.6 billion years ago. They primarily originate from two regions: the Kuiper Belt, a region of icy bodies beyond Neptune, which is the source of short-period comets; and the Oort Cloud, a vast, spherical shell of comets at the outermost edge of the solar system, which is the source of long-period comets."
+        },
+        {
+          "id": "lifecycle",
+          "title": "The Lifecycle of a Comet",
+          "content": "Comets spend most of their lives frozen and inactive in the outer solar system. When gravitational forces push them inward, they begin their active life. With each pass near the Sun, a comet loses a significant amount of its icy material. Eventually, after many orbits, it may either completely disintegrate or become a dormant, asteroid-like rock, its volatile ices long gone.",
+          "image": "/images/comets/theory/comet-lifecycle.jpg"
+        },
+        {
+          "id": "orbit",
+          "title": "Orbital Characteristics",
+          "content": "Unlike the nearly circular orbits of planets, most comets have highly elliptical (oval-shaped) orbits. This means they travel to the far reaches of the solar system and then swing back in close to the Sun. Their orbits can be highly inclined, meaning they don't have to orbit on the same plane as the planets."
+        },
+        {
+          "id": "influence",
+          "title": "Influence of Comets",
+          "points": [
+            "**Life on Earth:** A leading theory suggests that comets delivered a significant portion of Earth's water and organic molecules—the building blocks of life—through ancient impacts.",
+            "**Meteor Showers:** When Earth passes through the trail of dust and debris left behind by a comet, we experience a meteor shower. The particles burn up in our atmosphere, creating spectacular 'shooting stars'."
+          ]
+        }
+      ]
+    },
+    "classifications": {
+    "title": "Explore Comet Classifications",
+    "types": [
+      {
+        "id": "short-period",
+        "name": "Short-Period Comets",
+        "description": "With orbital periods of less than 200 years, these comets largely originate from the Kuiper Belt.",
+        "examples": [
+          { "name": "Halley's Comet", "info": "The most famous periodic comet, returning to Earth's vicinity every 75-76 years. It's the only naked-eye comet that can appear twice in a human lifetime.", "image": "/images/comets/halleys-comet.jpg" },
+          { "name": "Comet Encke", "info": "Possesses the shortest orbital period of any known comet, completing an orbit of the Sun in only 3.3 years.", "image": "/images/comets/encke-comet.jpg" },
+          { "name": "67P/Churyumov–Gerasimenko", "info": "The destination of the European Space Agency's Rosetta mission, which studied the comet up close from 2014 to 2016.", "image": "/images/comets/67p-comet.jpg" },
+          { "name": "Comet Tempel 1", "info": "Famously targeted by NASA's Deep Impact mission in 2005, which released an impactor to collide with the comet's nucleus.", "image": "/images/comets/tempel1-comet.jpg" },
+          { "name": "Comet Wild 2", "info": "Visited by NASA's Stardust spacecraft in 2004, which collected dust samples from the coma and returned them to Earth.", "image": "/images/comets/wild2-comet.jpg" },
+          { "name": "Comet Borrelly", "info": "Studied by the Deep Space 1 probe in 2001, revealing a dark, bowling pin-shaped nucleus.", "image": "/images/comets/borrelly-comet.jpg" },
+          { "name": "Comet Grigg-Skjellerup", "info": "A small comet whose orbit is influenced by Jupiter. It was visited by the Giotto spacecraft in 1992.", "image": "/images/comets/grigg-skjellerup-comet.jpg" },
+          { "name": "Comet Hartley 2", "info": "A small, peanut-shaped comet visited by NASA's EPOXI mission (an extension of Deep Impact) in 2010.", "image": "/images/comets/hartley2-comet.jpg" },
+          { "name": "Comet Tuttle-Giacobini-Kresak", "info": "This comet is responsible for the Draconid meteor shower, which can occasionally produce intense meteor storms.", "image": "/images/comets/tuttle-giacobini-kresak-comet.jpg" },
+          { "name": "Comet Swift-Tuttle", "info": "The parent body of the Perseid meteor shower, one of the most popular annual meteor showers. Its nucleus is one of the largest near-Earth objects.", "image": "/images/comets/swift-tuttle-comet.jpg" }
+        ]
+      },
+      {
+        "id": "long-period",
+        "name": "Long-Period Comets",
+        "description": "These comets have orbits longer than 200 years, often thousands or millions of years, and originate from the distant Oort Cloud.",
+        "examples": [
+          { "name": "Comet Hale-Bopp", "info": "One of the brightest comets of the 20th century, visible to the naked eye for a record 18 months. Its orbital period is estimated to be around 2,533 years.", "image": "/images/comets/hale-bopp-comet.jpg" },
+          { "name": "Comet Hyakutake", "info": "Known for its extremely long tail, it made a very close pass by Earth in 1996. Its orbital period is estimated to be around 70,000 years.", "image": "/images/comets/hyakutake-comet.jpg" },
+          { "name": "Comet ISON", "info": "A sungrazing comet that disintegrated as it passed close to the Sun in 2013, after generating significant media attention.", "image": "/images/comets/ison-comet.jpg" },
+          { "name": "Comet McNaught", "info": "The Great Comet of 2007, it became the second-brightest comet since 1935 and was easily visible in daylight in the Southern Hemisphere.", "image": "/images/comets/mcnaught-comet.jpg" },
+          { "name": "Comet West", "info": "Considered one of the most beautiful comets of the 20th century, the Great Comet of 1976 had a very bright, broad tail and its nucleus split into four fragments.", "image": "/images/comets/west-comet.jpg" },
+          { "name": "Comet C/2020 F3 (NEOWISE)", "info": "A bright naked-eye comet that graced the skies of the Northern Hemisphere in mid-2020, becoming a popular astronomical target during the COVID-19 pandemic.", "image": "/images/comets/neowise-comet.jpg" },
+          { "name": "The Great Comet of 1811", "info": "Visible to the naked eye for a record 260 days, it was a culturally significant event in the early 19th century, even mentioned in Tolstoy's 'War and Peace'.", "image": "/images/comets/great-comet-1811.jpg" },
+          { "name": "Comet Lovejoy (C/2011 W3)", "info": "A remarkable Kreutz sungrazer that survived its perilous journey around the Sun in 2011, re-emerging with a magnificent tail.", "image": "/images/comets/lovejoy-comet.jpg" },
+          { "name": "Comet Thatcher", "info": "The parent comet of the April Lyrids meteor shower. It has an orbital period of about 415 years.", "image": "/images/comets/thatcher-comet.jpg" },
+          { "name": "Comet C/2023 A3 (Tsuchinshan-ATLAS)", "info": "A long-period comet with the potential to become exceptionally bright and visible to the naked eye in late 2024.", "image": "/images/comets/tsuchinshan-atlas-comet.jpg" }
+        ]
+      },
+      {
+        "id": "non-periodic",
+        "name": "Non-Periodic & Interstellar Comets",
+        "description": "These comets pass through the inner Solar System only once and then leave, never to return. Some may even come from other star systems.",
+        "examples": [
+          { "name": "C/2019 Q4 (Borisov)", "info": "The first observed and confirmed interstellar comet, providing the first glimpse into the chemical composition of a comet from another star system.", "image": "/images/comets/borisov-comet.jpg" },
+          { "name": "'Oumuamua", "info": "The first interstellar object detected. Its unusual characteristics (cigar-shaped, no visible coma) led to debates about whether it was a comet or a new type of object.", "image": "/images/comets/oumuamua.jpg" },
+          { "name": "Comet Sarabat", "info": "The Great Comet of 1729, it holds the record for one of the largest intrinsic magnitudes ever recorded, meaning it was exceptionally large and bright despite its distance.", "image": "/images/comets/sarabat-comet.jpg" },
+          { "name": "Comet C/1980 E1 (Bowell)", "info": "This comet holds the record for the most eccentric orbit of any known solar system object. It entered on an elliptical orbit but was accelerated by Jupiter onto a hyperbolic escape trajectory.", "image": "/images/comets/bowell-comet.jpg" }
+        ]
+      }
+    ]
+  }
+  }

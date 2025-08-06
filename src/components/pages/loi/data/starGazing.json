@@ -61,36 +61,41 @@
         "name": "Aoraki Mackenzie, New Zealand",
         "description": "One of the best places in the world to stargaze, offering incredibly clear views of the Southern Cross, the Milky Way, and the Aurora Australis.",
         "image": "/images/star_gazing/place/NewZealand.jpg",
-        "latitude": -44.0264,
-        "longitude": 170.0901
+        "latitude": -43.5973,
+        "longitude": 170.1473,
+        "map_url": "https://maps.google.com/maps?q=LAT,LNG&hl=es;z=14&output=embed-43.5973,170.1473&z=7&output=embed"
       },
       {
         "name": "Atacama Desert, Chile",
         "description": "Known for its high altitude, dry air, and minimal light pollution, making it an ideal location for astronomical observation.",
         "image": "/images/star_gazing/place/Chile.jpg",
         "latitude": -23.5,
-        "longitude": -69.0
+        "longitude": -69.0,
+        "map_url": "https://www.google.com/maps/embed?pb=...1"
       },
       {
         "name": "Tenerife, Canary Islands, Spain",
         "description": "Mount Teide National Park is a Starlight Reserve, offering fantastic views of constellations and nebulae from its high volcanic peaks.",
         "image": "/images/star_gazing/place/Spain.jpg",
         "latitude": 28.2731,
-        "longitude": -16.6385
+        "longitude": -16.6385,
+        "map_url": "https://www.google.com/maps/embed?pb=...9"
       },
       {
         "name": "NamibRand Reserve, Namibia",
         "description": "One of Africa's largest Dark Sky Reserves, where visitors can experience pristine night skies untouched by light pollution.",
         "image": "/images/star_gazing/place/Namibia.jpg",
         "latitude": -25.2667,
-        "longitude": 15.8
+        "longitude": 15.8,
+        "map_url": "https://maps.google.com/maps?q=LAT,LNG&hl=es;z=14&output=embed0"
       },
       {
         "name": "Jasper National Park, Canada",
         "description": "The world's second-largest Dark Sky Preserve, offering incredible opportunities to view the Milky Way, stars, and even aurora in winter.",
         "image": "/images/star_gazing/place/Canada.jpg",
         "latitude": 52.8732,
-        "longitude": -118.0837
+        "longitude": -118.0837,
+        "map_url": "https://maps.google.com/maps?q=LAT,LNG&hl=es;z=14&output=embed1"
       }
     ]
   },

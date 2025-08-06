@@ -3,31 +3,25 @@ import { Button } from 'react-bootstrap';
 import observatoriesData from '../../data/observatories.json';
 import './Observatories.css';
 import pageBackground from './background/starfield-bg.jpg';
+import MapView from '../../common/MapView';
 
 const Observatories = () => {
   const primaryColor = '#67e8f9';
   const orbitronFont = 'Orbitron, sans-serif';
+  const pageRef = useRef(null);
 
   const [activeId, setActiveId] = useState(observatoriesData[0]?.id || '');
   const contentRefs = useRef({});
 
   useEffect(() => {
-    const imageUrl = pageBackground;
-    
-    const originalBackground = document.body.style.backgroundImage;
-    const originalBackgroundColor = document.body.style.backgroundColor;
+    if (!pageRef.current) return;
 
-    document.body.style.backgroundImage = `url(${imageUrl})`;
-    document.body.style.backgroundAttachment = 'fixed';
-    document.body.style.backgroundSize = 'cover';
-    document.body.style.backgroundPosition = 'center';
-    document.body.style.backgroundColor = 'transparent'; 
-    
-    return () => {
-      document.body.style.backgroundImage = originalBackground || 'none';
-      document.body.style.backgroundColor = originalBackgroundColor || '';
-    };
+    const element = pageRef.current;
+    const imageUrl = pageBackground;
+
+    element.style.backgroundImage = `url(${imageUrl})`;
   }, []);
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -60,10 +54,14 @@ const Observatories = () => {
     });
   };
 
-  const mapsApiKey = 'AIzaSyB9YyC32U0aoUibPZzJpN8BVBq8tnPhLb4';
-
   return (
-    <div className="observatories-page-exhibition">
+    <div ref={pageRef} className="observatories-page-exhibition page-wrapper">
+      <div className="container">
+        <h1 className="text-center page-title" style={{ fontFamily: orbitronFont, color: primaryColor }}>
+          Great Observatories of the World
+        </h1>
+      </div>
+
       <div className="exhibition-layout">
         <nav className="exhibition-nav">
           <ul>
@@ -102,9 +100,7 @@ const Observatories = () => {
                 Visit Website <i className="bi bi-box-arrow-up-right ms-2"></i>
               </Button>
 
-              {/* YÊU CẦU 3: BỐ CỤC 3 CỘT MỚI */}
               <div className="card-details-grid">
-                {/* Cột 1: Key Features */}
                 <div className="detail-column">
                   <h5>Key Features</h5>
                   <ul>
@@ -113,22 +109,16 @@ const Observatories = () => {
                     ))}
                   </ul>
                 </div>
-
-                {/* Cột 2: Bản đồ */}
                 <div className="detail-column">
                   <h5>Location</h5>
                   <div className="map-container">
-                    <iframe
-                      title={`map-${obs.name}`}
-                      width="100%"
-                      height="100%"
-                      loading="lazy"
-                      src={`https://www.google.com/maps/embed/v1/place?key=${mapsApiKey}&q=${obs.latitude},${obs.longitude}&zoom=10`}
-                    ></iframe>
+                    <MapView
+                      latitude={obs.latitude}
+                      longitude={obs.longitude}
+                      name={obs.name}
+                    />
                   </div>
                 </div>
-
-                {/* Cột 3: Thông tin thêm */}
                 <div className="detail-column">
                   <h5>Additional Info</h5>
                   {Object.entries(obs.additional_info).map(([key, value]) => (
