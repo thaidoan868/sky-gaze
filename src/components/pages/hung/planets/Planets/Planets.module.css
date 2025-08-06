@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     padding: 8rem 1rem;
+    z-index: 20;
 }
 
 .articleCard {
@@ -18,6 +19,7 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     overflow: hidden; 
+    z-index: 20;
 }
 
 .articleCard:hover {
@@ -30,11 +32,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 20;
 }
 
 .planetCard {
     transition: all 0.3s ease;
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
+    z-index: 20;
 }
 
 .planetCard:hover {
@@ -52,9 +56,41 @@
     flex-grow: 1;
     overflow-y: auto; 
     min-height: 100px;
+    z-index: 20;
 }
 
 .descriptionText {
     font-size: 1.1rem; 
     line-height: 1.6;  
+}
+
+.videoContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; 
+  padding-top: 56.25%; 
+  border-radius: 0.5rem; 
+  z-index: 20;
+}
+
+.videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.image-gallery-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: 1.5rem;
 }
