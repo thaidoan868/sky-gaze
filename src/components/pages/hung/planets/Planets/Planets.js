@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { planets } from '../../data/planetsData.js'; 
-import solarSystemBg from './images/solar-system-bg.jpg'; 
+import { planets } from '../../data/planetsData.js';
+import solarSystemBg from './images/solar-system-bg.jpg';
 import styles from './Planets.module.css';
 
 const Planets = () => {
@@ -25,7 +25,7 @@ const Planets = () => {
         <div className="d-flex justify-content-center flex-wrap gap-3 mb-5">
           {planets.map((planet) => (
             <button key={planet.id} onClick={() => handlePlanetSelection(planet)} className={`p-3 rounded-3 glass-effect text-white ${styles.planetCard} ${selectedPlanet.id === planet.id ? styles.active : ''}`}>
-              <img src={planet.images[0]} alt={planet.name} style={{width: '60px', height: '60px'}} className="rounded-circle mb-2 object-cover" />
+              <img src={planet.images[0]} alt={planet.name} style={{ width: '100px', height: '60px' }} className="rounded-circle mb-2 object-cover" />
               <span>{planet.name}</span>
             </button>
           ))}
@@ -33,17 +33,15 @@ const Planets = () => {
         <div className="row g-4 align-items-center">
           <div className="col-lg-5">
             <div className="card bg-transparent glass-effect text-white h-100">
-              <img src={selectedPlanet.images[0]} className="card-img-top" alt={selectedPlanet.name} style={{height: '250px', objectFit: 'cover'}}/>
+              <img src={selectedPlanet.images[0]} className="card-img-top" alt={selectedPlanet.name} style={{ height: '250px', objectFit: 'cover', width: '100%' }} />
               <div className="card-body text-start d-flex flex-column">
                 <h3 className="card-title font-orbitron">{selectedPlanet.name}</h3>
-                {/* Applied a new class for better font styling */}
                 <ul className={`list-unstyled mb-3 ${styles.infoList}`}>
                   <li><strong>Discovery:</strong> {selectedPlanet.discovery}</li>
                   <li><strong>Atmosphere:</strong> {selectedPlanet.atmosphere}</li>
                 </ul>
-                <div className={styles.descriptionContainer}>
-                    {/* Applied a new class for better font styling */}
-                    <p className={styles.descriptionText}>{selectedPlanet.description}</p>
+                <div style={{ height: '150px', overflowY: 'auto'}}>
+                  <p style={{ fontSize: '1.1rem', lineHeight: 1.6 }}>{selectedPlanet.description}</p>
                 </div>
               </div>
             </div>
@@ -51,7 +49,7 @@ const Planets = () => {
           <div className="col-lg-7">
             <div className="glass-effect p-2 rounded-3 position-relative">
               <button onClick={prevImage} className="btn btn-dark position-absolute top-50 start-0 translate-middle-y z-1 ms-3">‹</button>
-              <img src={selectedPlanet.images[currentImageIndex]} alt={`View of ${selectedPlanet.name}`} className="img-fluid rounded-2" style={{maxHeight: '60vh', objectFit: 'contain'}} />
+              <img src={selectedPlanet.images[currentImageIndex]} alt={`View of ${selectedPlanet.name}`} className="img-fluid rounded-2" style={{ maxHeight: '60vh', objectFit: 'cover', width: '100%' }} />
               <button onClick={nextImage} className="btn btn-dark position-absolute top-50 end-0 translate-middle-y z-1 me-3">›</button>
             </div>
           </div>

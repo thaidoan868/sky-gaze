@@ -8,7 +8,6 @@ export const astroTopics = [
   thumbnail: '/images/topics/big-bang.jpg', 
   summary: 'The prevailing cosmological model explaining the origin and evolution of the universe from an initial state of extreme density and temperature approximately 13.8 billion years ago.',
   
-  // ~1000 words of detailed content, broken into sections for the new layout
   content: [
     `<p>The Big Bang theory stands as the paramount scientific explanation for the origin of our universe. It posits that approximately 13.8 billion years ago, the entirety of the observable universe was concentrated into a singularity—a point of unimaginable density and temperature. This was not an explosion in the conventional sense, like a bomb detonating in a pre-existing space. Rather, it was the simultaneous appearance and expansion of space itself, everywhere at once. From this incandescent beginning, the universe has been continuously expanding and cooling, a process that has led to the formation of stars, galaxies, and all the cosmic structures we see today.</p>`,
     
@@ -37,26 +36,25 @@ export const astroTopics = [
     </div>`
   ],
 
-  // Gallery of 5 images with captions to be displayed throughout the content
   gallery: [
     {
-      src: '/images/topics/inflation.jpg', // Replace with your image path
+      src: '/images/topics/inflation.jpg', 
       caption: 'An artist’s depiction of cosmic inflation, where the universe expanded exponentially in a fraction of a second.'
     },
     {
-      src: '/images/topics/cmb-planck.jpg', // Replace with your image path
+      src: '/images/topics/cmb-planck.jpg', 
       caption: 'The Cosmic Microwave Background as mapped by the Planck satellite, showing the tiny temperature fluctuations that seeded galaxy formation.'
     },
     {
-      src: '/images/topics/recombination.jpg', // Replace with your image path
+      src: '/images/topics/recombination.jpg',
       caption: 'Illustration of the recombination era, when the universe became transparent and light could travel freely.'
     },
     {
-      src: '/images/topics/first-stars.jpg', // Replace with your image path
+      src: '/images/topics/first-stars.jpg', 
       caption: 'A simulation showing the formation of the first stars, which ended the Cosmic Dark Ages.'
     },
     {
-      src: '/images/topics/hubble-expansion.jpg', // Replace with your image path
+      src: '/images/topics/hubble-expansion.jpg', 
       caption: 'Edwin Hubble’s discovery of galactic redshift confirmed that the universe is expanding, a cornerstone of the Big Bang theory.'
     }
   ]
@@ -68,7 +66,6 @@ export const astroTopics = [
    thumbnail: '/images/topics/black-hole-main.jpg', 
   summary: 'Black holes are regions of spacetime where gravity is so intense that nothing, not even light, can escape. They are cosmic objects of extreme density, warping space and time around them.',
   
-  // ~1000 words of detailed content
   content: [
     `<p>In the cosmic zoo of celestial objects, none capture the imagination or challenge our understanding of physics quite like a black hole. It is a region of spacetime where gravity reaches its most extreme, creating a one-way door from which nothing can return. A black hole is not an empty void; rather, it is an immense amount of matter packed into an infinitesimally small space. This creates a gravitational field so powerful that it warps the fabric of spacetime around it, and once you cross its boundary—the <strong>event horizon</strong>—the laws of physics dictate that all paths lead only inward.</p>`,
     
@@ -97,26 +94,25 @@ export const astroTopics = [
     </div>`
   ],
 
-  // Gallery of 5 images with captions
   gallery: [
     {
-      src: '/images/topics/black-hole-supernova.jpg', // Replace with your image path
+      src: '/images/topics/black-hole-supernova.jpg',
       caption: 'An artist\'s concept of a supernova, the explosive death of a massive star that can lead to the formation of a stellar-mass black hole.'
     },
     {
-      src: '/images/topics/black-hole-m87.jpg', // Replace with your image path
+      src: '/images/topics/black-hole-m87.jpg', 
       caption: 'The first-ever image of a black hole, showing the shadow of the supermassive black hole at the center of the M87 galaxy.'
     },
     {
-      src: '/images/topics/black-hole-lensing.jpg', // Replace with your image path
+      src: '/images/topics/black-hole-lensing.jpg', 
       caption: 'An illustration of gravitational lensing, where a black hole\'s gravity bends the light from a distant galaxy behind it.'
     },
     {
-      src: '/images/topics/black-hole-accretion-disk.jpg', // Replace with your image path
+      src: '/images/topics/black-hole-accretion-disk.jpg',
       caption: 'A simulation showing the accretion disk around a black hole. The material glows intensely as it is heated by friction and gravitational forces.'
     },
     {
-      src: '/images/topics/black-hole-merger-waves.jpg', // Replace with your image path
+      src: '/images/topics/black-hole-merger-waves.jpg', 
       caption: 'A visualization of two merging black holes sending out gravitational waves, ripples in spacetime that can now be detected on Earth.'
     }
   ]
@@ -128,7 +124,6 @@ export const astroTopics = [
   thumbnail: '/images/topics/dark-matter-main.jpg', 
   summary: 'A mysterious and invisible substance that is believed to make up about 27% of the universe. Though we cannot see it, its gravitational influence is the crucial "scaffolding" that holds galaxies and galaxy clusters together.',
   
-  // ~1000 words of detailed content
   content: [
     `<p>When we look up at the night sky, we see stars, galaxies, and nebulae—the luminous matter of the cosmos. Yet, one of the most profound discoveries of the last century is that everything we can see makes up only about 5% of the total mass and energy of the universe. A staggering 27% is composed of a mysterious, invisible substance known as <strong>dark matter</strong>. It does not emit, reflect, or interact with light in any way, making it completely transparent to all our telescopes. We know it exists only because of its gravitational pull on the things we can see, and its presence is both a cornerstone of modern cosmology and one of its greatest unsolved puzzles.</p>`,
     
@@ -157,18 +152,17 @@ export const astroTopics = [
     </div>`
   ],
 
-  // Gallery of 5 images with captions
   gallery: [
     {
-      src: '/images/topics/dark-matter-rotation-curve.jpg', // Replace with your image path
+      src: '/images/topics/dark-matter-rotation-curve.jpg', 
       caption: 'A diagram of a galaxy rotation curve. The observed velocity of stars (white line) remains flat, suggesting a halo of unseen dark matter.'
     },
     {
-      src: '/images/topics/dark-matter-lensing.jpg', // Replace with your image path
+      src: '/images/topics/dark-matter-lensing.jpg', 
       caption: 'The galaxy cluster Abell 2218 demonstrates strong gravitational lensing, where its immense mass—mostly dark matter—warps the light from galaxies behind it.'
     },
     {
-      src: '/images/topics/dark-matter-cmb.jpg', // Replace with your image path
+      src: '/images/topics/dark-matter-cmb.jpg',
       caption: 'The Cosmic Microwave Background, mapped by the Planck satellite. The pattern of fluctuations provides powerful evidence for the existence of cold dark matter.'
     },
     {
@@ -176,7 +170,7 @@ export const astroTopics = [
       caption: 'An artist\'s simulation showing the vast, invisible halo of dark matter (in blue) that is believed to envelop the Milky Way galaxy.'
     },
     {
-      src: '/images/topics/dark-matter-detector.jpg', // Replace with your image path
+      src: '/images/topics/dark-matter-detector.jpg', 
       caption: 'The interior of the XENON1T direct detection experiment, one of several ultra-sensitive detectors built deep underground to search for dark matter particles.'
     }
   ]
@@ -188,7 +182,6 @@ export const astroTopics = [
   thumbnail: '/images/topics/exoplanet-main.jpg', 
   summary: 'Planets that orbit stars other than our Sun. The discovery of thousands of these distant worlds has revolutionized our understanding of planet formation and the potential for life in the galaxy.',
   
-  // ~1000 words of detailed content
   content: [
     `<p>For centuries, the planets of our own solar system were the only ones we knew. But in the vast expanse of the Milky Way, with its hundreds of billions of stars, it seemed statistically inevitable that other stars would have their own families of planets. In 1995, that belief transformed into fact with the discovery of 51 Pegasi b, the first exoplanet found orbiting a Sun-like star. Today, thanks to powerful telescopes and ingenious detection methods, we have confirmed the existence of over 5,000 exoplanets, revealing a stunning diversity of worlds that challenge our old definitions of what a planet can be.</p>`,
     
@@ -222,26 +215,25 @@ export const astroTopics = [
     </div>`
   ],
 
-  // Gallery of 5 images with captions
   gallery: [
     {
-      src: '/images/topics/exoplanet-transit-method.jpg', // Replace with your image path
+      src: '/images/topics/exoplanet-transit-method.jpg', 
       caption: 'The Transit Method is used to detect exoplanets by measuring the dimming of a star\'s light as a planet passes in front of it.'
     },
     {
-      src: '/images/topics/exoplanet-gas-giant.jpg', // Replace with your image path
+      src: '/images/topics/exoplanet-gas-giant.jpg', 
       caption: 'An artist\'s concept of a "hot Jupiter," a type of gas giant exoplanet that orbits extremely close to its parent star.'
     },
     {
-      src: '/images/topics/exoplanet-super-earth.jpg', // Replace with your image path
+      src: '/images/topics/exoplanet-super-earth.jpg',
       caption: 'Super-Earths are a class of planet more massive than Earth but smaller than Neptune, with potentially rocky or ocean-covered surfaces.'
     },
     {
-      src: '/images/topics/exoplanet-trappist1.jpg', // Replace with your image path
+      src: '/images/topics/exoplanet-trappist1.jpg', 
       caption: 'The TRAPPIST-1 system contains seven Earth-sized terrestrial planets, some of which lie within the star\'s habitable zone.'
     },
     {
-      src: '/images/topics/exoplanet-habitable-zone.jpg', // Replace with your image path
+      src: '/images/topics/exoplanet-habitable-zone.jpg', 
       caption: 'An illustration of the habitable zone, the region around a star where conditions might be right for liquid water and potentially life.'
     }
   ]
@@ -253,7 +245,6 @@ export const astroTopics = [
   thumbnail: '/images/topics/star-cycle-main.jpg', 
   summary: 'The process by which a star changes over billions of years. A star’s destiny, from its birth in a dusty nebula to its final, dramatic end, is determined almost entirely by its mass.',
   
-  // ~1000 words of detailed content
   content: [
     `<p>Stars are the luminous engines of the cosmos, performing a delicate balancing act for billions of years. They are not eternal; they undergo a complete life cycle, from a spectacular birth to a dramatic death. This entire journey is dictated by a single defining characteristic: a star's initial mass. The more massive a star, the brighter it burns and the faster it dies. From the gentle fading of a Sun-like star to the cataclysmic explosion of a cosmic heavyweight, the life cycle of a star is a story of gravity, pressure, and the creation of the very elements that make life possible.</p>`,
     
@@ -281,26 +272,25 @@ export const astroTopics = [
     </div>`
   ],
 
-  // Gallery of 5 images with captions
   gallery: [
     {
-      src: '/images/topics/star-cycle-nursery.jpg', // Replace with your image path
+      src: '/images/topics/star-cycle-nursery.jpg', 
       caption: 'The Carina Nebula, a vast stellar nursery where thousands of new stars are being born from collapsing clouds of gas and dust.'
     },
     {
-      src: '/images/topics/star-cycle-equilibrium.jpg', // Replace with your image path
+      src: '/images/topics/star-cycle-equilibrium.jpg', 
       caption: 'A diagram showing hydrostatic equilibrium, the stable balance between outward pressure from fusion and inward pull from gravity during a star\'s main sequence.'
     },
     {
-      src: '/images/topics/star-cycle-planetary-nebula.jpg', // Replace with your image path
+      src: '/images/topics/star-cycle-planetary-nebula.jpg', 
       caption: 'The Ring Nebula, a classic example of a planetary nebula formed when a Sun-like star shed its outer layers, leaving a white dwarf at its center.'
     },
     {
-      src: '/images/topics/star-cycle-supernova.jpg', // Replace with your image path
+      src: '/images/topics/star-cycle-supernova.jpg', 
       caption: 'The Crab Nebula is the remnant of a supernova explosion witnessed in 1054 A.D. The expanding filaments of gas are enriched with heavy elements.'
     },
     {
-      src: '/images/topics/star-cycle-neutron-star.jpg', // Replace with your image path
+      src: '/images/topics/star-cycle-neutron-star.jpg', 
       caption: 'An artist\'s concept of a neutron star. This incredibly dense remnant of a massive star\'s death crushes immense mass into the size of a city.'
     }
   ]
@@ -312,7 +302,6 @@ export const astroTopics = [
   thumbnail: '/images/topics/nebula-main.jpg', 
   summary: 'Vast and beautiful interstellar clouds of dust, hydrogen, helium, and other ionized gases. Nebulae are not only visually stunning but are also the cosmic grounds for both the birth and death of stars.',
   
-  // ~1000 words of detailed content
   content: [
     `<p>Stretched across the vast, dark canvas of interstellar space are some of the most beautiful and scientifically significant structures in the universe: nebulae. The word "nebula" is Latin for "cloud," and at their simplest, that's what they are—enormous clouds of gas and dust. But these are no ordinary clouds. They are dynamic, vibrant regions that play a dual role in the great cosmic cycle. They are the stellar nurseries where new stars and planets are born, and they are the ghostly remnants left behind by dying stars. Illuminated in a spectacular array of colors, each type of nebula tells a different part of the story of the universe.</p>`,
     
@@ -341,26 +330,25 @@ export const astroTopics = [
     </div>`
   ],
 
-  // Gallery of 5 images with captions
   gallery: [
     {
-      src: '/images/topics/nebula-emission-orion.jpg', // Replace with your image path
+      src: '/images/topics/nebula-emission-orion.jpg', 
       caption: 'The Orion Nebula (M42), a massive emission nebula where hot, young stars ionize the surrounding gas, causing it to glow in brilliant colors.'
     },
     {
-      src: '/images/topics/nebula-reflection-pleiades.jpg', // Replace with your image path
+      src: '/images/topics/nebula-reflection-pleiades.jpg',
       caption: 'The nebulosity surrounding the Pleiades star cluster is a classic reflection nebula, where dust scatters the blue light of the nearby stars.'
     },
     {
-      src: '/images/topics/nebula-dark-horsehead.jpg', // Replace with your image path
+      src: '/images/topics/nebula-dark-horsehead.jpg',
       caption: 'The Horsehead Nebula, a famous dark nebula, is a cold, dense cloud of dust silhouetted against the bright emission nebula IC 434.'
     },
     {
-      src: '/images/topics/nebula-planetary-ring.jpg', // Replace with your image path
+      src: '/images/topics/nebula-planetary-ring.jpg', 
       caption: 'The Ring Nebula (M57) is a planetary nebula formed by a dying, Sun-like star shedding its outer layers, leaving a hot white dwarf at the center.'
     },
     {
-      src: '/images/topics/nebula-supernova-crab.jpg', // Replace with your image path
+      src: '/images/topics/nebula-supernova-crab.jpg',
       caption: 'The Crab Nebula (M1) is a supernova remnant, the expanding debris from a massive star\'s explosion, powered by a rapidly spinning pulsar at its core.'
     }
   ]

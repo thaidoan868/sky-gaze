@@ -1,44 +1,60 @@
-/* Add this to your existing Planets.module.css file */
-.descriptionContainer {
-    max-height: 200px; /* Adjust height as needed */
-    overflow-y: auto;
-    padding-right: 10px; /* Add some padding so the scrollbar doesn't hug the text */
-    flex-grow: 1;
-}
-
-/* Optional: Style the scrollbar for a better look on Webkit browsers (Chrome, Safari) */
-.descriptionContainer::-webkit-scrollbar {
-  width: 8px;
-}
-
-.descriptionContainer::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-}
-
-.descriptionContainer::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-}
-
-.descriptionContainer::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
-}
 .contentSection {
     min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
-}
-.planetCard {
-  /* This makes all effects appear smoothly */
-  transition: all 0.25s ease-in-out;
+    justify-content: center;
+    padding: 8rem 1rem;
 }
 
-.planetCard:not(.active):hover {
-  cursor: pointer;
-  box-shadow: 0 0 0 3px #67e8f9;
+.articleCard {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    max-width: 800px; 
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden; 
+}
+
+.articleCard:hover {
+    transform: scale(1.05); 
+    border-color: #67e8f9;
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.articleImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.planetCard {
+    transition: all 0.3s ease;
+    border: 1px solid transparent; 
+}
+
+.planetCard:hover {
+    transform: scale(1.05); 
+    border-color: #67e8f9; 
+    background-color: rgba(255, 255, 255, 0.2); 
 }
 
 .active {
-  box-shadow: 0 0 0 3px #67e8f9;
+    border-color: #67e8f9;
+    background-color: rgba(103, 232, 249, 0.2);
+}
+
+.descriptionContainer {
+    flex-grow: 1;
+    overflow-y: auto; 
+    min-height: 100px;
+}
+
+.descriptionText {
+    font-size: 1.1rem; 
+    line-height: 1.6;  
 }
