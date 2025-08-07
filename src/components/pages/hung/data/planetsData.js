@@ -16,7 +16,7 @@ Unlike Earth, Mercury has almost no atmosphere to speak of. It possesses a very 
         id: 'venus',
         name: 'Venus',
         discovery: 'Known since ancient times.',
-        atmosphere: 'Extremely dense, composed of 96.5% carbon dioxide and 3.5% nitrogen.',
+        atmosphere: 'Extremely dense, with 96.5% carbon dioxide and 3.5% nitrogen.',
         images: ['/images/planets/venus1.jpg', '/images/planets/venus2.jpg', '/images/planets/venus3.jpg', '/images/planets/venus4.jpg', '/images/planets/venus5.jpg', '/images/planets/venus6.jpg'],
         youtubeId: '0SboqQysc8o',
         description: `Venus, the second planet from the Sun, is often called Earth's "sister planet" due to their similar size, mass, and composition. However, the similarities end there. Venus is a hellish world, shrouded in a thick, toxic atmosphere that has created a runaway greenhouse effect, making it the hottest planet in our solar system. Its surface temperatures are a uniform and scorching 465°C (870°F), hot enough to melt lead and far hotter than Mercury, despite being farther from the Sun. This oppressive heat is trapped by its incredibly dense atmosphere, which is about 90 times more massive than Earth's. Composed almost entirely of carbon dioxide with clouds of sulfuric acid, this atmosphere exerts a surface pressure equivalent to being 900 meters (3,000 feet) deep in Earth's oceans.
