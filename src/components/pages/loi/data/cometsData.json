@@ -1,64 +1,70 @@
 {
-    "theory": {
-      "title": "Comets: The Wandering Snowballs",
-      "sections": [
-        {
-          "id": "what-is-a-comet",
-          "title": "What is a Comet?",
-          "content": "Comets are cosmic snowballs of frozen gases, rock, and dust that orbit the Sun. When frozen, they are the size of a small town. When a comet's orbit brings it close to the Sun, it heats up and spews dust and gases into a giant glowing head larger than most planets. The dust and gases form a tail that stretches away from the Sun for millions of miles.",
-          "image": "/images/comets/theory/what-is-a-comet.jpg",
-          "funFact": {
+  "theory": {
+    "title": "Comets: The Wandering Snowballs",
+    "sections": [
+      {
+        "id": "what-is-a-comet",
+        "title": "What is a Comet?",
+        "content": "Comets are cosmic snowballs of frozen gases, rock, and dust that orbit the Sun. When frozen, they are the size of a small town. When a comet's orbit brings it close to the Sun, it heats up and spews dust and gases into a giant glowing head larger than most planets. The dust and gases form a tail that stretches away from the Sun for millions of miles.",
+        "image": "/images/comets/theory/what-is-a-comet.jpg",
+        "funFact": {
           "title": "Fun Fact: Comet Tails",
           "text": "A comet's tail can be incredibly long, sometimes stretching over 150 million kilometers (about the distance from the Earth to the Sun)! Despite their immense size, you could fly a spaceship right through one without noticing, as the particles are extremely spread out."
         }
-        },
-        {
-          "id": "early-conceptions",
-          "title": "Early Conceptions of Comets",
-          "content": "For centuries, comets were often seen as bad omens or messengers of doom. Lacking scientific understanding, ancient cultures interpreted their sudden and unpredictable appearances as warnings of disasters, such as plagues, wars, or the death of rulers. Their ethereal beauty was overshadowed by fear and superstition."
-        },
-        {
-          "id": "structure",
-          "title": "Structure of a Comet",
-          "content": "A comet is composed of three main parts: the nucleus, the coma, and the tails.",
-          "image": "/images/comets/theory/comet-structure.jpg",
-          "points": [
-            "**Nucleus:** The solid, core structure made of ice, dust, and rock. It is typically only a few kilometers across.",
-            "**Coma:** As the comet nears the Sun, its ice turns directly into gas, forming a large, glowing cloud around the nucleus. This cloud is the coma.",
-            "**Tails:** Solar wind and radiation pressure push dust and gas away from the coma, forming two distinct tails: a yellowish dust tail that is often curved, and a blueish ion (gas) tail that always points directly away from the Sun."
-          ],
-          "funFact": {
+      },
+      {
+        "id": "early-conceptions",
+        "title": "Early Conceptions of Comets",
+        "content": "For centuries, comets were often seen as bad omens or messengers of doom. Lacking scientific understanding, ancient cultures interpreted their sudden and unpredictable appearances as warnings of disasters, such as plagues, wars, or the death of rulers. Their ethereal beauty was overshadowed by fear and superstition."
+      },
+      {
+        "id": "structure",
+        "title": "Structure of a Comet",
+        "content": "A comet is composed of three main parts: the nucleus, the coma, and the tails.",
+        "image": "/images/comets/theory/comet-structure.jpg",
+        "points": [
+          "**Nucleus:** The solid, core structure made of ice, dust, and rock. It is typically only a few kilometers across.",
+          "**Coma:** As the comet nears the Sun, its ice turns directly into gas, forming a large, glowing cloud around the nucleus. This cloud is the coma.",
+          "**Tails:** Solar wind and radiation pressure push dust and gas away from the coma, forming two distinct tails: a yellowish dust tail that is often curved, and a blueish ion (gas) tail that always points directly away from the Sun."
+        ],
+        "funFact": {
           "title": "Fun Fact: Dark Nucleus",
           "text": "Despite being made of ice, a comet's nucleus is one of the darkest objects in the solar system, reflecting only about 4% of the light that hits it. This is because it's covered in a dark, tar-like organic dust."
         }
-        },
-        {
-          "id": "origin",
-          "title": "Origin and Physical Characteristics",
-          "content": "Comets are believed to be pristine remnants from the formation of our solar system about 4.6 billion years ago. They primarily originate from two regions: the Kuiper Belt, a region of icy bodies beyond Neptune, which is the source of short-period comets; and the Oort Cloud, a vast, spherical shell of comets at the outermost edge of the solar system, which is the source of long-period comets."
-        },
-        {
-          "id": "lifecycle",
-          "title": "The Lifecycle of a Comet",
-          "content": "Comets spend most of their lives frozen and inactive in the outer solar system. When gravitational forces push them inward, they begin their active life. With each pass near the Sun, a comet loses a significant amount of its icy material. Eventually, after many orbits, it may either completely disintegrate or become a dormant, asteroid-like rock, its volatile ices long gone.",
-          "image": "/images/comets/theory/comet-lifecycle.jpg"
-        },
-        {
-          "id": "orbit",
-          "title": "Orbital Characteristics",
-          "content": "Unlike the nearly circular orbits of planets, most comets have highly elliptical (oval-shaped) orbits. This means they travel to the far reaches of the solar system and then swing back in close to the Sun. Their orbits can be highly inclined, meaning they don't have to orbit on the same plane as the planets."
-        },
-        {
-          "id": "influence",
-          "title": "Influence of Comets",
-          "points": [
-            "**Life on Earth:** A leading theory suggests that comets delivered a significant portion of Earth's water and organic molecules—the building blocks of life—through ancient impacts.",
-            "**Meteor Showers:** When Earth passes through the trail of dust and debris left behind by a comet, we experience a meteor shower. The particles burn up in our atmosphere, creating spectacular 'shooting stars'."
-          ]
-        }
-      ]
-    },
-    "classifications": {
+      },
+      {
+        "id": "origin",
+        "title": "Origin and Physical Characteristics",
+        "content": "Comets are believed to be pristine remnants from the formation of our solar system about 4.6 billion years ago. They primarily originate from two regions: the Kuiper Belt, a region of icy bodies beyond Neptune, which is the source of short-period comets; and the Oort Cloud, a vast, spherical shell of comets at the outermost edge of the solar system, which is the source of long-period comets."
+      },
+      {
+        "id": "lifecycle",
+        "title": "The Lifecycle of a Comet",
+        "content": "Comets spend most of their lives frozen and inactive in the outer solar system. When gravitational forces push them inward, they begin their active life. With each pass near the Sun, a comet loses a significant amount of its icy material. Eventually, after many orbits, it may either completely disintegrate or become a dormant, asteroid-like rock, its volatile ices long gone.",
+        "image": "/images/comets/theory/comet-lifecycle.jpg"
+      },
+      {
+        "id": "orbit",
+        "title": "Orbital Characteristics",
+        "content": "Unlike the nearly circular orbits of planets, most comets have highly elliptical (oval-shaped) orbits. This means they travel to the far reaches of the solar system and then swing back in close to the Sun. Their orbits can be highly inclined, meaning they don't have to orbit on the same plane as the planets."
+      },
+      {
+        "id": "influence",
+        "title": "Influence of Comets",
+        "points": [
+          "**Life on Earth:** A leading theory suggests that comets delivered a significant portion of Earth's water and organic molecules—the building blocks of life—through ancient impacts.",
+          "**Meteor Showers:** When Earth passes through the trail of dust and debris left behind by a comet, we experience a meteor shower. The particles burn up in our atmosphere, creating spectacular 'shooting stars'."
+        ]
+      },
+      {
+        "id": "asteroids-vs-comets",
+        "title": "Note: Comets vs. Asteroids",
+        "content": "While both are remnants from the early solar system, the key difference lies in their composition. Asteroids are primarily made of rock and metal, while comets are composed of ice, dust, and rock ('dirty snowballs'). This difference is why comets develop spectacular comas and tails when they approach the Sun, as their ices turn to gas—a phenomenon asteroids do not exhibit.",
+        "image": "/images/comets/theory/comet-vs-asteroid.jpg"
+      }
+    ]
+  },
+  "classifications": {
     "title": "Explore Comet Classifications",
     "types": [
       {
@@ -108,4 +114,4 @@
       }
     ]
   }
-  }
+}

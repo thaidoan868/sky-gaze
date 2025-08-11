@@ -152,6 +152,12 @@
         "title": "Meteor Showers",
         "description": "Witness 'shooting stars' as tiny bits of space dust burn up in our atmosphere. Annual showers like the Perseids (August) and Geminids (December) can produce dozens of meteors per hour.",
         "image": "/images/star_gazing/meteor-shower.jpg"
+      },
+      {
+        "id": "auroras",
+        "title": "Auroras",
+        "description": "Known as the Northern Lights (Aurora Borealis) and Southern Lights (Aurora Australis), these breathtaking light displays are caused by charged particles from the Sun colliding with atoms in Earth's atmosphere. They are best seen from high-latitude regions.",
+        "image": "/images/star_gazing/aurora.jpg"
       }
     ]
   }

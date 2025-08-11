@@ -1,3 +1,507 @@
-.body{
-    background-color: #0C1427; 
+:root {
+    --space-blue: #0b0c1d;
+    --accent-cyan: #67e8f9;
+    --star-gold: #ffd700;
+    --text-white: #ffffff;
+    --text-offwhite: #e0e0e0;
+    --border-color: rgba(103, 232, 249, 0.3);
+    --input-focus: #67e8f9;
+    --bg-color: #fff;
+}
+
+.constellations-page .content-inner {
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.constellations-page .page-title {
+    font-family: "Orbitron", sans-serif;
+    color: var(--text-white);
+    text-shadow: 0 0 10px var(--accent-cyan);
+    margin-bottom: 3rem;
+}
+
+.intro-container {
+    background: rgba(11, 12, 29, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-offwhite);
+}
+
+.intro-title {
+    font-family: "Orbitron", sans-serif;
+    color: var(--accent-cyan);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.intro-section-item {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.intro-section-item:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.intro-section-grid {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.intro-section-grid.reverse {
+    flex-direction: row-reverse;
+}
+
+.intro-section-text {
+    flex: 3;
+}
+
+.intro-section-image {
+    flex: 2;
+}
+
+.intro-section-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.intro-subtitle {
+    font-family: "Orbitron", sans-serif;
+    color: var(--text-white);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-left: 3px solid var(--accent-cyan);
+    padding-left: 1rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.intro-list {
+    padding-left: 20px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.intro-list ul {
+    margin-top: 0.5rem;
+}
+
+.hemisphere-controls-container {
+    background: rgba(11, 12, 29, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.display-container {
+    background: rgba(11, 12, 29, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+}
+
+.hemisphere-toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Orbitron", sans-serif;
+    color: #888;
+}
+
+.hemisphere-label {
+    transition: color 0.4s ease;
+}
+
+.hemisphere-label.active {
+    color: var(--text-white);
+    text-shadow: 0 0 5px var(--accent-cyan);
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5b5b5b;
+    transition: 0.4s;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.slider .circle {
+    background-color: #212121;
+    height: 1.6em;
+    width: 1.6em;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.2em;
+    transition: 0.4s;
+}
+
+.slider .circle::before {
+    position: absolute;
+    content: "";
+    height: 1.3em;
+    width: 1.3em;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(182, 182, 182);
+    transition: 0.4s;
+}
+
+.slider .circle::after {
+    content: "";
+    background-color: #212121;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+}
+
+input:checked + .slider .circle {
+    transform: translateX(1.5em);
+    transition: 0.4s;
+}
+
+input:checked + .slider .circle::before {
+    background-color: #e1e1e1;
+    transition: 0.4s;
+}
+
+input:checked + .slider .circle::after {
+    width: 0;
+    height: 0;
+    transition: 0.4s;
+}
+
+.filter-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.search-bar-container {
+    flex: 1 1 250px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    color: var(--text-white);
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--accent-cyan);
+    border-color: var(--accent-cyan);
+}
+
+.season-tabs {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.zodiac-toggle-container {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkbox-container {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: var(--input-focus);
+    border-color: var(--input-focus);
+}
+
+.checkmark:after {
+    content: "";
+    width: 6px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 7px;
+    display: none;
+    border: solid var(--bg-color);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-label {
+    font-family: "Orbitron", sans-serif;
+    color: var(--text-white);
+}
+
+.astrology-notice {
+    background-color: rgba(255, 215, 0, 0.1);
+    border-left: 4px solid var(--star-gold);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    color: var(--text-offwhite);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.astrology-notice strong {
+    color: var(--star-gold);
+}
+
+.season-tab {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--border-color);
+    background-color: transparent;
+    color: var(--accent-cyan);
+    font-family: "Orbitron", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.season-tab:hover {
+    background-color: var(--border-color);
+    color: var(--text-white);
+}
+
+.season-tab.active {
+    background-color: var(--accent-cyan);
+    color: var(--space-blue);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
+}
+
+.constellation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    perspective: 1200px;
+}
+
+.flip-card-square {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
+    border: none;
+}
+
+.flip-card-square .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-card-square:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-square .flip-card-front,
+.flip-card-square .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.flip-card-square .flip-card-front {
+    background-color: var(--space-blue);
+    background-size: cover;
+    background-position: center;
+}
+
+.flip-card-square .flip-card-back {
+    background-color: #1a2938;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flip-card-square .flip-card-back h5 {
+    font-family: "Orbitron", sans-serif;
+    color: var(--accent-cyan);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.flip-card-square .flip-card-back h6 {
+    font-style: italic;
+    font-weight: 400;
+    color: #adb5bd;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.flip-card-square .flip-card-back p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+.no-results {
+    color: #adb5bd;
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 2rem;
+}
+
+.extra-info-container {
+    margin-top: 4rem;
+    padding: 2.5rem;
+    background: rgba(11, 12, 29, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.extra-info-title {
+    font-family: "Orbitron", sans-serif;
+    color: var(--text-white);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 1.75rem;
+}
+
+.feature-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(103, 232, 249, 0.2);
+    border-color: var(--accent-cyan);
+}
+
+.feature-card-icon {
+    font-size: 2.5rem;
+    color: var(--accent-cyan);
+    margin-bottom: 1.5rem;
+}
+
+.feature-card-title {
+    font-family: "Orbitron", sans-serif;
+    color: var(--text-white);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card-content {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.notice-ai {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notice-ai strong {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
 }

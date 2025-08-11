@@ -68,6 +68,37 @@ const StarGazing = () => {
         </div>
         <section className="mb-5">
           <Modal show={showTipsModal} onHide={handleCloseTipsModal} centered size="lg">
+            <Modal.Header closeButton className="bg-dark border-bottom-0">
+              <Modal.Title style={{ fontFamily: orbitronFont, color: primaryColor }}>Tips & Gear</Modal.Title>
+            </Modal.Header>
+            <Modal.Body className="bg-dark text-white">
+              <Row>
+                <Col md={6}>
+                  <h5 style={{ fontFamily: orbitronFont }}>Essential Tips</h5>
+                  {starGazingData.whereBest?.tips?.map((tip) => (
+                    <Card key={tip.heading} className="bg-secondary text-white border-0 shadow-sm mb-3">
+                      {tip.image && <Card.Img variant="top" src={process.env.PUBLIC_URL + tip.image} alt={tip.heading} style={{ height: '150px', objectFit: 'cover' }} />}
+                      <Card.Body>
+                        <Card.Title style={{ fontFamily: orbitronFont, color: primaryColor, fontSize: '1.1rem' }}>{tip.heading}</Card.Title>
+                        <Card.Text>{tip.content}</Card.Text>
+                      </Card.Body>
+                    </Card>
+                  ))}
+                </Col>
+                <Col md={6}>
+                  <h5 style={{ fontFamily: orbitronFont }}>Recommended Gear</h5>
+                  {starGazingData.whereBest?.gear?.map((item) => (
+                    <div key={item.name} className="d-flex align-items-start mb-4">
+                      <i className={`${item.icon} fs-2 me-3`} style={{ color: primaryColor, minWidth: '30px' }}></i>
+                      <div>
+                        <h6 className="mb-1" style={{ fontFamily: orbitronFont }}>{item.name}</h6>
+                        <p className="mb-0 text-white-50">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </Col>
+              </Row>
+            </Modal.Body>
           </Modal>
           <Row className="g-4 justify-content-center">
             {starGazingData.whereBest?.locations?.map((location, index) => (

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Modal } from 'react-bootstrap';
+import { Modal, Card } from 'react-bootstrap';
 import cometsData from '../../data/cometsData.json';
 import './Comets.css';
 import pageBackground from '../background/comets-bg.jpg';
@@ -64,10 +64,8 @@ const Comets = () => {
     <>
       <div ref={pageRef} className="comets-page page-wrapper">
         <div className="container py-5 content-inner">
-          <div className="comet-icon icon-1">☄</div>
-          <div className="comet-icon icon-2">☄</div>
-          <div className="comet-icon icon-3">☄</div>
           <h1 className="text-center page-title">{cometsData.theory.title}</h1>
+
           <div className="comet-theory-container">
             {cometsData.theory.sections.map((section, index) => (
               <React.Fragment key={section.id}>
@@ -79,6 +77,17 @@ const Comets = () => {
 
           <div className="comet-classification-container">
             <h2 className="text-center classification-title">{cometsData.classifications.title}</h2>
+
+            <div className="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/VV30nKCNjAQ"
+                title="Comets - A Celestial Story"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+
             <div className="classification-tabs">
               {cometsData.classifications.types.map(type => (
                 <button
@@ -90,7 +99,7 @@ const Comets = () => {
                 </button>
               ))}
             </div>
-            
+
             {activeTab && (
               <div className="classification-content">
                 {cometsData.classifications.types.map(type => (
@@ -98,15 +107,11 @@ const Comets = () => {
                     <div key={type.id} className="classification-pane">
                       <p className="classification-description">{type.description}</p>
                       <div className="comet-examples-grid">
-                        {type.examples.map((example) => (
-                          <div 
-                            key={example.name} 
-                            className="comet-card-artistic" 
-                            onClick={() => handleShowModal(example)}
-                            style={{'--bg-image': `url(${process.env.PUBLIC_URL + example.image})`}}
-                          >
-                            <div className="comet-card-artistic-content">
-                              <h3>{example.name}</h3>
+                        {type.examples.map(example => (
+                          <div key={example.name} className="comet-card" onClick={() => handleShowModal(example)}>
+                            <img src={process.env.PUBLIC_URL + example.image} alt={example.name} className="comet-card-image" />
+                            <div className="comet-card-body">
+                              <h5 className="comet-card-name">{example.name}</h5>
                             </div>
                           </div>
                         ))}
@@ -127,8 +132,8 @@ const Comets = () => {
               <Modal.Title className="modal-title-custom">{selectedComet.name}</Modal.Title>
             </Modal.Header>
             <Modal.Body className="modal-body-custom">
-                <img src={process.env.PUBLIC_URL + selectedComet.image} alt={selectedComet.name} className="modal-image"/>
-                <p className="modal-info">{selectedComet.info}</p>
+              <img src={process.env.PUBLIC_URL + selectedComet.image} alt={selectedComet.name} className="modal-image" />
+              <p className="modal-info">{selectedComet.info}</p>
             </Modal.Body>
           </>
         )}

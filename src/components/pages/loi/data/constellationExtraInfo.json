@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "title": "How many stars are in a constellation?",
+      "icon": "bi-question-circle-fill",
+      "content": "According to the modern definition by the IAU, a constellation is not a group of a fixed number of stars, but one of 88 official regions of the sky. The number of stars you see depends on viewing conditions and equipment."
+    },
+    {
+      "id": 2,
+      "title": "Constellation vs. Asterism",
+      "icon": "bi-star-half",
+      "content": "An 'asterism' is any recognizable pattern of stars (e.g., the Big Dipper). A 'constellation' is one of the 88 officially recognized areas of the sky. An asterism can be part of one or more constellations."
+    },
+    {
+      "id": 3,
+      "title": "Origin of the Zodiac",
+      "icon": "bi-gem",
+      "content": "The astrological zodiac originates from 12 constellations on the ecliptic. However, due to Earth's precession, the astrological signs no longer align with their namesake constellations. Astronomy recognizes 13 zodiac constellations, including Ophiuchus."
+    },
+    {
+      "id": 4,
+      "title": "The Former Constellations",
+      "icon": "bi-trash-fill",
+      "content": "Many historical constellations are no longer officially recognized. Their stars were merged into neighboring constellations. A prime example is Argo Navis, which was split into Carina, Puppis, and Vela."
+    },
+    {
+      "id": 5,
+      "title": "Astronomy vs. Astrology",
+      "icon": "bi-book-half",
+      "content": "Astronomy is the scientific study of celestial objects based on evidence. Astrology is a system of divination that believes celestial positions influence human destiny. Astronomy is a science, while astrology is a pseudoscience."
+    },
+    {
+      "id": 6,
+      "title": "How are stars named?",
+      "icon": "bi-tag-fill",
+      "content": "Most bright stars have ancient names from Arabic, Greek, or Latin origins (e.g., Sirius, Vega). For fainter stars, astronomers use designations consisting of a letter or number and the constellation name, like the Bayer designation (Alpha Centauri) or the Flamsteed designation (51 Pegasi). Most stars are simply known by their catalog numbers."
+    }
+  
+  ]
