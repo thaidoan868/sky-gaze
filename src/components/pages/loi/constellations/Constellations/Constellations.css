@@ -36,6 +36,7 @@
     color: var(--accent-cyan) !important;
     text-align: center;
     margin-bottom: 1.5rem;
+    font-size: 1.75rem !important;
 }
 
 .intro-section-item {
@@ -77,6 +78,7 @@
     text-shadow: 0 0 8px rgba(103, 232, 249, 0.7);
     margin-top: 0;
     margin-bottom: 1.5rem;
+    font-size: 1.5rem !important;
 }
 
 .intro-text {
@@ -447,7 +449,7 @@ input:checked + .slider .circle::after {
 
 .feature-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -617,3 +619,9 @@ input:checked + .slider .circle::after {
     color: var(--accent-cyan);
     font-family: 'Orbitron', sans-serif;
   }
+
+  @media (max-width: 992px) {
+    .feature-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
