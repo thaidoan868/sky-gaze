@@ -33,11 +33,12 @@
 .exhibition-nav a {
   display: block;
   padding: 0.75rem 1rem;
-  color: #adb5bd;
+  color: var(--text-offwhite);
   text-decoration: none;
   border-left: 3px solid transparent;
   transition: all 0.3s ease;
   font-family: 'Orbitron', sans-serif !important;
+  border-radius: 8px;
 }
 
 .exhibition-nav a:hover {
@@ -54,6 +55,7 @@
 
 .exhibition-content {
   flex: 1;
+  min-width: 0;
 }
 
 .obs-content-card {
@@ -110,12 +112,6 @@
   overflow: hidden;
 }
 
-@media (max-width: 992px) {
-  .exhibition-nav {
-    display: none;
-  }
-
-}
 .page-wrapper {
   min-height: 100vh;
   background-color: #0C1427;
@@ -126,9 +122,49 @@
 
 .page-title {
   font-family: 'Orbitron', sans-serif !important;
-  color: #67e8f9 !important;
-  margin-bottom: 3rem;
-  text-shadow: 0 0 10px rgba(103, 232, 249, 0.5);
-  font-size: 2.8rem !important;
+  color: #FFFFFF !important;
+  margin-bottom: 4rem !important;
+  text-shadow: 0 0 15px #67e8f9, 0 0 25px #67e8f9; 
+  font-size: 3rem !important;
   font-weight: bold !important;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .exhibition-nav {
+    display: none;
+  }
+  .exhibition-layout {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .observatories-page-exhibition {
+    padding: 120px 15px 30px 15px;
+  }
+
+  .page-title {
+    font-size: 2.2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .obs-content-card {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .obs-content-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-details-grid {
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .observatories-page-exhibition {
+    background-image: none !important;
+    background-color: #0C1427 !important;
+  }
 }

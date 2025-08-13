@@ -1,38 +1,38 @@
 {
-    "title": "Discover the Stars: Structure and Lifecycle",
-    "introduction": "Before we journey through the 88 constellations in the sky, let's learn about the very celestial bodies that create them. What exactly are stars, how are they structured, and what is their lifecycle?",
-    "sections": [
-      {
-        "id": "what-is-a-star",
-        "title": "What is a Star? 🔭",
-        "content": "Stars are giant spheres of hot gas that produce their own light through nuclear fusion reactions in their core. Their immense gravity creates tremendous pressure and temperature at the center, enough to fuse light elements (mainly hydrogen) into heavier elements (like helium), releasing a vast amount of energy as light and heat. The primary components of stars are hydrogen (over 70%) and helium.",
-        "image": "/images/constellations/intro/star-structure.jpg"
-      },
-      {
-        "id": "lifecycle",
-        "title": "The Lifecycle of a Star ✨",
-        "content": "Like everything in the universe, stars have a lifecycle: they are born, they live, and they die. A star's lifespan depends on its mass: **the larger the star, the faster it burns, and the sooner it dies.**",
-        "points": [
-          "**Formation:** Stars are born from vast clouds of dust and gas called nebulae. Under the force of gravity, material in the nebula clumps together, heats up, and forms a protostar.",
-          "**Main Sequence:** When the core becomes hot enough, nuclear fusion begins. The star enters the longest, most stable phase of its life, known as the main sequence. Our Sun is currently in this stage.",
-          "**Final Stages:** When the hydrogen in the core runs out, the star's fate depends on its mass:",
-          [
-            "**Average-sized stars (like the Sun):** They swell into a red giant, then their outer layers drift away, creating a beautiful planetary nebula. The remaining core collapses into a dense, cooling white dwarf.",
-            "**Massive stars:** They become red supergiants. Eventually, they explode in a cataclysmic event called a supernova. After the explosion, the core can become either an ultra-dense neutron star or, if massive enough, collapse infinitely to form a black hole."
-          ]
-        ],
-        "image": "/images/constellations/intro/star-lifecycle.jpg"
-      },
-      {
-        "id": "observing-from-earth",
-        "title": "A View from a Spinning World 🌍",
-        "content": "So, we have a sky full of countless stars at different stages of their lives. But why don't we see the same constellations all year round? And why does someone in Australia see a different sky than someone in Europe? It's all about our perspective from Earth.",
-        "points": [
-          "**The Hemisphere Difference:** Because the Earth is a sphere, an observer in the Northern Hemisphere is looking out into a different section of space than an observer in the Southern Hemisphere. This is why some constellations, like Ursa Major (The Great Bear), are staples of the northern sky, while others, like Crux (The Southern Cross), are famous landmarks of the southern sky.",
-          "**The Seasonal Shift:** As the Earth orbits the Sun, our planet's night side faces a different direction in the vast universe. The constellations we see in the winter are in the opposite direction of the Sun from us. Six months later, in the summer, the Earth is on the other side of its orbit, and our night sky now faces a completely new set of constellations. This is what creates the beautiful progression of seasonal constellations."
-        ],
-        "image": "/images/constellations/intro/earth-orbit.jpg"
-      }
-    ],
-    "conclusion": "Understanding this celestial dance helps us appreciate why we have different star maps for different locations and times of the year. Now, select your hemisphere and a season below to begin exploring the patterns in the sky!"
-  }
+  "title": "Discover the Stars: Structure and Lifecycle",
+  "introduction": "Before we journey through the 88 constellations in the sky, let's learn about the very celestial bodies that create them. What exactly are stars, how are they structured, and what is their lifecycle?",
+  "sections": [
+    {
+      "id": "what-is-a-star",
+      "title": "What is a Star? 🔭",
+      "content": "Stars are giant spheres of hot gas that produce their own light through nuclear fusion reactions in their core. Their immense gravity creates tremendous pressure and temperature at the center, enough to fuse light elements (mainly hydrogen) into heavier elements (like helium), releasing a vast amount of energy as light and heat. The primary components of stars are hydrogen (over 70%) and helium.",
+      "image": "/images/constellations/intro/star-structure.jpg"
+    },
+    {
+      "id": "lifecycle",
+      "title": "The Lifecycle of a Star ✨",
+      "content": "Like everything in the universe, stars have a lifecycle: they are born, they live, and they die. A star's lifespan depends on its mass: <strong>the larger the star, the faster it burns, and the sooner it dies.</strong>",
+      "points": [
+        "<strong>Formation:</strong> Stars are born from vast clouds of dust and gas called nebulae. Under the force of gravity, material in the nebula clumps together, heats up, and forms a protostar.",
+        "<strong>Main Sequence:</strong> When the core becomes hot enough, nuclear fusion begins. The star enters the longest, most stable phase of its life, known as the main sequence. Our Sun is currently in this stage.",
+        "<strong>Final Stages:</strong> When the hydrogen in the core runs out, the star's fate depends on its mass:",
+        [
+          "<strong>Average-sized stars (like the Sun):</strong> They swell into a red giant, then their outer layers drift away, creating a beautiful planetary nebula. The remaining core collapses into a dense, cooling white dwarf.",
+          "<strong>Massive stars:</strong> They become red supergiants. Eventually, they explode in a cataclysmic event called a supernova. After the explosion, the core can become either an ultra-dense neutron star or, if massive enough, collapse infinitely to form a black hole."
+        ]
+      ],
+      "image": "/images/constellations/intro/star-lifecycle.jpg"
+    },
+    {
+      "id": "observing-from-earth",
+      "title": "A View from a Spinning World 🌍",
+      "content": "So, we have a sky full of countless stars at different stages of their lives. But why don't we see the same constellations all year round? And why does someone in Australia see a different sky than someone in Europe? It's all about our perspective from Earth.",
+      "points": [
+        "<strong>The Hemisphere Difference:</strong> Because the Earth is a sphere, an observer in the Northern Hemisphere is looking out into a different section of space than an observer in the Southern Hemisphere. This is why some constellations, like Ursa Major (The Great Bear), are staples of the northern sky, while others, like Crux (The Southern Cross), are famous landmarks of the southern sky.",
+        "<strong>The Seasonal Shift:</strong> As the Earth orbits the Sun, our planet's night side faces a different direction in the vast universe. The constellations we see in the winter are in the opposite direction of the Sun from us. Six months later, in the summer, the Earth is on the other side of its orbit, and our night sky now faces a completely new set of constellations. This is what creates the beautiful progression of seasonal constellations."
+      ],
+      "image": "/images/constellations/intro/earth-orbit.jpg"
+    }
+  ],
+  "conclusion": "Understanding this celestial dance helps us appreciate why we have different star maps for different locations and times of the year. Now, select your hemisphere and a season below to begin exploring the patterns in the sky!"
+}

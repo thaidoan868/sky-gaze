@@ -1,155 +1,124 @@
- .gallery-title {
-    font-family: "Orbitron", sans-serif;
-    color: var(--text-white);
-    text-align: center;
-    margin-bottom: 2.5rem;
-    font-size: 1.75rem;
-    text-shadow: 0 0 10px var(--accent-cyan);
-  }
-  
-  .gallery-filters {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
-    flex-wrap: wrap;
-  }
-  
-  .filter-btn {
-    padding: 0.75rem 1.5rem;
-    border: 1px solid var(--border-color);
-    background-color: transparent;
-    color: var(--accent-cyan);
-    font-family: "Orbitron", sans-serif;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .filter-btn:hover {
-    background-color: var(--border-color);
-    color: var(--text-white);
-  }
-  
-  .filter-btn.active {
-    background-color: var(--accent-cyan);
-    color: var(--space-blue);
-    border-color: var(--accent-cyan);
-    box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
-  }
-  
+.gallery-container {
+  background: rgba(11, 12, 29, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  padding: 2.5rem;
+  margin-top: 4rem;
+}
+
+.gallery-title {
+  font-family: "Orbitron", sans-serif;
+  color: var(--text-white);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 1.75rem;
+  text-shadow: 0 0 10px var(--accent-cyan);
+}
+
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  color: var(--accent-cyan);
+  font-family: "Orbitron", sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--border-color);
+  color: var(--text-white);
+}
+
+.filter-btn.active {
+  background-color: var(--accent-cyan);
+  color: var(--space-blue);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 200px; /* Giữ nguyên chiều cao hàng cơ bản */
+  grid-auto-flow: dense; /* THÊM THUỘC TÍNH NÀY ĐỂ LẤP ĐẦY CHỖ TRỐNG */
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Giữ nguyên các quy tắc tạo sự đa dạng */
+.gallery-item:nth-child(7n + 1) {
+  grid-column: span 2;
+}
+.gallery-item:nth-child(7n + 4) {
+  grid-row: span 2;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(103, 232, 249, 0.3);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  color: white;
+  padding: 1.5rem 1rem 0.75rem;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
   .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: 200px;
-    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px;
   }
-  
-  .gallery-item {
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .gallery-item:nth-child(7n + 1) {
-    grid-column: span 2; /* Rộng gấp đôi */
-  }
+
+  /* Tắt hiệu ứng Masonry trên mobile để bố cục gọn gàng hơn */
+  .gallery-item:nth-child(7n + 1),
   .gallery-item:nth-child(7n + 4) {
-    grid-row: span 2; /* Cao gấp đôi */
+    grid-column: span 1;
+    grid-row: span 1;
   }
-  
-  .gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(103, 232, 249, 0.3);
+}
+
+@media (max-width: 480px) {
+  .gallery-filters {
+    gap: 0.5rem;
   }
-  
-  .gallery-item img {
-    width: 100%;
-    height: 100%; /* Sửa lại để ảnh lấp đầy thẻ figure */
-    object-fit: cover;
-    display: block;
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
-  
-  
-  .gallery-item figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-    color: white;
-    padding: 1.5rem 1rem 0.75rem;
-    font-size: 0.9rem;
-    text-align: center;
-    transition: opacity 0.3s ease;
-  }
-  
-  @media (max-width: 768px) {
-    .gallery-container {
-      padding: 1.5rem;
-      margin-top: 2rem;
-    }
-    .gallery-grid {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      gap: 1rem;
-    }
-    .gallery-item img {
-      height: 150px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .gallery-filters {
-      gap: 0.5rem;
-    }
-    .filter-btn {
-      padding: 0.5rem 1rem;
-      font-size: 0.8rem;
-    }
-    .gallery-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  .lightbox-modal .modal-content {
-    background-color: transparent;
-    border: none;
-  }
-  
-  .lightbox-modal .modal-body {
-    padding: 0;
-    text-align: center;
-  }
-  
-  .lightbox-image {
-    max-width: 90vw;
-    max-height: 80vh;
-    border-radius: 10px;
-    object-fit: contain;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
-  }
-  
-  .lightbox-caption {
-    color: white;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
-  }
-  
-  @media (max-width: 768px) {
-    .gallery-grid {
-      grid-template-columns: 1fr 1fr;
-      grid-auto-rows: 150px;
-      gap: 1rem;
-    }
-    .gallery-item:nth-child(7n + 1),
-    .gallery-item:nth-child(7n + 4) {
-      grid-column: span 1;
-      grid-row: span 1;
-    }
-  }
-  
+}

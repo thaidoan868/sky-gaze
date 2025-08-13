@@ -28,7 +28,7 @@ const StarGazing = () => {
   return (
     <div ref={pageRef} className="star-gazing-container page-wrapper">
       <div className="container py-5">
-        <h1 className="text-center mb-5" style={{ fontFamily: orbitronFont, color: primaryColor }}>
+        <h1 className="text-center page-title">
           Stargazing Guide
         </h1>
 
@@ -76,13 +76,15 @@ const StarGazing = () => {
                 <Col md={6}>
                   <h5 style={{ fontFamily: orbitronFont }}>Essential Tips</h5>
                   {starGazingData.whereBest?.tips?.map((tip) => (
-                    <Card key={tip.heading} className="bg-secondary text-white border-0 shadow-sm mb-3">
-                      {tip.image && <Card.Img variant="top" src={process.env.PUBLIC_URL + tip.image} alt={tip.heading} style={{ height: '150px', objectFit: 'cover' }} />}
-                      <Card.Body>
-                        <Card.Title style={{ fontFamily: orbitronFont, color: primaryColor, fontSize: '1.1rem' }}>{tip.heading}</Card.Title>
-                        <Card.Text>{tip.content}</Card.Text>
-                      </Card.Body>
-                    </Card>
+                    <div key={tip.heading} className="tip-item mb-3">
+                      {tip.image && (
+                        <img src={process.env.PUBLIC_URL + tip.image} alt={tip.heading} className="tip-item-image" />
+                      )}
+                      <div className="tip-item-content">
+                        <h6 className="tip-item-title" style={{ fontFamily: orbitronFont, color: primaryColor }}>{tip.heading}</h6>
+                        <p>{tip.content}</p>
+                      </div>
+                    </div>
                   ))}
                 </Col>
                 <Col md={6}>
@@ -102,26 +104,31 @@ const StarGazing = () => {
           </Modal>
           <Row className="g-4 justify-content-center">
             {starGazingData.whereBest?.locations?.map((location, index) => (
+              // THAY THẾ TOÀN BỘ KHỐI <Col> BẰNG ĐOẠN MÃ DƯỚI ĐÂY
               <Col lg={10} xl={9} key={location.name} className="mb-4">
-                <Card className="h-100 bg-dark text-white border-info shadow-lg flex-md-row stargazing-location-card">
-                  <Col md={5} className={`p-0 ${index % 2 !== 0 && 'order-md-1'}`}>
-                    <Card.Img src={process.env.PUBLIC_URL + location.image} alt={location.name} className="object-fit-cover" />
-                  </Col>
-                  <Col md={7} className="p-4 d-flex flex-column">
-                    <Card.Body>
-                      <Card.Title style={{ fontFamily: orbitronFont, color: primaryColor }}>{location.name}</Card.Title>
-                      <Card.Text>{location.description}</Card.Text>
-                    </Card.Body>
-                    {location.latitude && location.longitude && (
-                      <div className="mt-auto map-container">
-                        <MapView
-                          latitude={location.latitude}
-                          longitude={location.longitude}
-                          name={location.name}
-                        />
+                <Card className="h-100 bg-dark text-white border-info shadow-lg stargazing-location-card">
+                  <Row className="g-0">
+                    <Col md={5} className={index % 2 !== 0 ? 'order-md-2' : ''}>
+                      <div className="location-image-container">
+                        <Card.Img src={process.env.PUBLIC_URL + location.image} alt={location.name} className="location-image" />
                       </div>
-                    )}
-                  </Col>
+                    </Col>
+                    <Col md={7} className="d-flex flex-column">
+                      <Card.Body className="d-flex flex-column p-4">
+                        <Card.Title style={{ fontFamily: orbitronFont, color: primaryColor }}>{location.name}</Card.Title>
+                        <Card.Text>{location.description}</Card.Text>
+                        {location.latitude && location.longitude && (
+                          <div className="mt-auto map-container">
+                            <MapView
+                              latitude={location.latitude}
+                              longitude={location.longitude}
+                              name={location.name}
+                            />
+                          </div>
+                        )}
+                      </Card.Body>
+                    </Col>
+                  </Row>
                 </Card>
               </Col>
             ))}

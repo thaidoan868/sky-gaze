@@ -1,78 +1,75 @@
 .star-gazing-container {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.star-gazing-container .page-title {
+  font-family: 'Orbitron', sans-serif !important;
+  color: #FFFFFF !important;
+  margin-bottom: 4rem !important;
+  text-shadow: 0 0 15px #67e8f9, 0 0 25px #67e8f9; 
+  font-size: 3rem !important;
+  text-align: center;
+}
+
+.title-container {
+  padding: 1rem 2.5rem;
+  background: rgba(13, 22, 40, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(103, 232, 249, 0.2);
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+}
+
+.title-highlight {
+  color: #16ffcd;
+  margin-right: 0.75rem;
+  font-weight: 700;
 }
 
 .card {
   transition: transform 0.2s ease-in-out;
+  background-color: rgba(13, 22, 40, 0.5) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(103, 232, 249, 0.2) !important;
+  border-radius: 15px !important;
+  height: 100%;
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
-.star-gazing-container h1,
-.star-gazing-container h2 {
-  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.9);
-  font-size: 2.5rem !important; 
-}
-
-.title-box {
-  background-color: rgba(13, 22, 40, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(103, 232, 249, 0.2);
-  border-radius: 15px;
-  padding: 1rem 2rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 1rem;
-}
-
 .card .card-text {
-  font-size: 1.1rem !important;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: #e0e0e0;
 }
 
-.stargazing-location-card {
-  border: 1px solid #67e8f9;
-  box-shadow: 0 0 15px rgba(103, 232, 249, 0.4);
-  transition: all 0.3s ease-in-out;
-}
-
-.stargazing-location-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(103, 232, 249, 0.7);
-}
-
-.stargazing-location-card .map-container {
-  height: 250px;
-  overflow: hidden;
-  border-radius: 10px;
-  margin-top: 1rem;
-}
-
-.stargazing-location-card .map-container iframe {
-  border: none;
-  border-radius: 10px;
-}
-
-.stargazing-location-card .object-fit-cover {
-  object-fit: cover;
+.stargazing-location-card .location-image-container {
   height: 100%;
+  min-height: 250px;
+}
+
+.stargazing-location-card .location-image {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .map-container {
   height: 250px;
   border-radius: 10px;
   overflow: hidden;
-}
-
-.page-wrapper {
-  min-height: 100vh;
-  background-color: #0c1427;
+  margin-top: auto;
 }
 
 .tips-icon-btn {
@@ -90,46 +87,85 @@
 }
 
 .tips-icon-btn:hover {
-  background-color: #88f3ff;
-  border-color: #88f3ff;
-  box-shadow: 0 0 25px rgba(103, 232, 249, 0.8);
   transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(103, 232, 249, 0.8);
 }
 
-.title-container {
-  padding: 1rem 2.5rem;
-  background: rgba(13, 22, 40, 0.6);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+.tips-modal .modal-content {
+    background-color: #121932;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    color: var(--text-offwhite);
+}
+
+.tips-modal .modal-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tips-modal .modal-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.tips-modal .modal-title {
+    color: var(--accent-cyan);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.tip-item {
+  background-color: rgba(13, 22, 40, 0.7);
   border: 1px solid rgba(103, 232, 249, 0.2);
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 10px;
+  padding: 1rem;
   text-align: center;
+}
+
+.tip-item-image {
+  width: 100%;
+  max-width: 300px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+.tip-item-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
 .my-5 {
   text-align: center;
 }
 
-.section-title .title-highlight {
-  color: #3dd5f3 !important;
-  font-weight: 700 !important;
-  margin-right: 0.5rem !important;
-}
-.info-container {
-  padding: 0;
-  background: none;
-  backdrop-filter: none;
-  border: none;
+@media (max-width: 992px) {
+  .stargazing-location-card.card {
+    flex-direction: column !important;
+    z-index: 0;
+  }
+
+  .stargazing-location-card .location-image-container {
+    height: 250px;
+    min-height: auto;
+  }
 }
 
 @media (max-width: 768px) {
-  .stargazing-location-card .map-container {
-    z-index: 1;
+  .star-gazing-container .page-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem !important;
+  }
+  
+  .title-container {
+    padding: 0.75rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+  .star-gazing-page.page-wrapper {
+    background-image: none !important;
+    background-color: #0C1427 !important;
   }
 }

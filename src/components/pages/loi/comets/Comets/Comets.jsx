@@ -2,20 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Modal, Card } from 'react-bootstrap';
 import cometsData from '../../data/cometsData.json';
 import './Comets.css';
-import pageBackground from '../background/comets-bg.jpg';
 
 const Comets = () => {
   const pageRef = useRef(null);
   const [activeTab, setActiveTab] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [selectedComet, setSelectedComet] = useState(null);
-
-  useEffect(() => {
-    if (!pageRef.current) return;
-    const element = pageRef.current;
-    const imageUrl = pageBackground;
-    element.style.backgroundImage = `url(${imageUrl})`;
-  }, []);
 
   const handleShowModal = (comet) => {
     setSelectedComet(comet);
@@ -32,31 +24,31 @@ const Comets = () => {
   };
 
   const renderSection = (section) => (
-    <div key={section.id} className="comet-theory-section">
-      <h3 className="comet-section-title">{section.title}</h3>
-      <div className={section.image ? "theory-content-grid" : "text-only-section"}>
-        <div className="theory-text">
-          <p className="comet-section-content">{section.content}</p>
-          {section.points && (
-            <ul className="comet-section-points">
-              {section.points.map((point, index) => (
+    <div key={section.id} className={`comet-theory-section section-${section.id}`}>
+      <div className="theory-text">
+        <h3 className="comet-section-title">{section.title}</h3>
+        <p className="comet-section-content">{section.content}</p>
+        {section.points && (
+          <ul className="comet-section-points">
+            {Array.isArray(section.points) ? (
+              section.points.map((point, index) => (
                 <li key={index} dangerouslySetInnerHTML={{ __html: point }} />
-              ))}
-            </ul>
-          )}
-          {section.funFact && (
-            <div className="fun-fact-box">
-              <h5>{section.funFact.title}</h5>
-              <p>{section.funFact.text}</p>
-            </div>
-          )}
-        </div>
-        {section.image && (
-          <div className="comet-section-image-container">
-            <img src={process.env.PUBLIC_URL + section.image} alt={section.title} className="comet-section-image" />
+              ))
+            ) : null}
+          </ul>
+        )}
+        {section.funFact && (
+          <div className="fun-fact-box">
+            <h5>{section.funFact.title}</h5>
+            <p>{section.funFact.text}</p>
           </div>
         )}
       </div>
+      {section.image && (
+        <div className="comet-section-image-container">
+          <img src={process.env.PUBLIC_URL + section.image} alt={section.title} className="comet-section-image" />
+        </div>
+      )}
     </div>
   );
 
@@ -67,12 +59,10 @@ const Comets = () => {
           <h1 className="text-center page-title">{cometsData.theory.title}</h1>
 
           <div className="comet-theory-container">
-            {cometsData.theory.sections.map((section, index) => (
-              <React.Fragment key={section.id}>
-                {renderSection(section)}
-                {index < cometsData.theory.sections.length - 1 && <hr className="section-divider" />}
-              </React.Fragment>
-            ))}
+          {cometsData.theory.sections.map((section) => (
+    // Chỉ render trực tiếp component, không cần Fragment hay hr
+    renderSection(section)
+  ))}
           </div>
 
           <div className="comet-classification-container">

@@ -73,11 +73,10 @@
 
 .intro-subtitle {
     font-family: "Orbitron", sans-serif !important;
-    color: var(--text-white) !important;
+    color: #FFFFFF;
+    text-shadow: 0 0 8px rgba(103, 232, 249, 0.7);
     margin-top: 0;
     margin-bottom: 1.5rem;
-    border-left: 3px solid var(--accent-cyan);
-    padding-left: 1rem;
 }
 
 .intro-text {

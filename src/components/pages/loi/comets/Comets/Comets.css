@@ -3,108 +3,202 @@
   --accent-cyan: #67e8f9;
   --star-gold: #ffd700;
   --text-white: #FFFFFF;
+  --text-offwhite: #e0e0e0;
   --border-color: rgba(103, 232, 249, 0.3);
 }
 
+.comets-page {
+  background-color: #0C1427; 
+}
+
 .comets-page .content-inner {
-  padding-top: 120px !important;
+  padding-top: 150px;
   padding-bottom: 40px;
 }
 
 .comets-page .page-title {
   font-family: 'Orbitron', sans-serif;
   color: #FFFFFF !important;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   text-shadow: 0 0 15px var(--accent-cyan), 0 0 25px var(--accent-cyan); 
   font-size: 3rem; 
 }
 
 .comet-theory-container {
-  margin-top: 4rem;
-  margin-bottom: 5rem;
-  padding: 2rem;
-  background: rgba(11, 12, 29, 0.7);
+  max-width: 900px;
+  margin: 0 auto 5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.comet-theory-section {
+  display: flex;
+  background: rgba(18, 25, 50, 0.7);
   backdrop-filter: blur(10px);
-  border-radius: 15px;
   border: 1px solid var(--border-color);
+  border-radius: 15px;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+  transition: all 0.3s ease;
+}
+
+.comet-theory-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(103, 232, 249, 0.2);
+  border-color: var(--accent-cyan);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.comet-theory-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.comet-section-image-container {
+  flex: 1 1 40%;
+  min-width: 300px;
+}
+
+.comet-section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.theory-text {
+  flex: 1 1 60%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .comet-section-title {
   font-family: 'Orbitron', sans-serif !important;
   color: var(--accent-cyan) !important;
   margin-bottom: 1.5rem !important;
-  text-align: center !important;
+  font-size: 1.75rem;
 }
 
-.text-only-section {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+.section-structure {
+  flex-direction: column !important;
+  padding: 2.5rem;
 }
 
-.theory-content-grid {
+.section-structure .theory-text-wrapper {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  align-items: flex-end;
+}
+
+.section-structure .comet-section-points {
+  grid-column: 1 / -1;
+}
+
+.section-structure .fun-fact-box {
+  margin-top: 0;
+}
+
+.section-structure .comet-section-image-container {
+  display: none;
+}
+
+.section-structure .comet-section-image-wrapper {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-structure .comet-section-image-wrapper .comet-section-image-container {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section-lifecycle {
   align-items: center;
 }
 
-.comet-section-content,
-.comet-section-points li,
-.classification-description {
-  color: var(--text-white) !important;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  opacity: 0.9;
+.section-lifecycle .comet-section-image-container {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
 }
 
-.comet-section-points {
-    list-style: none;
-    padding-left: 0;
+.section-lifecycle .comet-section-image {
+  border-radius: 10px;
 }
 
+.section-asteroids-vs-comets {
+  background: rgba(0, 0, 0, 0.2);
+  border-style: dashed;
+  flex-direction: column !important;
+  padding: 2.5rem;
+}
+
+.section-asteroids-vs-comets .comet-section-image-container {
+  display: none;
+}
+
+.section-asteroids-vs-comets .theory-text {
+  width: 100%;
+  padding: 0;
+}
+
+.section-asteroids-vs-comets .comet-section-title,
+.section-asteroids-vs-comets .comet-section-content {
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comet-section-content, 
 .comet-section-points li {
-  padding-left: 1.5em;
-  position: relative;
-  margin-bottom: 0.5rem;
+  color: var(--text-offwhite) !important; 
+  font-size: 1.1rem; 
+  line-height: 1.7;
 }
 
-.comet-section-points li::before {
-    content: "✦";
-    color: var(--star-gold);
-    position: absolute;
-    left: 0;
-    top: 2px;
+.comet-section-points { 
+  list-style: none; 
+  padding-left: 0; 
+  margin-top: 1rem; 
 }
 
-.fun-fact-box {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-left: 4px solid var(--star-gold);
-    border-radius: 0 8px 8px 0;
-    text-align: left;
-}
+.comet-section-points li { 
+  padding-left: 1.5em; 
+  position: relative; 
+  margin-bottom: 0.5rem; }
 
-.fun-fact-box h5 {
-    font-family: "Orbitron", sans-serif;
-    color: var(--star-gold);
-    margin-bottom: 0.75rem;
-}
+.comet-section-points li::before { 
+  content: "✦"; 
+  color: var(--star-gold); 
+  position: absolute; left: 0; 
+  top: 2px; }
 
-.fun-fact-box p {
-    color: #E0E0E0;
-    opacity: 0.9;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
+.fun-fact-box { 
+  margin-top: 1.5rem; padding: 1.5rem; 
+  background-color: rgba(0, 0, 0, 0.2); border-left: 4px solid var(--star-gold); 
+  border-radius: 0 8px 8px 0; }
 
-.section-divider {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(103, 232, 249, 0), var(--border-color), rgba(103, 232, 249, 0));
-  margin: 3rem 0;
-}
+.fun-fact-box h5 { 
+  font-family: "Orbitron", sans-serif; 
+  color: var(--star-gold); 
+  margin-bottom: 0.75rem; }
+
+.fun-fact-box p { 
+  color: var(--text-offwhite); 
+  font-size: 0.95rem; 
+  line-height: 1.6; }
 
 .comet-classification-container {
   padding: 2.5rem;
@@ -113,7 +207,6 @@
   border-radius: 15px;
   border: 1px solid var(--border-color);
 }
-
 .video-container {
   position: relative;
   overflow: hidden;
@@ -125,7 +218,6 @@
   border: 1px solid var(--border-color);
   box-shadow: 0 0 20px rgba(103, 232, 249, 0.2);
 }
-
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -133,14 +225,12 @@
   width: 100%;
   height: 100%;
 }
-
 .classification-title {
   font-family: 'Orbitron', sans-serif;
   color: var(--text-white);
   text-shadow: 0 0 10px var(--accent-cyan);
   margin-bottom: 2rem;
 }
-
 .classification-tabs {
   display: flex;
   justify-content: center;
@@ -148,7 +238,6 @@
   margin-bottom: 2rem;
   flex-wrap: wrap;
 }
-
 .classification-tab {
   border: 1px solid var(--border-color);
   color: var(--accent-cyan);
@@ -159,26 +248,22 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .classification-tab:hover {
   background-color: var(--border-color);
   color: var(--text-white);
   transform: translateY(-3px);
 }
-
 .classification-tab.active {
   background-color: var(--accent-cyan);
   border-color: var(--accent-cyan);
   color: var(--space-blue);
   box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
 }
-
 .comet-examples-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
-
 .comet-card {
   background-color: rgba(0,0,0,0.4);
   border: 1px solid rgba(103, 232, 249, 0.2);
@@ -189,19 +274,16 @@
   display: flex;
   flex-direction: column;
 }
-
 .comet-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 20px rgba(103, 232, 249, 0.3);
     border-color: rgba(103, 232, 249, 0.5);
 }
-
 .comet-card-image {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
-
 .comet-card-body {
     padding: 1rem;
     flex-grow: 1;
@@ -209,7 +291,6 @@
     align-items: center;
     justify-content: center;
 }
-
 .comet-card-name {
   color: var(--text-white);
   font-family: 'Orbitron', sans-serif;
@@ -218,20 +299,73 @@
 }
 
 @media (max-width: 768px) {
-  .comets-page .content-inner {
-    padding-top: 100px;
+  .comets-page .page-title { font-size: 2.2rem; }
+  
+  .comet-theory-section,
+  .comet-theory-section:nth-child(even),
+  .section-lifecycle {
+    flex-direction: column;
   }
-
-  .comet-theory-container, .comet-classification-container {
-    padding: 1.5rem;
-  }
-
-  .theory-content-grid {
+  
+  .section-structure .theory-text-wrapper {
     grid-template-columns: 1fr;
   }
-
-  .comet-section-image-container {
-    order: -1; 
-    margin-bottom: 1.5rem;
+  
+  .section-structure .comet-section-image-wrapper {
+    grid-column: 1 / -1;
+    grid-row: auto;
   }
+  
+  .section-lifecycle .comet-section-image-container {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}
+
+.classification-description {
+  color: var(--text-offwhite) !important;
+  opacity: 0.9;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comet-modal .modal-content {
+  background-color: #121932;
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  color: var(--text-offwhite);
+}
+
+.comet-modal .modal-header-custom {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 1.5rem;
+}
+
+.comet-modal .modal-title-custom {
+  color: var(--accent-cyan);
+  font-family: 'Orbitron', sans-serif;
+}
+
+.comet-modal .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.comet-modal .modal-body-custom {
+  padding: 1.5rem;
+}
+
+.comet-modal .modal-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.comet-modal .modal-info {
+  font-size: 1rem;
+  line-height: 1.6;
 }

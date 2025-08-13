@@ -23,9 +23,9 @@
         "content": "A comet is composed of three main parts: the nucleus, the coma, and the tails.",
         "image": "/images/comets/theory/comet-structure.jpg",
         "points": [
-          "**Nucleus:** The solid, core structure made of ice, dust, and rock. It is typically only a few kilometers across.",
-          "**Coma:** As the comet nears the Sun, its ice turns directly into gas, forming a large, glowing cloud around the nucleus. This cloud is the coma.",
-          "**Tails:** Solar wind and radiation pressure push dust and gas away from the coma, forming two distinct tails: a yellowish dust tail that is often curved, and a blueish ion (gas) tail that always points directly away from the Sun."
+          "Nucleus: The solid, core structure made of ice, dust, and rock. It is typically only a few kilometers across.",
+          "Coma: As the comet nears the Sun, its ice turns directly into gas, forming a large, glowing cloud around the nucleus. This cloud is the coma.",
+          "Tails: Solar wind and radiation pressure push dust and gas away from the coma, forming two distinct tails: a yellowish dust tail that is often curved, and a blueish ion (gas) tail that always points directly away from the Sun."
         ],
         "funFact": {
           "title": "Fun Fact: Dark Nucleus",
@@ -52,8 +52,8 @@
         "id": "influence",
         "title": "Influence of Comets",
         "points": [
-          "**Life on Earth:** A leading theory suggests that comets delivered a significant portion of Earth's water and organic molecules—the building blocks of life—through ancient impacts.",
-          "**Meteor Showers:** When Earth passes through the trail of dust and debris left behind by a comet, we experience a meteor shower. The particles burn up in our atmosphere, creating spectacular 'shooting stars'."
+          "Life on Earth: A leading theory suggests that comets delivered a significant portion of Earth's water and organic molecules—the building blocks of life—through ancient impacts.",
+          "Meteor Showers: When Earth passes through the trail of dust and debris left behind by a comet, we experience a meteor shower. The particles burn up in our atmosphere, creating spectacular 'shooting stars'."
         ]
       },
       {
