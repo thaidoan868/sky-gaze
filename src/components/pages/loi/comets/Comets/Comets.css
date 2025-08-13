@@ -1,253 +1,235 @@
 :root {
-    --space-blue: #0b0c1d;
-    --accent-cyan: #67e8f9;
-    --star-gold: #ffd700;
-    --text-white: #FFFFFF;
-    --text-offwhite: #E0E0E0;
-    --border-color: rgba(103, 232, 249, 0.3);
-  }
-  
-  .comets-page .content-inner {
-    padding-top: 120px;
-    padding-bottom: 40px;
-  }
-  
-  .comets-page .page-title {
-    font-family: 'Orbitron', sans-serif;
-    color: var(--text-white);
-    text-shadow: 0 0 10px var(--accent-cyan);
-  }
-  
-  .comet-theory-container {
-    margin-top: 4rem;
-    margin-bottom: 5rem;
-    padding: 2rem;
-    background: rgba(11, 12, 29, 0.7);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    border: 1px solid var(--border-color);
-  }
-  
-  .comet-section-title {
-    font-family: 'Orbitron', sans-serif;
-    color: var(--accent-cyan);
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  
-  .text-only-section {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .theory-content-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    align-items: center;
-  }
-  
-  .comet-section-content,
-  .comet-section-points li,
-  .classification-description {
-    color: var(--text-offwhite) !important;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    opacity: 0.9;
-  }
-  
-  .comet-section-points {
-      list-style: none;
-      padding-left: 0;
-  }
-  
-  .comet-section-points li {
-    padding-left: 1.5em;
-    position: relative;
-    margin-bottom: 0.5rem;
-  }
-  
-  .comet-section-points li::before {
-      content: "✦";
-      color: var(--star-gold);
-      position: absolute;
-      left: 0;
-      top: 2px;
-  }
-  
-  .fun-fact-box {
-      margin-top: 2rem;
-      padding: 1.5rem;
-      background-color: rgba(0, 0, 0, 0.2);
-      border-left: 4px solid var(--star-gold);
-      border-radius: 0 8px 8px 0;
-      text-align: left;
-  }
-  
-  .fun-fact-box h5 {
-      font-family: "Orbitron", sans-serif;
-      color: var(--star-gold);
-      margin-bottom: 0.75rem;
-  }
-  
-  .fun-fact-box p {
-      color: var(--text-offwhite);
-      opacity: 0.9;
-      font-size: 0.95rem;
-      line-height: 1.6;
-  }
-  
-  .section-divider {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(103, 232, 249, 0), var(--border-color), rgba(103, 232, 249, 0));
-    margin: 3rem 0;
-  }
-  
-  .comet-classification-container {
-    padding: 2.5rem;
-    background: rgba(11, 12, 29, 0.7);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    border: 1px solid var(--border-color);
-  }
-  
-  .video-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 560px; 
-    margin: 0 auto 2.5rem auto;
-    padding-top: 42.85%;
-    border-radius: 15px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 0 20px rgba(103, 232, 249, 0.2);
-  }
-  
-  .video-container iframe {
+  --space-blue: #0b0c1d;
+  --accent-cyan: #67e8f9;
+  --star-gold: #ffd700;
+  --text-white: #FFFFFF;
+  --border-color: rgba(103, 232, 249, 0.3);
+}
+
+.comets-page .content-inner {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+.comets-page .page-title {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--text-white);
+  text-shadow: 0 0 10px var(--accent-cyan);
+}
+
+.comet-theory-container {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  background: rgba(11, 12, 29, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+}
+
+.comet-section-title {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent-cyan);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.text-only-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.theory-content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.comet-section-content,
+.comet-section-points li,
+.classification-description {
+  color: var(--text-white) !important;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.comet-section-points {
+    list-style: none;
+    padding-left: 0;
+}
+
+.comet-section-points li {
+  padding-left: 1.5em;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.comet-section-points li::before {
+    content: "✦";
+    color: var(--star-gold);
     position: absolute;
-    top: 0;
     left: 0;
+    top: 2px;
+}
+
+.fun-fact-box {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-left: 4px solid var(--star-gold);
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+}
+
+.fun-fact-box h5 {
+    font-family: "Orbitron", sans-serif;
+    color: var(--star-gold);
+    margin-bottom: 0.75rem;
+}
+
+.fun-fact-box p {
+    color: #E0E0E0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(103, 232, 249, 0), var(--border-color), rgba(103, 232, 249, 0));
+  margin: 3rem 0;
+}
+
+.comet-classification-container {
+  padding: 2.5rem;
+  background: rgba(11, 12, 29, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto 2.5rem auto;
+  padding-top: 25%;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 20px rgba(103, 232, 249, 0.2);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.classification-title {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--text-white);
+  text-shadow: 0 0 10px var(--accent-cyan);
+  margin-bottom: 2rem;
+}
+
+.classification-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.classification-tab {
+  border: 1px solid var(--border-color);
+  color: var(--accent-cyan);
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 30px;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.classification-tab:hover {
+  background-color: var(--border-color);
+  color: var(--text-white);
+  transform: translateY(-3px);
+}
+
+.classification-tab.active {
+  background-color: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+  color: var(--space-blue);
+  box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
+}
+
+.comet-examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.comet-card {
+  background-color: rgba(0,0,0,0.4);
+  border: 1px solid rgba(103, 232, 249, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.comet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(103, 232, 249, 0.3);
+    border-color: rgba(103, 232, 249, 0.5);
+}
+
+.comet-card-image {
     width: 100%;
-    height: 100%;
-  }
-  
-  .classification-title {
-    font-family: 'Orbitron', sans-serif;
-    color: var(--text-white);
-    text-shadow: 0 0 10px var(--accent-cyan);
-    margin-bottom: 2rem;
-  }
-  
-  .classification-tabs {
+    height: 150px;
+    object-fit: cover;
+}
+
+.comet-card-body {
+    padding: 1rem;
+    flex-grow: 1;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
+}
+
+.comet-card-name {
+  color: var(--text-white);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .comets-page .content-inner {
+    padding-top: 100px;
   }
-  
-  .classification-tab {
-    border: 1px solid var(--border-color);
-    color: var(--accent-cyan);
-    font-family: 'Orbitron', sans-serif;
-    border-radius: 30px;
-    padding: 0.75rem 1.5rem;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
+
+  .comet-theory-container, .comet-classification-container {
+    padding: 1.5rem;
   }
-  
-  .classification-tab:hover {
-    background-color: var(--border-color);
-    color: var(--text-white);
-    transform: translateY(-3px);
+
+  .theory-content-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .classification-tab.active {
-    background-color: var(--accent-cyan);
-    border-color: var(--accent-cyan);
-    color: var(--space-blue);
-    box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
+
+  .comet-section-image-container {
+    order: -1; 
+    margin-bottom: 1.5rem;
   }
-  
-  .comet-examples-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .comet-card {
-    background-color: rgba(0,0,0,0.4);
-    border: 1px solid rgba(103, 232, 249, 0.2);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .comet-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 20px rgba(103, 232, 249, 0.3);
-      border-color: rgba(103, 232, 249, 0.5);
-  }
-  
-  .comet-card-image {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-  }
-  
-  .comet-card-body {
-      padding: 1rem;
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-  
-  .comet-card-name {
-    color: var(--text-white);
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.1rem;
-    text-align: center;
-  }
-  
-  .modal-content {
-      background-color: var(--space-blue);
-      border: 1px solid var(--border-color);
-      color: var(--text-offwhite);
-      border-radius: 15px;
-  }
-  
-  .modal-header-custom {
-      border-bottom: 1px solid var(--border-color) !important;
-  }
-  
-  .modal-title-custom {
-      font-family: "Orbitron", sans-serif;
-      color: var(--star-gold);
-  }
-  
-  .modal-body-custom {
-      padding: 2rem;
-  }
-  
-  .modal-image {
-      max-width: 80%;
-      height: auto;
-      border-radius: 10px;
-      display: block;
-      margin: 0 auto 1.5rem auto;
-  }
-  
-  .modal-info {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: var(--text-offwhite);
-      opacity: 0.9;
-      text-align: center;
-  }
+}
