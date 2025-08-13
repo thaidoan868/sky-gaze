@@ -3,6 +3,11 @@
   color: white;
 }
 
+.obs-content-card h2 {
+  font-size: 1.75rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
 .exhibition-layout {
   display: flex;
   gap: 3rem;
