@@ -11,7 +11,9 @@ const AstronomyTopics = () => {
       <section
         id="void-theory"
         className={styles.contentSection}
-        style={{ backgroundImage: `url(/images/topics/void-theory-bg.jpg)` }}
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/topics/void-theory-bg.jpg)`,
+        }}
       >
         <div className="container text-center">
           <h2 className="display-3 font-orbitron text-white">Void Theories</h2>
@@ -26,9 +28,9 @@ const AstronomyTopics = () => {
                   className={`pt-4 card glass-effect text-white h-100 ${styles.articleCard}`}
                   style={{ cursor: "pointer", textDecoration: "none" }}
                 >
-                  <div className="d-flex justify-content-center">git
+                  <div className="d-flex justify-content-center">
                     <img
-                      src={topic.thumbnail}
+                      src={process.env.PUBLIC_URL + topic.thumbnail}
                       className="card-img-top"
                       alt={topic.title}
                       style={{

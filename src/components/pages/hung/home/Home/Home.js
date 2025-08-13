@@ -57,7 +57,10 @@ const Home = () => {
       <section
         id="home"
         className={styles.contentSection}
-        style={{ backgroundImage: "url(/images/home/home-bg.jpg)" }}
+        style={{
+          backgroundImage:
+            "url(" + process.env.PUBLIC_URL + "/images/home/home-bg.jpg)",
+        }}
       >
         <div className="glass-effect p-4 p-md-5 rounded-3 text-center">
           <h1 className="display-4 font-orbitron text-white">
