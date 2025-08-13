@@ -26,7 +26,7 @@ const AstronomyTopics = () => {
                   className={`pt-4 card glass-effect text-white h-100 ${styles.articleCard}`}
                   style={{ cursor: "pointer", textDecoration: "none" }}
                 >
-                  <div className="d-flex justify-content-center">
+                  <div className="d-flex justify-content-center">git
                     <img
                       src={topic.thumbnail}
                       className="card-img-top"
