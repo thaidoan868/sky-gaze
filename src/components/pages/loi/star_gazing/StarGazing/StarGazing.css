@@ -17,7 +17,7 @@
 }
 
 .title-box {
-  background-color: rgba(13, 22, 40, 0.5); 
+  background-color: rgba(13, 22, 40, 0.5);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(103, 232, 249, 0.2);
@@ -35,7 +35,7 @@
 }
 
 .stargazing-location-card {
-  border: 1px solid #67e8f9; 
+  border: 1px solid #67e8f9;
   box-shadow: 0 0 15px rgba(103, 232, 249, 0.4);
   transition: all 0.3s ease-in-out;
 }
@@ -58,20 +58,20 @@
 }
 
 .stargazing-location-card .object-fit-cover {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .map-container {
-  height: 250px; 
+  height: 250px;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .page-wrapper {
   min-height: 100vh;
-  background-color: #0C1427;
+  background-color: #0c1427;
 }
 
 .tips-icon-btn {
@@ -85,7 +85,7 @@
 }
 
 .tips-icon-btn i {
-  color: #0C1427;
+  color: #0c1427;
 }
 
 .tips-icon-btn:hover {
@@ -96,34 +96,33 @@
 }
 
 .title-container {
-    padding: 1rem 2.5rem;
-    background: rgba(13, 22, 40, 0.6); 
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(103, 232, 249, 0.2);
-    border-radius: 50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  padding: 1rem 2.5rem;
+  background: rgba(13, 22, 40, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(103, 232, 249, 0.2);
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .my-5 {
-    text-align: center;
+  text-align: center;
 }
 
 .section-title .title-highlight {
-    color: #3dd5f3;
-    font-weight: 700;
-    margin-right: 0.5rem;
+  color: #3dd5f3 !important;
+  font-weight: 700 !important;
+  margin-right: 0.5rem !important;
 }
-
 .info-container {
-    padding: 0;
-    background: none;
-    backdrop-filter: none;
-    border: none;
+  padding: 0;
+  background: none;
+  backdrop-filter: none;
+  border: none;
 }

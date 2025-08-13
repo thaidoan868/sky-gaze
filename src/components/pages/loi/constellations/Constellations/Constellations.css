@@ -15,10 +15,10 @@
 }
 
 .constellations-page .page-title {
-    font-family: "Orbitron", sans-serif;
-    color: var(--text-white);
-    text-shadow: 0 0 10px var(--accent-cyan);
-    margin-bottom: 3rem;
+    font-family: 'Orbitron', sans-serif !important;
+    color: var(--text-white) !important;
+    text-shadow: 0 0 10px var(--accent-cyan) !important;
+    margin-bottom: 3rem !important;
 }
 
 .intro-container {
@@ -32,8 +32,8 @@
 }
 
 .intro-title {
-    font-family: "Orbitron", sans-serif;
-    color: var(--accent-cyan);
+    font-family: "Orbitron", sans-serif !important;
+    color: var(--accent-cyan) !important;
     text-align: center;
     margin-bottom: 1.5rem;
 }
@@ -72,8 +72,8 @@
 }
 
 .intro-subtitle {
-    font-family: "Orbitron", sans-serif;
-    color: var(--text-white);
+    font-family: "Orbitron", sans-serif !important;
+    color: var(--text-white) !important;
     margin-top: 0;
     margin-bottom: 1.5rem;
     border-left: 3px solid var(--accent-cyan);

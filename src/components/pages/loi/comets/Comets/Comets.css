@@ -28,10 +28,10 @@
 }
 
 .comet-section-title {
-  font-family: 'Orbitron', sans-serif;
-  color: var(--accent-cyan);
-  margin-bottom: 1.5rem;
-  text-align: center;
+  font-family: 'Orbitron', sans-serif !important;
+  color: var(--accent-cyan) !important;
+  margin-bottom: 1.5rem !important;
+  text-align: center !important;
 }
 
 .text-only-section {

@@ -37,7 +37,7 @@
   text-decoration: none;
   border-left: 3px solid transparent;
   transition: all 0.3s ease;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', sans-serif !important;
 }
 
 .exhibition-nav a:hover {
@@ -81,8 +81,8 @@
 }
 
 .detail-column h5 {
-  font-family: 'Orbitron', sans-serif;
-  color: #67e8f9;
+  font-family: 'Orbitron', sans-serif !important;
+  color: #67e8f9 !important;
   margin-bottom: 1rem;
 }
 
@@ -124,6 +124,8 @@
 }
 
 .page-title {
+  font-family: 'Orbitron', sans-serif !important;
+  color: #67e8f9 !important;
   margin-bottom: 3rem;
   text-shadow: 0 0 10px rgba(103, 232, 249, 0.5);
 }
