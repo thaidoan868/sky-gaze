@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/sky-gaze/static/css/main.58c008b6.css",
-    "main.js": "/sky-gaze/static/js/main.a2113e7d.js",
+    "main.css": "/sky-gaze/static/css/main.55382119.css",
+    "main.js": "/sky-gaze/static/js/main.a2cc5576.js",
     "static/js/453.799881e7.chunk.js": "/sky-gaze/static/js/453.799881e7.chunk.js",
     "static/media/stargazing-bg.jpg": "/sky-gaze/static/media/stargazing-bg.5c79e7dfb1fe6ee3e83e.jpg",
     "static/media/starfield-bg.jpg": "/sky-gaze/static/media/starfield-bg.98ef9aa98b70ddbf40d4.jpg",
     "static/media/solar-system-bg.jpg": "/sky-gaze/static/media/solar-system-bg.9ecf6be46be8313c3efb.jpg",
-    "static/media/comets-bg.jpg": "/sky-gaze/static/media/comets-bg.5ad64ee066b9ffcf6436.jpg",
     "static/media/bootstrap-icons.woff?": "/sky-gaze/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/sky-gaze/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "static/media/logo.svg": "/sky-gaze/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/sky-gaze/index.html",
-    "main.58c008b6.css.map": "/sky-gaze/static/css/main.58c008b6.css.map",
-    "main.a2113e7d.js.map": "/sky-gaze/static/js/main.a2113e7d.js.map",
+    "main.55382119.css.map": "/sky-gaze/static/css/main.55382119.css.map",
+    "main.a2cc5576.js.map": "/sky-gaze/static/js/main.a2cc5576.js.map",
     "453.799881e7.chunk.js.map": "/sky-gaze/static/js/453.799881e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58c008b6.css",
-    "static/js/main.a2113e7d.js"
+    "static/css/main.55382119.css",
+    "static/js/main.a2cc5576.js"
   ]
 }
