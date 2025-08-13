@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Sky Gaze 🌌
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Batch:** T3.2502.E0  
+**Center Name:** ACE-HCMC-2-FPT
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 👥 Group 5 – Collaborators
 
-### `npm start`
+- **Doan Duy Thai** – Student1637699
+- **Mai Mai Truong Quoc Hung** – Student1634676
+- **Hong Tai Loi** – Student1634674
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📄 Documentation
 
-### `npm test`
+You can view the complete project report here:  
+[**eProject Report – Sky Gaze**](https://github.com/thaidoan868/sky-gaze/blob/main/document/eProject_Report_Sky_Gazing_Group5.pdf)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🌐 Live Website
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click below to explore the live version of our project:  
+[**Sky Gaze Website**](https://thaidoan868.github.io/sky-gaze/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎥 Demonstration Video
 
-### `npm run eject`
+_(Link coming soon)_
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📌 Project Overview
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Sky Gaze** is an interactive web application designed to provide users with a beautiful and educational stargazing experience.  
+It offers real-time sky maps, constellation guides, and astronomical event highlights to help users explore the night sky from anywhere in the world.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ✨ Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Descriptions, images, and detailed profiles of planets, constellations, and comets.
+- Educational content on Solar Eclipses, Big Bang Theory, and Earth’s evolution.
+- Star gazing guides: best time, best location, and what to expect.
+- Latest astronomy news and a list of top observatories with map locations.
+- Site map, gallery, and contact information for the Sky Gazing Company.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🛠️ Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Frontend:** HTML5, CSS3, JavaScript (React.js)
+- **Styling:** Tailwind CSS
+- **Deployment:** GitHub Pages
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Getting Started (For Developers)
 
-### Making a Progressive Web App
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Node.js (v14+)
+- npm or yarn
 
-### Advanced Configuration
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+# Clone the repository
+git clone https://github.com/thaidoan868/sky-gaze.git
 
-### Deployment
+# Navigate into the project folder
+cd sky-gaze
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Install dependencies
+npm install
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start development server
+npm start
+```

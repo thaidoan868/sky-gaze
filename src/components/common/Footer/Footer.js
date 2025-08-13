@@ -109,8 +109,7 @@ export function Footer() {
                 </p>
                 <p>
                   <i className="fas fa-envelope me-3">
-                    Address: 590 Cach Mang Thang 8 Street, Ward 11, District 3,
-                    Ho Chi Minh City, Vietnam
+                    21Bis Hau Giang, Tan Son Nhat, Ho Chi Minh City, Viet Nam.
                   </i>
                 </p>
                 <p>
