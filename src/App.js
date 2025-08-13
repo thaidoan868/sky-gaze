@@ -20,6 +20,8 @@ import ScrollToTop from "./components/common/ScrollToTop/ScrollToToop";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Constellations from "./components/pages/loi/constellations/Constellations/Constellations";
 import Comets from "./components/pages/loi/comets/Comets/Comets";
+import { useEffect } from "react";
+import { ScrollToTopButton } from "./components/common/ScrollToTopButton/ScrollToTopButton";
 
 function App() {
   return (
@@ -40,6 +42,7 @@ function App() {
           <Route path="/about_us" element={<AboutUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <ScrollToTopButton />
         <Footer />
       </Router>
     </div>

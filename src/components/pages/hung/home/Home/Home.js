@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import homeBg from "./images/home-bg.jpg";
 import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
 
@@ -58,7 +57,10 @@ const Home = () => {
       <section
         id="home"
         className={styles.contentSection}
-        style={{ backgroundImage: `url(${homeBg})` }}
+        style={{
+          backgroundImage:
+            "url(" + process.env.PUBLIC_URL + "/images/home/home-bg.jpg)",
+        }}
       >
         <div className="glass-effect p-4 p-md-5 rounded-3 text-center">
           <h1 className="display-4 font-orbitron text-white">

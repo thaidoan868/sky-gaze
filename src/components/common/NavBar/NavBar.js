@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import ScrollToTop, {
+  ScrollToTopButton,
+} from "../ScrollToTopButton/ScrollToTopButton";
 
 const Navbar = () => {
   const [visitorCount, setVisitorCount] = useState();
@@ -32,10 +35,14 @@ const Navbar = () => {
         <div className="flex items-center space-x-2">
           <Link
             to="/"
-            className="text-2xl text-white"
+            className="text-2xl text-white d-flex gap-2 align-items-center"
             style={{ textDecoration: "none" }}
           >
-            🌌 Sky Gaze
+            <img
+              src={process.env.PUBLIC_URL + "/images/logo/galaxy.png"}
+              style={{ width: "50px" }}
+            />
+            <a>Sky Gaze</a>
           </Link>
         </div>
         <div className="hidden md:flex items-center space-x-8">
