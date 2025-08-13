@@ -10,12 +10,12 @@
 }
 
 .constellations-page .content-inner {
-    padding-top: 150px !important;
+    padding-top: 120px !important;
     padding-bottom: 40px;
 }
 
 .constellations-page .page-title {
-    font-family: 'Orbitron', sans-serif !important;
+    font-family: "Orbitron", sans-serif !important;
     color: var(--text-white) !important;
     text-shadow: 0 0 10px var(--accent-cyan) !important;
     margin-bottom: 3rem !important;
@@ -505,3 +505,116 @@ input:checked + .slider .circle::after {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
 }
+
+@media (max-width: 768px) {
+    .constellations-page .content-inner {
+        padding-top: 120px !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .constellations-page .page-title {
+        font-size: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .intro-container,
+    .display-container,
+    .extra-info-container {
+        padding: 1.5rem;
+    }
+
+    .intro-section-grid {
+        flex-direction: column !important;
+        gap: 1.5rem;
+    }
+
+    .intro-section-grid.reverse {
+        flex-direction: column !important;
+    }
+
+    .filter-controls {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+
+    .search-bar-container {
+        flex-basis: auto;
+    }
+
+    .zodiac-toggle-container {
+        justify-content: center;
+    }
+
+    .season-tabs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+
+    .season-tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .constellation-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 1rem;
+    }
+
+    .flip-card-square .flip-card-back {
+        padding: 0.75rem;
+    }
+
+    .flip-card-square .flip-card-back h5 {
+        font-size: 0.9rem;
+    }
+
+    .flip-card-square .flip-card-back h6 {
+        font-size: 0.7rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .flip-card-square .flip-card-back p {
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+}
+
+.gallery-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1050;
+    background-color: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+    color: var(--space-blue);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .gallery-toggle-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(103, 232, 249, 0.8);
+  }
+ 
+  .gallery-modal .modal-content {
+    background-color: #0b0c1d;
+    border: 1px solid var(--border-color);
+  }
+  
+  .gallery-modal .modal-header {
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .gallery-modal .modal-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+  }
+  
+  .gallery-modal .modal-title {
+    color: var(--accent-cyan);
+    font-family: 'Orbitron', sans-serif;
+  }

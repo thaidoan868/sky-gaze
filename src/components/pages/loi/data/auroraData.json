@@ -1,0 +1,44 @@
+[
+    {
+      "id": "aurora-1",
+      "src": "/images/gallery/aurora-iceland.jpg",
+      "caption": "Icelandic Aurora",
+      "alt": "Vibrant green aurora borealis dancing over the mountains of Iceland.",
+      "category": "aurora"
+    },
+    {
+      "id": "aurora-2",
+      "src": "/images/gallery/aurora-australis-iss.jpg",
+      "caption": "Aurora Australis from ISS",
+      "alt": "The Southern Lights glowing over the Earth's horizon, seen from the International Space Station.",
+      "category": "aurora"
+    },
+    {
+      "id": "aurora-3",
+      "src": "/images/gallery/aurora-purple.jpg",
+      "caption": "Violet Northern Lights",
+      "alt": "Rare purple and pink hues in the aurora borealis over a dark forest.",
+      "category": "aurora"
+    },
+    {
+      "id": "aurora-4",
+      "src": "/images/gallery/aurora-reflection.jpg",
+      "caption": "Lake Reflection",
+      "alt": "A stunning green aurora reflected perfectly in the calm water of a northern lake.",
+      "category": "aurora"
+    },
+    {
+      "id": "aurora-5",
+      "src": "/images/gallery/aurora-curtains.jpg",
+      "caption": "Dancing Light Curtains",
+      "alt": "Bright green curtains of the aurora borealis moving across the starry night sky.",
+      "category": "aurora"
+    },
+    {
+      "id": "aurora-6",
+      "src": "/images/gallery/aurora-norway.jpg",
+      "caption": "Lights over Norway",
+      "alt": "The Northern Lights illuminating the sky above a coastal town in Norway.",
+      "category": "aurora"
+    }
+  ]

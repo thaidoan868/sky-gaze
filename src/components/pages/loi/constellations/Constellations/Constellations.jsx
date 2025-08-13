@@ -3,6 +3,8 @@ import allConstellations from '../../data/constellationsData.json';
 import constellationContent from '../../data/constellationContent.json';
 import extraInfo from '../../data/constellationExtraInfo.json';
 import './Constellations.css';
+import Gallery from '../other/Gallery';
+import { Button, Modal } from 'react-bootstrap';
 
 const Constellations = () => {
   const [hemisphere, setHemisphere] = useState('north');
@@ -11,6 +13,10 @@ const Constellations = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showZodiacOnly, setShowZodiacOnly] = useState(false);
   const [showAstrologyNotice, setShowAstrologyNotice] = useState(false);
+  // State for gallery modal
+  const [showGalleryModal, setShowGalleryModal] = useState(false);
+  const handleShowGallery = () => setShowGalleryModal(true);
+  const handleCloseGallery = () => setShowGalleryModal(false);
 
   useEffect(() => {
     const filterData = () => {
@@ -194,6 +200,24 @@ const Constellations = () => {
           </div>
         </div>
       </div>
+      <Button onClick={handleShowGallery} className="gallery-toggle-btn">
+        <i className="bi bi-images me-2"></i> Gallery
+      </Button>
+
+      <Modal
+        show={showGalleryModal}
+        onHide={handleCloseGallery}
+        centered
+        fullscreen={true}
+        className="gallery-modal"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Celestial Gallery</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Gallery />
+        </Modal.Body>
+      </Modal>
     </div>
   );
 };

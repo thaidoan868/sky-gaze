@@ -127,3 +127,9 @@
   backdrop-filter: none;
   border: none;
 }
+
+@media (max-width: 768px) {
+  .stargazing-location-card .map-container {
+    z-index: 1;
+  }
+}

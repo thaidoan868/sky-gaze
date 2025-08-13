@@ -84,6 +84,7 @@
   font-family: 'Orbitron', sans-serif !important;
   color: #67e8f9 !important;
   margin-bottom: 1rem;
+  font-weight: bold !important; 
 }
 
 .detail-column ul {
@@ -129,4 +130,5 @@
   margin-bottom: 3rem;
   text-shadow: 0 0 10px rgba(103, 232, 249, 0.5);
   font-size: 2.8rem !important;
+  font-weight: bold !important;
 }
