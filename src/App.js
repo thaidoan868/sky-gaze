@@ -24,9 +24,6 @@ import { useEffect } from "react";
 import { ScrollToTopButton } from "./components/common/ScrollToTopButton/ScrollToTopButton";
 
 function App() {
-  useEffect(() => {
-    document.title = "Sky Gazing";
-  }, []);
   return (
     <div className="App">
       <Router>

@@ -38,7 +38,7 @@ const Navbar = () => {
             className="text-2xl text-white d-flex gap-2 align-items-center"
             style={{ textDecoration: "none" }}
           >
-            <img src="/images/galaxy.png" style={{ width: "50px" }} />
+            <img src="/images/logo/galaxy.png" style={{ width: "50px" }} />
             <a>Sky Gaze</a>
           </Link>
         </div>

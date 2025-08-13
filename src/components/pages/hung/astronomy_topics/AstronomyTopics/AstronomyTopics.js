@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { astroTopics } from "../../data/astroTopicsData.js";
-import voidTheoryBg from "./images/void-theory-bg.jpg";
 import styles from "./AstronomyTopics.module.css";
 import { Link } from "react-router-dom";
 
@@ -12,7 +11,7 @@ const AstronomyTopics = () => {
       <section
         id="void-theory"
         className={styles.contentSection}
-        style={{ backgroundImage: `url(${voidTheoryBg})` }}
+        style={{ backgroundImage: `url(/images/topics/void-theory-bg.jpg)` }}
       >
         <div className="container text-center">
           <h2 className="display-3 font-orbitron text-white">Void Theories</h2>
@@ -32,12 +31,15 @@ const AstronomyTopics = () => {
                       src={topic.thumbnail}
                       className="card-img-top"
                       alt={topic.title}
-                      style={{ height: "200px", objectFit: "cover", width: "100%" }}
+                      style={{
+                        height: "200px",
+                        objectFit: "cover",
+                        width: "100%",
+                      }}
                     />
                   </div>
                   <div className="card-body">
                     <h4 className="card-title">{topic.title}</h4>
-
                   </div>
                 </Link>
               </div>
