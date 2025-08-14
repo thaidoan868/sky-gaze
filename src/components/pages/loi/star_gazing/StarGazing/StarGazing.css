@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.title-container {
+.star-gazing-container .title-container {
   padding: 1rem 2.5rem;
   background: rgba(13, 22, 40, 0.6);
   backdrop-filter: blur(10px);
@@ -25,17 +25,17 @@
   margin-bottom: 2rem;
 }
 
-.section-title {
+.star-gazing-container .section-title {
   font-size: 1.75rem;
 }
 
-.title-highlight {
+.star-gazing-container .title-highlight {
   color: #16ffcd;
   margin-right: 0.75rem;
   font-weight: 700;
 }
 
-.card {
+.star-gazing-container .card {
   transition: transform 0.2s ease-in-out;
   background-color: rgba(13, 22, 40, 0.5) !important;
   backdrop-filter: blur(8px);
@@ -44,35 +44,35 @@
   height: 100%;
 }
 
-.card:hover {
+.star-gazing-container .card:hover {
   transform: translateY(-5px);
 }
 
-.card .card-text {
+.star-gazing-container .card .card-text {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #e0e0e0;
 }
 
-.stargazing-location-card .location-image-container {
+.star-gazing-container .stargazing-location-card .location-image-container {
   height: 100%;
   min-height: 250px;
 }
 
-.stargazing-location-card .location-image {
+.star-gazing-container .stargazing-location-card .location-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.map-container {
+.star-gazing-container .map-container {
   height: 250px;
   border-radius: 10px;
   overflow: hidden;
   margin-top: auto;
 }
 
-.tips-icon-btn {
+.star-gazing-container .tips-icon-btn {
   background-color: #67e8f9;
   border-color: #67e8f9;
   display: inline-flex;
@@ -82,36 +82,36 @@
   transition: all 0.3s ease;
 }
 
-.tips-icon-btn i {
+.star-gazing-container .tips-icon-btn i {
   color: #0c1427;
 }
 
-.tips-icon-btn:hover {
+.star-gazing-container .tips-icon-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 25px rgba(103, 232, 249, 0.8);
 }
 
-.tips-modal .modal-content {
+.star-gazing-container .tips-modal .modal-content {
     background-color: #121932;
     border: 1px solid var(--border-color);
     border-radius: 15px;
     color: var(--text-offwhite);
 }
 
-.tips-modal .modal-header {
+.star-gazing-container .tips-modal .modal-header {
     border-bottom: 1px solid var(--border-color);
 }
 
-.tips-modal .modal-header .btn-close {
+.star-gazing-container .tips-modal .modal-header .btn-close {
     filter: invert(1) grayscale(100%) brightness(200%);
 }
 
-.tips-modal .modal-title {
+.star-gazing-container .tips-modal .modal-title {
     color: var(--accent-cyan);
     font-family: 'Orbitron', sans-serif;
 }
 
-.tip-item {
+.star-gazing-container .tip-item {
   background-color: rgba(13, 22, 40, 0.7);
   border: 1px solid rgba(103, 232, 249, 0.2);
   border-radius: 10px;
@@ -119,7 +119,7 @@
   text-align: center;
 }
 
-.tip-item-image {
+.star-gazing-container .tip-item-image {
   width: 100%;
   max-width: 300px;
   height: 150px;
@@ -129,22 +129,22 @@
   display: block;
 }
 
-.tip-item-title {
+.star-gazing-container .tip-item-title {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
-.my-5 {
+.star-gazing-container .my-5 {
   text-align: center;
 }
 
 @media (max-width: 992px) {
-  .stargazing-location-card.card {
+  .star-gazing-container .stargazing-location-card.card {
     flex-direction: column !important;
     z-index: 0;
   }
 
-  .stargazing-location-card .location-image-container {
+  .star-gazing-container .stargazing-location-card .location-image-container {
     height: 250px;
     min-height: auto;
   }
@@ -156,12 +156,12 @@
     margin-bottom: 2rem !important;
   }
   
-  .title-container {
+  .star-gazing-container .title-container {
     padding: 0.75rem 1.5rem;
     gap: 1rem;
   }
 
-  .section-title {
+  .star-gazing-container .section-title {
     font-size: 1.25rem;
   }
   .star-gazing-page.page-wrapper {

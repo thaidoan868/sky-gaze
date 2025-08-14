@@ -62,7 +62,7 @@ const Home = () => {
             "url(" + process.env.PUBLIC_URL + "/images/home/home-bg.jpg)",
         }}
       >
-        <div className="glass-effect p-4 p-md-5 rounded-3 text-center">
+        <div className={styles.centerContent}>
           <h1 className="display-4 font-orbitron text-white">
             Explore the Cosmos
           </h1>
@@ -78,7 +78,7 @@ const Home = () => {
         </div>
       </section>
 
-      <footer className={`${styles.footer} glass-effect`}>
+      <footer className={styles.footer}>
         <div className="text-white-50 small font-orbitron">{tickerText}</div>
       </footer>
     </>

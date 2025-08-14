@@ -25,7 +25,7 @@
   font-size: 3rem; 
 }
 
-.comet-theory-container {
+.comets-page .comet-theory-container {
   max-width: 900px;
   margin: 0 auto 5rem auto;
   display: flex;
@@ -33,7 +33,7 @@
   gap: 3rem;
 }
 
-.comet-theory-section {
+.comets-page .comet-theory-section {
   display: flex;
   background: rgba(18, 25, 50, 0.7);
   backdrop-filter: blur(10px);
@@ -45,7 +45,7 @@
   transition: all 0.3s ease;
 }
 
-.comet-theory-section:hover {
+.comets-page .comet-theory-section:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(103, 232, 249, 0.2);
   border-color: var(--accent-cyan);
@@ -56,22 +56,22 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-.comet-theory-section:nth-child(even) {
+.comets-page .comet-theory-section:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.comet-section-image-container {
+.comets-page .comet-section-image-container {
   flex: 1 1 40%;
   min-width: 300px;
 }
 
-.comet-section-image {
+.comets-page .comet-section-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.theory-text {
+.comets-page .theory-text {
   flex: 1 1 60%;
   padding: 2.5rem;
   display: flex;
@@ -79,38 +79,38 @@
   justify-content: center;
 }
 
-.comet-section-title {
+.comets-page .comet-section-title {
   font-family: 'Orbitron', sans-serif !important;
   color: var(--accent-cyan) !important;
   margin-bottom: 1.5rem !important;
   font-size: 1.75rem;
 }
 
-.section-structure {
+.comets-page .section-structure {
   flex-direction: column !important;
   padding: 2.5rem;
 }
 
-.section-structure .theory-text-wrapper {
+.comets-page .section-structure .theory-text-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: flex-end;
 }
 
-.section-structure .comet-section-points {
+.comets-page .section-structure .comet-section-points {
   grid-column: 1 / -1;
 }
 
-.section-structure .fun-fact-box {
+.comets-page .section-structure .fun-fact-box {
   margin-top: 0;
 }
 
-.section-structure .comet-section-image-container {
+.comets-page .section-structure .comet-section-image-container {
   display: none;
 }
 
-.section-structure .comet-section-image-wrapper {
+.comets-page .section-structure .comet-section-image-wrapper {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   display: flex;
@@ -118,97 +118,97 @@
   gap: 1.5rem;
 }
 
-.section-structure .comet-section-image-wrapper .comet-section-image-container {
+.comets-page .section-structure .comet-section-image-wrapper .comet-section-image-container {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.section-lifecycle {
+.comets-page .section-lifecycle {
   align-items: center;
 }
 
-.section-lifecycle .comet-section-image-container {
+.comets-page .section-lifecycle .comet-section-image-container {
   width: 300px;
   height: auto;
   flex-shrink: 0;
 }
 
-.section-lifecycle .comet-section-image {
+.comets-page .section-lifecycle .comet-section-image {
   border-radius: 10px;
 }
 
-.section-asteroids-vs-comets {
+.comets-page .section-asteroids-vs-comets {
   background: rgba(0, 0, 0, 0.2);
   border-style: dashed;
   flex-direction: column !important;
   padding: 2.5rem;
 }
 
-.section-asteroids-vs-comets .comet-section-image-container {
+.comets-page .section-asteroids-vs-comets .comet-section-image-container {
   display: none;
 }
 
-.section-asteroids-vs-comets .theory-text {
+.comets-page .section-asteroids-vs-comets .theory-text {
   width: 100%;
   padding: 0;
 }
 
-.section-asteroids-vs-comets .comet-section-title,
-.section-asteroids-vs-comets .comet-section-content {
+.comets-page .section-asteroids-vs-comets .comet-section-title,
+.comets-page .section-asteroids-vs-comets .comet-section-content {
   text-align: center;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.comet-section-content, 
-.comet-section-points li {
+.comets-page .comet-section-content, 
+.comets-page .comet-section-points li {
   color: var(--text-offwhite) !important; 
   font-size: 1.1rem; 
   line-height: 1.7;
 }
 
-.comet-section-points { 
+.comets-page .comet-section-points { 
   list-style: none; 
   padding-left: 0; 
   margin-top: 1rem; 
 }
 
-.comet-section-points li { 
+.comets-page .comet-section-points li { 
   padding-left: 1.5em; 
   position: relative; 
   margin-bottom: 0.5rem; }
 
-.comet-section-points li::before { 
+.comets-page .comet-section-points li::before { 
   content: "✦"; 
   color: var(--star-gold); 
   position: absolute; left: 0; 
   top: 2px; }
 
-.fun-fact-box { 
+.comets-page .fun-fact-box { 
   margin-top: 1.5rem; padding: 1.5rem; 
   background-color: rgba(0, 0, 0, 0.2); border-left: 4px solid var(--star-gold); 
   border-radius: 0 8px 8px 0; }
 
-.fun-fact-box h5 { 
+.comets-page .fun-fact-box h5 { 
   font-family: "Orbitron", sans-serif; 
   color: var(--star-gold); 
   margin-bottom: 0.75rem; }
 
-.fun-fact-box p { 
+.comets-page .fun-fact-box p { 
   color: var(--text-offwhite); 
   font-size: 0.95rem; 
   line-height: 1.6; }
 
-.comet-classification-container {
+.comets-page .comet-classification-container {
   padding: 2.5rem;
   background: rgba(11, 12, 29, 0.7);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid var(--border-color);
 }
-.video-container {
+.comets-page .video-container {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -219,27 +219,27 @@
   border: 1px solid var(--border-color);
   box-shadow: 0 0 20px rgba(103, 232, 249, 0.2);
 }
-.video-container iframe {
+.comets-page .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.classification-title {
+.comets-page .classification-title {
   font-family: 'Orbitron', sans-serif;
   color: var(--text-white);
   text-shadow: 0 0 10px var(--accent-cyan);
   margin-bottom: 2rem;
 }
-.classification-tabs {
+.comets-page .classification-tabs {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 2rem;
   flex-wrap: wrap;
 }
-.classification-tab {
+.comets-page .classification-tab {
   border: 1px solid var(--border-color);
   color: var(--accent-cyan);
   font-family: 'Orbitron', sans-serif;
@@ -249,23 +249,23 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.classification-tab:hover {
+.comets-page .classification-tab:hover {
   background-color: var(--border-color);
   color: var(--text-white);
   transform: translateY(-3px);
 }
-.classification-tab.active {
+.comets-page .classification-tab.active {
   background-color: var(--accent-cyan);
   border-color: var(--accent-cyan);
   color: var(--space-blue);
   box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
 }
-.comet-examples-grid {
+.comets-page .comet-examples-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
-.comet-card {
+.comets-page .comet-card {
   background-color: rgba(0,0,0,0.4);
   border: 1px solid rgba(103, 232, 249, 0.2);
   border-radius: 10px;
@@ -275,55 +275,31 @@
   display: flex;
   flex-direction: column;
 }
-.comet-card:hover {
+.comets-page .comet-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 20px rgba(103, 232, 249, 0.3);
     border-color: rgba(103, 232, 249, 0.5);
 }
-.comet-card-image {
+.comets-page .comet-card-image {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
-.comet-card-body {
+.comets-page .comet-card-body {
     padding: 1rem;
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.comet-card-name {
+.comets-page .comet-card-name {
   color: var(--text-white);
   font-family: 'Orbitron', sans-serif;
   font-size: 1.1rem;
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .comets-page .page-title { font-size: 2.2rem; }
-  
-  .comet-theory-section,
-  .comet-theory-section:nth-child(even),
-  .section-lifecycle {
-    flex-direction: column;
-  }
-  
-  .section-structure .theory-text-wrapper {
-    grid-template-columns: 1fr;
-  }
-  
-  .section-structure .comet-section-image-wrapper {
-    grid-column: 1 / -1;
-    grid-row: auto;
-  }
-  
-  .section-lifecycle .comet-section-image-container {
-    width: 100%;
-    margin-top: 1.5rem;
-  }
-}
-
-.classification-description {
+.comets-page .classification-description {
   color: var(--text-offwhite) !important;
   opacity: 0.9;
   font-size: 1.1rem;
@@ -335,38 +311,62 @@
   margin-right: auto;
 }
 
-.comet-modal .modal-content {
+.comets-page .comet-modal .modal-content {
   background-color: #121932;
   border: 1px solid var(--border-color);
   border-radius: 15px;
   color: var(--text-offwhite);
 }
 
-.comet-modal .modal-header-custom {
+.comets-page .comet-modal .modal-header-custom {
   border-bottom: 1px solid var(--border-color);
   padding: 1rem 1.5rem;
 }
 
-.comet-modal .modal-title-custom {
+.comets-page .comet-modal .modal-title-custom {
   color: var(--accent-cyan);
   font-family: 'Orbitron', sans-serif;
 }
 
-.comet-modal .btn-close {
+.comets-page .comet-modal .btn-close {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
 
-.comet-modal .modal-body-custom {
+.comets-page .comet-modal .modal-body-custom {
   padding: 1.5rem;
 }
 
-.comet-modal .modal-image {
+.comets-page .comet-modal .modal-image {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 1.5rem;
 }
 
-.comet-modal .modal-info {
+.comets-page .comet-modal .modal-info {
   font-size: 1rem;
   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .comets-page .page-title { font-size: 2.2rem; }
+  
+  .comets-page .comet-theory-section,
+  .comets-page .comet-theory-section:nth-child(even),
+  .comets-page .section-lifecycle {
+    flex-direction: column;
+  }
+  
+  .comets-page .section-structure .theory-text-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .comets-page .section-structure .comet-section-image-wrapper {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+  
+  .comets-page .section-lifecycle .comet-section-image-container {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
 }

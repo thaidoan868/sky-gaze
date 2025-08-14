@@ -21,7 +21,7 @@
     margin-bottom: 3rem !important;
 }
 
-.intro-container {
+.constellations-page .intro-container {
     background: rgba(11, 12, 29, 0.7);
     backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -31,7 +31,7 @@
     color: var(--text-offwhite);
 }
 
-.intro-title {
+.constellations-page .intro-title {
     font-family: "Orbitron", sans-serif !important;
     color: var(--accent-cyan) !important;
     text-align: center;
@@ -39,65 +39,65 @@
     font-size: 1.75rem !important;
 }
 
-.intro-section-item {
+.constellations-page .intro-section-item {
     padding: 2rem 0;
     border-bottom: 1px solid var(--border-color);
 }
 
-.intro-section-item:last-of-type {
+.constellations-page .intro-section-item:last-of-type {
     border-bottom: none;
     padding-bottom: 0;
 }
 
-.intro-section-grid {
+.constellations-page .intro-section-grid {
     display: flex;
     gap: 2.5rem;
     align-items: center;
 }
 
-.intro-section-grid.reverse {
+.constellations-page .intro-section-grid.reverse {
     flex-direction: row-reverse;
 }
 
-.intro-section-text {
+.constellations-page .intro-section-text {
     flex: 3;
 }
 
-.intro-section-image {
+.constellations-page .intro-section-image {
     flex: 2;
 }
 
-.intro-section-image img {
+.constellations-page .intro-section-image img {
     width: 100%;
     border-radius: 15px;
 }
 
-.intro-subtitle {
-    font-family: "Orbitron", sans-serif !important;
-    color: #FFFFFF;
+.constellations-page .intro-subtitle {
+    font-family: "Orbitron", sans-serif;
+    color: #ffffff;
     text-shadow: 0 0 8px rgba(103, 232, 249, 0.7);
     margin-top: 0;
     margin-bottom: 1.5rem;
     font-size: 1.5rem !important;
 }
 
-.intro-text {
+.constellations-page .intro-text {
     font-size: 1.1rem;
     line-height: 1.7;
     opacity: 0.9;
 }
 
-.intro-list {
+.constellations-page .intro-list {
     padding-left: 20px;
     font-size: 1.1rem;
     line-height: 1.7;
 }
 
-.intro-list ul {
+.constellations-page .intro-list ul {
     margin-top: 0.5rem;
 }
 
-.hemisphere-controls-container {
+.constellations-page .hemisphere-controls-container {
     background: rgba(11, 12, 29, 0.7);
     backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -108,7 +108,7 @@
     justify-content: center;
 }
 
-.display-container {
+.constellations-page .display-container {
     background: rgba(11, 12, 29, 0.7);
     backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -116,7 +116,7 @@
     padding: 2rem;
 }
 
-.hemisphere-toggle-container {
+.constellations-page .hemisphere-toggle-container {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -124,16 +124,16 @@
     color: #888;
 }
 
-.hemisphere-label {
+.constellations-page .hemisphere-label {
     transition: color 0.4s ease;
 }
 
-.hemisphere-label.active {
+.constellations-page .hemisphere-label.active {
     color: var(--text-white);
     text-shadow: 0 0 5px var(--accent-cyan);
 }
 
-.switch {
+.constellations-page .switch {
     font-size: 17px;
     position: relative;
     display: inline-block;
@@ -141,13 +141,13 @@
     height: 2em;
 }
 
-.switch input {
+.constellations-page .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-.slider {
+.constellations-page .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -161,7 +161,7 @@
     align-items: center;
 }
 
-.slider .circle {
+.constellations-page .slider .circle {
     background-color: #212121;
     height: 1.6em;
     width: 1.6em;
@@ -171,7 +171,7 @@
     transition: 0.4s;
 }
 
-.slider .circle::before {
+.constellations-page .slider .circle::before {
     position: absolute;
     content: "";
     height: 1.3em;
@@ -184,7 +184,7 @@
     transition: 0.4s;
 }
 
-.slider .circle::after {
+.constellations-page .slider .circle::after {
     content: "";
     background-color: #212121;
     height: 1em;
@@ -197,23 +197,23 @@
     transition: 0.4s;
 }
 
-input:checked + .slider .circle {
+.constellations-page input:checked + .slider .circle {
     transform: translateX(1.5em);
     transition: 0.4s;
 }
 
-input:checked + .slider .circle::before {
+.constellations-page input:checked + .slider .circle::before {
     background-color: #e1e1e1;
     transition: 0.4s;
 }
 
-input:checked + .slider .circle::after {
+.constellations-page input:checked + .slider .circle::after {
     width: 0;
     height: 0;
     transition: 0.4s;
 }
 
-.filter-controls {
+.constellations-page .filter-controls {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,11 +222,11 @@ input:checked + .slider .circle::after {
     flex-wrap: wrap;
 }
 
-.search-bar-container {
+.constellations-page .search-bar-container {
     flex: 1 1 250px;
 }
 
-.search-bar {
+.constellations-page .search-bar {
     width: 100%;
     padding: 0.75rem 1rem;
     background-color: rgba(0, 0, 0, 0.3);
@@ -237,26 +237,26 @@ input:checked + .slider .circle::after {
     transition: all 0.3s ease;
 }
 
-.search-bar:focus {
+.constellations-page .search-bar:focus {
     outline: none;
     box-shadow: 0 0 10px var(--accent-cyan);
     border-color: var(--accent-cyan);
 }
 
-.season-tabs {
+.constellations-page .season-tabs {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.zodiac-toggle-container {
+.constellations-page .zodiac-toggle-container {
     flex: 1 1 auto;
     display: flex;
     justify-content: flex-end;
 }
 
-.checkbox-container {
+.constellations-page .checkbox-container {
     position: relative;
     cursor: pointer;
     display: flex;
@@ -264,12 +264,12 @@ input:checked + .slider .circle::after {
     gap: 10px;
 }
 
-.checkbox-container input {
+.constellations-page .checkbox-container input {
     position: absolute;
     opacity: 0;
 }
 
-.checkmark {
+.constellations-page .checkmark {
     width: 25px;
     height: 25px;
     position: relative;
@@ -279,12 +279,12 @@ input:checked + .slider .circle::after {
     transition: all 0.3s;
 }
 
-.checkbox-container input:checked ~ .checkmark {
+.constellations-page .checkbox-container input:checked ~ .checkmark {
     background-color: var(--input-focus);
     border-color: var(--input-focus);
 }
 
-.checkmark:after {
+.constellations-page .checkmark:after {
     content: "";
     width: 6px;
     height: 12px;
@@ -297,16 +297,16 @@ input:checked + .slider .circle::after {
     transform: rotate(45deg);
 }
 
-.checkbox-container input:checked ~ .checkmark:after {
+.constellations-page .checkbox-container input:checked ~ .checkmark:after {
     display: block;
 }
 
-.checkbox-label {
+.constellations-page .checkbox-label {
     font-family: "Orbitron", sans-serif;
     color: var(--text-white);
 }
 
-.astrology-notice {
+.constellations-page .astrology-notice {
     background-color: rgba(255, 215, 0, 0.1);
     border-left: 4px solid var(--star-gold);
     padding: 1rem;
@@ -317,11 +317,11 @@ input:checked + .slider .circle::after {
     text-align: center;
 }
 
-.astrology-notice strong {
+.constellations-page .astrology-notice strong {
     color: var(--star-gold);
 }
 
-.season-tab {
+.constellations-page .season-tab {
     padding: 0.75rem 1.5rem;
     border: 1px solid var(--border-color);
     background-color: transparent;
@@ -332,33 +332,33 @@ input:checked + .slider .circle::after {
     transition: all 0.3s ease;
 }
 
-.season-tab:hover {
+.constellations-page .season-tab:hover {
     background-color: var(--border-color);
     color: var(--text-white);
 }
 
-.season-tab.active {
+.constellations-page .season-tab.active {
     background-color: var(--accent-cyan);
     color: var(--space-blue);
     border-color: var(--accent-cyan);
     box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
 }
 
-.constellation-grid {
+.constellations-page .constellation-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 1.5rem;
     perspective: 1200px;
 }
 
-.flip-card-square {
+.constellations-page .flip-card-square {
     width: 100%;
     aspect-ratio: 1 / 1;
     background-color: transparent;
     border: none;
 }
 
-.flip-card-square .flip-card-inner {
+.constellations-page .flip-card-square .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -367,12 +367,12 @@ input:checked + .slider .circle::after {
     cursor: pointer;
 }
 
-.flip-card-square:hover .flip-card-inner {
+.constellations-page .flip-card-square:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-.flip-card-square .flip-card-front,
-.flip-card-square .flip-card-back {
+.constellations-page .flip-card-square .flip-card-front,
+.constellations-page .flip-card-square .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -383,13 +383,13 @@ input:checked + .slider .circle::after {
     overflow: hidden;
 }
 
-.flip-card-square .flip-card-front {
+.constellations-page .flip-card-square .flip-card-front {
     background-color: var(--space-blue);
     background-size: cover;
     background-position: center;
 }
 
-.flip-card-square .flip-card-back {
+.constellations-page .flip-card-square .flip-card-back {
     background-color: #1a2938;
     color: white;
     transform: rotateY(180deg);
@@ -401,14 +401,14 @@ input:checked + .slider .circle::after {
     text-align: center;
 }
 
-.flip-card-square .flip-card-back h5 {
+.constellations-page .flip-card-square .flip-card-back h5 {
     font-family: "Orbitron", sans-serif;
     color: var(--accent-cyan);
     margin: 0;
     font-size: 1.1rem;
 }
 
-.flip-card-square .flip-card-back h6 {
+.constellations-page .flip-card-square .flip-card-back h6 {
     font-style: italic;
     font-weight: 400;
     color: #adb5bd;
@@ -416,21 +416,21 @@ input:checked + .slider .circle::after {
     margin-bottom: 0.5rem;
 }
 
-.flip-card-square .flip-card-back p {
+.constellations-page .flip-card-square .flip-card-back p {
     font-size: 0.8rem;
     line-height: 1.5;
     color: #e0e0e0;
     margin: 0;
 }
 
-.no-results {
+.constellations-page .no-results {
     color: #adb5bd;
     text-align: center;
     grid-column: 1 / -1;
     padding: 2rem;
 }
 
-.extra-info-container {
+.constellations-page .extra-info-container {
     margin-top: 4rem;
     padding: 2.5rem;
     background: rgba(11, 12, 29, 0.7);
@@ -439,7 +439,7 @@ input:checked + .slider .circle::after {
     border: 1px solid var(--border-color);
 }
 
-.extra-info-title {
+.constellations-page .extra-info-title {
     font-family: "Orbitron", sans-serif;
     color: var(--text-white);
     text-align: center;
@@ -447,13 +447,13 @@ input:checked + .slider .circle::after {
     font-size: 1.75rem;
 }
 
-.feature-card-grid {
+.constellations-page .feature-card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-.feature-card {
+.constellations-page .feature-card {
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid var(--border-color);
     border-radius: 10px;
@@ -462,33 +462,33 @@ input:checked + .slider .circle::after {
     transition: all 0.3s ease;
 }
 
-.feature-card:hover {
+.constellations-page .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(103, 232, 249, 0.2);
     border-color: var(--accent-cyan);
 }
 
-.feature-card-icon {
+.constellations-page .feature-card-icon {
     font-size: 2.5rem;
     color: var(--accent-cyan);
     margin-bottom: 1.5rem;
 }
 
-.feature-card-title {
+.constellations-page .feature-card-title {
     font-family: "Orbitron", sans-serif;
     color: var(--text-white);
     font-size: 1.1rem;
     margin-bottom: 1rem;
 }
 
-.feature-card-content {
+.constellations-page .feature-card-content {
     color: #e0e0e0;
     font-size: 0.9rem;
     line-height: 1.6;
     opacity: 0.9;
 }
 
-.notice-ai {
+.constellations-page .notice-ai {
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.85rem;
     font-style: italic;
@@ -502,9 +502,70 @@ input:checked + .slider .circle::after {
     margin-right: auto;
 }
 
-.notice-ai strong {
+.constellations-page .notice-ai strong {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.constellations-page .gallery-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1050;
+    background-color: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+    color: var(--space-blue);
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
+    transition: all 0.3s ease;
+    position: fixed !important;
+    bottom: 20px !important;
+    left: 20px !important;
+    right: auto !important;
+}
+
+.constellations-page .gallery-toggle-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(103, 232, 249, 0.8);
+}
+
+.constellations-page .gallery-modal .modal-content {
+    background-color: #0b0c1d !important;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.constellations-page .gallery-modal-header-custom {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    background-color: #0b0c1d !important;
+    color: var(--text-white);
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+ .gallery-modal-header-custom .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%) !important;
+    opacity: 1 !important;
+}
+
+.constellations-page .gallery-modal-body-custom {
+    padding: 0;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+@media (max-width: 992px) {
+    .constellations-page .feature-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
@@ -519,109 +580,142 @@ input:checked + .slider .circle::after {
         margin-bottom: 2rem !important;
     }
 
-    .intro-container,
-    .display-container,
-    .extra-info-container {
+    .constellations-page .intro-container,
+    .constellations-page .display-container,
+    .constellations-page .extra-info-container {
         padding: 1.5rem;
     }
 
-    .intro-section-grid {
+    .constellations-page .intro-section-grid {
         flex-direction: column !important;
         gap: 1.5rem;
     }
 
-    .intro-section-grid.reverse {
+    .constellations-page .intro-section-grid.reverse {
         flex-direction: column !important;
     }
 
-    .filter-controls {
+    .constellations-page .filter-controls {
         flex-direction: column;
         gap: 1.5rem;
         align-items: stretch;
     }
 
-    .search-bar-container {
+    .constellations-page .search-bar-container {
         flex-basis: auto;
     }
 
-    .zodiac-toggle-container {
+    .constellations-page .zodiac-toggle-container {
         justify-content: center;
     }
 
-    .season-tabs {
+    .constellations-page .season-tabs {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0.5rem;
     }
 
-    .season-tab {
+    .constellations-page .season-tab {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
     }
 
-    .constellation-grid {
+    .constellations-page .constellation-grid {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         gap: 1rem;
     }
 
-    .flip-card-square .flip-card-back {
+    .constellations-page .flip-card-square .flip-card-back {
         padding: 0.75rem;
     }
 
-    .flip-card-square .flip-card-back h5 {
+    .constellations-page .flip-card-square .flip-card-back h5 {
         font-size: 0.9rem;
     }
 
-    .flip-card-square .flip-card-back h6 {
+    .constellations-page .flip-card-square .flip-card-back h6 {
         font-size: 0.7rem;
         margin-bottom: 0.25rem;
     }
 
-    .flip-card-square .flip-card-back p {
+    .constellations-page .flip-card-square .flip-card-back p {
         font-size: 0.7rem;
         line-height: 1.4;
     }
 }
+.constellations-page .gallery-modal {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+}
 
-.gallery-toggle-btn {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1050;
-    background-color: var(--accent-cyan);
-    border-color: var(--accent-cyan);
-    color: var(--space-blue);
-    font-family: 'Orbitron', sans-serif;
-    font-weight: bold;
-    box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
-    transition: all 0.3s ease;
-  }
-  
-  .gallery-toggle-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(103, 232, 249, 0.8);
-  }
- 
-  .gallery-modal .modal-content {
-    background-color: #0b0c1d;
+.modal-backdrop.show {
+    background-color: #000 !important;
+    opacity: 0.85 !important;
+}
+
+.constellations-page .gallery-modal .modal-dialog {
+    margin: 0 !important;
+    max-width: 100% !important;
+    height: 100% !important;
+}
+
+.constellations-page .gallery-modal .modal-content {
+    background-color: #0b0c1d !important;
     border: 1px solid var(--border-color);
-  }
-  
-  .gallery-modal .modal-header {
-    border-bottom: 1px solid var(--border-color);
-  }
-  
-  .gallery-modal .modal-header .btn-close {
-    filter: invert(1) grayscale(100%) brightness(200%);
-  }
-  
-  .gallery-modal .modal-title {
-    color: var(--accent-cyan);
-    font-family: 'Orbitron', sans-serif;
-  }
+    border-radius: 12px;
+    min-height: 100vh;
+}
 
-  @media (max-width: 992px) {
-    .feature-card-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
+.constellations-page .gallery-modal-body-custom {
+    background-color: #0b0c1d !important;
+}
+
+.constellations-page .modal-dialog,
+.constellations-page .modal-content,
+.constellations-page .modal-body {
+    background-color: #0b0c1d !important;
+}
+
+.constellations-page .modal-content {
+    border: none !important;
+    border-radius: 0 !important;
+    min-height: 100vh !important;
+}
+
+.constellations-page .modal-body {
+    padding: 0 !important;
+}
+
+.constellations-page .modal-dialog {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    height: 100% !important;
+}
+
+.constellations-page .modal-content,
+.constellations-page .modal-body {
+    background-color: #0b0c1d !important;
+    color: var(--text-white) !important;
+}
+
+.constellations-page .modal-content {
+    height: 100% !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.modal-backdrop.show {
+    background-color: #000 !important;
+    opacity: 0.85 !important;
+}
+
+.gallery-modal-body-custom.modal-body {
+    padding: 0 !important;
+    background-color: #0b0c1d !important; 
+}
+
+.gallery-modal .modal-content {
+    background-color: #0b0c1d !important;
+    border: none !important;
+    border-radius: 0 !important;
 }

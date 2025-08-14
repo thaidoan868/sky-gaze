@@ -209,12 +209,10 @@ const Constellations = () => {
         onHide={handleCloseGallery}
         centered
         fullscreen={true}
-        className="gallery-modal"
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>Celestial Gallery</Modal.Title>
+        className="gallery-modal">
+        <Modal.Header closeButton className="gallery-modal-header-custom">
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="gallery-modal-body-custom">
           <Gallery />
         </Modal.Body>
       </Modal>

@@ -1,41 +1,99 @@
 .observatories-page-exhibition {
-  padding: 150px 5% 50px 5%;
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: hidden; 
+  position: relative;
+}
+
+.main-content {
+  position: relative;
+  z-index: 10;
+  padding: 0 5% 50px 5%;
   color: white;
 }
 
-.obs-content-card h2 {
-  font-size: 1.75rem !important;
-  margin-bottom: 0.5rem !important;
+.observatories-banner {
+  padding: 150px 0 4rem 0;
 }
 
-.exhibition-layout {
+@keyframes animStar {
+  from { transform: translateY(0px); }
+  to   { transform: translateY(-2000px); }
+}
+
+#stars, #stars2, #stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 797px 621px #FFF, 291px 78px #FFF, 137px 590px #FFF, 895px 174px #FFF, 565px 338px #FFF, 493px 612px #FFF, 6px 363px #FFF, 351px 544px #FFF, 555px 38px #FFF, 517px 632px #FFF, 32px 334px #FFF, 686px 658px #FFF, 64px 381px #FFF, 831px 648px #FFF, 804px 546px #FFF, 219px 247px #FFF, 1720px 1011px #FFF, 146px 1867px #FFF, 1928px 1354px #FFF, 240px 1289px #FFF, 1614px 1756px #FFF, 117px 899px #FFF, 1374px 1280px #FFF, 1139px 21px #FFF, 1373px 388px #FFF, 1279px 1243px #FFF, 107px 1443px #FFF, 1204px 1381px #FFF, 1512px 1678px #FFF, 1855px 1974px #FFF, 1409px 610px #FFF, 1521px 1251px #FFF, 1877px 897px #FFF, 1656px 1686px #FFF, 298px 1234px #FFF, 1695px 696px #FFF, 1214px 1546px #FFF, 1342px 768px #FFF, 1251px 717px #FFF, 1095px 1789px #FFF, 1032px 1145px #FFF, 351px 1787px #FFF, 356px 528px #FFF, 804px 1876px #FFF, 1573px 1577px #FFF, 1654px 1957px #FFF, 499px 1635px #FFF, 1944px 1433px #FFF, 1121px 907px #FFF, 1845px 1601px #FFF, 1801px 1716px #FFF, 1395px 1621px #FFF, 1083px 109px #FFF, 1609px 1546px #FFF, 1488px 1803px #FFF, 1819px 1959px #FFF, 1187px 222px #FFF, 1547px 1878px #FFF, 966px 1790px #FFF, 1932px 1087px #FFF, 1555px 1826px #FFF, 1152px 1852px #FFF, 143px 1599px #FFF, 1278px 1260px #FFF, 1561px 1949px #FFF, 1021px 1317px #FFF, 1729px 1711px #FFF, 1530px 108px #FFF;
+  animation: animStar 50s linear infinite;
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 1537px 1279px #FFF, 1466px 1629px #FFF, 856px 1795px #FFF, 1093px 839px #FFF, 1152px 1362px #FFF, 1521px 1139px #FFF, 1113px 1205px #FFF, 1795px 638px #FFF, 969px 921px #FFF, 545px 1642px #FFF, 893px 107px #FFF, 1445px 1374px #FFF, 1118px 1691px #FFF, 1158px 1478px #FFF, 1308px 673px #FFF, 1761px 1243px #FFF, 1515px 145px #FFF, 1088px 1816px #FFF, 107px 1642px #FFF, 1601px 867px #FFF, 1146px 608px #FFF, 1493px 780px #FFF, 219px 1584px #FFF, 735px 563px #FFF, 574px 1779px #FFF, 1729px 1557px #FFF, 1419px 1069px #FFF, 1074px 1862px #FFF, 622px 1391px #FFF, 1438px 1096px #FFF, 42px 790px #FFF, 142px 1850px #FFF, 1473px 1198px #FFF, 1246px 574px #FFF, 201px 1928px #FFF, 1472px 1032px #FFF, 281px 1735px #FFF, 1154px 1906px #FFF, 1163px 1867px #FFF, 1097px 1318px #FFF, 203px 1083px #FFF, 1042px 1243px #FFF, 1778px 1249px #FFF, 1855px 1584px #FFF, 1317px 565px #FFF, 1485px 1115px #FFF, 1888px 1699px #FFF, 959px 1424px #FFF, 1656px 1319px #FFF, 284px 1064px #FFF, 1089px 1399px #FFF, 1673px 1805px #FFF, 1121px 1618px #FFF, 1213px 1326px #FFF, 1500px 1083px #FFF, 1362px 1362px #FFF, 1821px 1214px #FFF, 1064px 21px #FFF, 213px 1530px #FFF, 1984px 62px #FFF, 1899px 1651px #FFF, 1221px 831px #FFF, 107px 1192px #FFF, 1342px 1515px #FFF, 867px 1187px #FFF, 1826px 1489px #FFF, 888px 1928px #FFF, 1587px 440px #FFF, 545px 1445px #FFF, 1083px 1655px #FFF, 1695px 1850px #FFF, 638px 1521px #FFF, 1144px 1200px #FFF, 1584px 1555px #FFF, 1488px 1279px #FFF, 1339px 298px #FFF, 1338px 1801px #FFF, 1294px 959px #FFF, 1066px 1466px #FFF, 1573px 1485px #FFF, 717px 1888px #FFF, 1765px 1779px #FFF, 1845px 1121px #FFF, 1746px 1308px #FFF, 1105px 1901px #FFF, 1251px 1500px #FFF, 1198px 1395px #FFF, 1875px 1819px #FFF, 1691px 1249px #FFF, 1260px 1547px #FFF, 1317px 966px #FFF, 1949px 1932px #FFF, 1269px 1555px #FFF, 108px 1152px #FFF, 1711px 143px #FFF, 1074px 1278px #FFF, 1200px 1561px #FFF;
+  animation: animStar 100s linear infinite;
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 1918px 1582px #FFF, 62px 1419px #FFF, 1269px 1530px #FFF, 1699px 233px #FFF, 1221px 1198px #FFF, 765px 695px #FFF, 836px 1475px #FFF, 1633px 1851px #FFF, 345px 1294px #FFF, 1965px 1695px #FFF, 222px 1779px #FFF, 1243px 1445px #FFF, 1435px 339px #FFF, 1162px 1584px #FFF, 1935px 1515px #FFF, 497px 1184px #FFF, 1720px 1011px #FFF, 146px 1867px #FFF, 1928px 1354px #FFF, 240px 1289px #FFF, 1614px 1756px #FFF, 117px 899px #FFF, 1374px 1280px #FFF, 1139px 21px #FFF, 1373px 388px #FFF, 1279px 1243px #FFF, 107px 1443px #FFF, 1204px 1381px #FFF, 1512px 1678px #FFF, 1855px 1974px #FFF, 1409px 610px #FFF, 1521px 1251px #FFF, 1877px 897px #FFF, 1656px 1686px #FFF, 298px 1234px #FFF, 1695px 696px #FFF, 1214px 1546px #FFF, 1342px 768px #FFF, 1251px 717px #FFF, 1095px 1789px #FFF, 1032px 1145px #FFF, 351px 1787px #FFF, 356px 528px #FFF, 804px 1876px #FFF, 1573px 1577px #FFF, 1654px 1957px #FFF, 499px 1635px #FFF, 1944px 1433px #FFF, 1121px 907px #FFF, 1845px 1601px #FFF, 1801px 1716px #FFF, 1395px 1621px #FFF, 1083px 109px #FFF, 1609px 1546px #FFF, 1488px 1803px #FFF, 1819px 1959px #FFF, 1187px 222px #FFF, 1547px 1878px #FFF, 966px 1790px #FFF, 1932px 1087px #FFF, 1555px 1826px #FFF, 1152px 1852px #FFF, 143px 1599px #FFF, 1278px 1260px #FFF, 1561px 1949px #FFF, 1021px 1317px #FFF, 1729px 1711px #FFF, 1530px 108px #FFF;
+  animation: animStar 150s linear infinite;
+}
+
+.observatories-page-exhibition .page-title {
+  font-family: 'Orbitron', sans-serif !important;
+  color: #FFFFFF !important;
+  margin: 0 !important;
+  text-shadow: 0 0 15px #67e8f9, 0 0 25px #67e8f9; 
+  font-size: 3rem !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+
+.observatories-page-exhibition .exhibition-layout {
   display: flex;
   gap: 3rem;
   max-width: 1400px;
   margin: auto;
 }
 
-.exhibition-nav {
+.observatories-page-exhibition .exhibition-nav {
   flex: 0 0 250px;
   position: sticky;
-  top: 150px;
-  height: calc(100vh - 200px);
+  top: 100px;
+  align-self: flex-start;
+  height: calc(100vh - 120px);
   overflow-y: auto;
-  scrollbar-width: none; 
-  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.exhibition-nav::-webkit-scrollbar {
+.observatories-page-exhibition .exhibition-nav::-webkit-scrollbar {
   display: none;
 }
 
-.exhibition-nav ul {
+.observatories-page-exhibition .exhibition-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.exhibition-nav a {
+.observatories-page-exhibition .exhibition-nav a {
   display: block;
   padding: 0.75rem 1rem;
   color: var(--text-offwhite);
@@ -46,24 +104,24 @@
   border-radius: 8px;
 }
 
-.exhibition-nav a:hover {
+.observatories-page-exhibition .exhibition-nav a:hover {
   color: white;
   background-color: rgba(103, 232, 249, 0.1);
 }
 
-.exhibition-nav a.active {
+.observatories-page-exhibition .exhibition-nav a.active {
   color: #67e8f9;
   border-left-color: #67e8f9;
   background-color: rgba(103, 232, 249, 0.1);
   transform: translateX(5px);
 }
 
-.exhibition-content {
+.observatories-page-exhibition .exhibition-content {
   flex: 1;
   min-width: 0;
 }
 
-.obs-content-card {
+.observatories-page-exhibition .obs-content-card {
   margin-bottom: 4rem;
   background: rgba(12, 20, 39, 0.7);
   backdrop-filter: blur(8px);
@@ -72,13 +130,18 @@
   padding: 2rem;
 }
 
-.obs-content-card img {
+.observatories-page-exhibition .obs-content-card h2 {
+  font-size: 1.75rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.observatories-page-exhibition .obs-content-card img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 1.5rem;
 }
 
-.card-details-grid {
+.observatories-page-exhibition .card-details-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
@@ -87,90 +150,56 @@
   border-top: 1px solid #2a4a6a;
 }
 
-.detail-column h5 {
+.observatories-page-exhibition .detail-column h5 {
   font-family: 'Orbitron', sans-serif !important;
   color: #67e8f9 !important;
   margin-bottom: 1rem;
   font-weight: bold !important; 
 }
 
-.detail-column ul {
+.observatories-page-exhibition .detail-column ul,
+.observatories-page-exhibition .detail-column p {
   list-style-type: none;
   padding-left: 0;
-}
-
-.detail-column li {
   margin-bottom: 0.5rem;
 }
 
-.detail-column p {
-  margin-bottom: 0.5rem;
-}
-
-.detail-column strong {
+.observatories-page-exhibition .detail-column strong {
   color: #adb5bd;
 }
 
-.map-container {
+.observatories-page-exhibition .map-container {
   height: 250px; 
   border-radius: 10px;
   overflow: hidden;
 }
 
-.page-wrapper {
-  min-height: 100vh;
-  background-color: #0C1427;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-.page-title {
-  font-family: 'Orbitron', sans-serif !important;
-  color: #FFFFFF !important;
-  margin-bottom: 4rem !important;
-  text-shadow: 0 0 15px #67e8f9, 0 0 25px #67e8f9; 
-  font-size: 3rem !important;
-  font-weight: bold !important;
-  text-align: center;
-}
-
 @media (max-width: 992px) {
-  .exhibition-nav {
+  .observatories-page-exhibition .exhibition-nav {
     display: none;
-  }
-  .exhibition-layout {
-    flex-direction: column;
   }
 }
 
 @media (max-width: 768px) {
-  .observatories-page-exhibition {
-    padding: 120px 15px 30px 15px;
-  }
-
-  .page-title {
+  .observatories-page-exhibition .page-title {
     font-size: 2.2rem !important;
-    margin-bottom: 2rem !important;
   }
   
-  .obs-content-card {
+  .observatories-banner {
+    padding: 120px 0 2rem 0;
+  }
+
+  .observatories-page-exhibition .obs-content-card {
     padding: 1.5rem;
     margin-bottom: 2rem;
   }
   
-  .obs-content-card h2 {
-    font-size: 1.75rem !important;
-    margin-bottom: 0.5rem !important;
+  .observatories-page-exhibition .obs-content-card h2 {
+    font-size: 1.5rem !important;
   }
 
-  .card-details-grid {
+  .observatories-page-exhibition .card-details-grid {
     gap: 1.5rem;
     padding-top: 1.5rem;
-  }
-
-  .observatories-page-exhibition {
-    background-image: none !important;
-    background-color: #0C1427 !important;
   }
 }
