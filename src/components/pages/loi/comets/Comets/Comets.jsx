@@ -59,9 +59,7 @@ const Comets = () => {
           <h1 className="text-center page-title">{cometsData.theory.title}</h1>
 
           <div className="comet-theory-container">
-          {cometsData.theory.sections.map((section) => (
-    // Chỉ render trực tiếp component, không cần Fragment hay hr
-    renderSection(section)
+          {cometsData.theory.sections.map((section) => (renderSection(section)
   ))}
           </div>
 

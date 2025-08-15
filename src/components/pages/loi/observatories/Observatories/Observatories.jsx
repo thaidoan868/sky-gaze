@@ -44,12 +44,9 @@ const Observatories = () => {
 
   return (
     <div className="observatories-page-exhibition page-wrapper">
-      {/* CÁC LỚP SAO CHO HIỆU ỨNG NỀN */}
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-
-      {/* NỘI DUNG CHÍNH CỦA TRANG */}
       <div className="main-content">
         <div className="observatories-banner">
           <h1 className="text-center page-title">

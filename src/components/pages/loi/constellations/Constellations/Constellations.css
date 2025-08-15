@@ -508,9 +508,6 @@
 }
 
 .constellations-page .gallery-toggle-btn {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
     z-index: 1050;
     background-color: var(--accent-cyan);
     border-color: var(--accent-cyan);
@@ -523,6 +520,8 @@
     bottom: 20px !important;
     left: 20px !important;
     right: auto !important;
+    margin-bottom: 3% !important;
+    margin-left: 3% !important;
 }
 
 .constellations-page .gallery-toggle-btn:hover {
