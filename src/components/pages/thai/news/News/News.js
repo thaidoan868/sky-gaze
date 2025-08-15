@@ -102,7 +102,7 @@ export default function News() {
           alt=""
         />
       </div>
-      <h1 className="fs-1">NEWS</h1>
+      <h1 className="fs-1 title">NEWS</h1>
       <div className="News fs-1 d-flex flex-column align-items-center text-white m-4">
         {articles.map((article, index) => (
           <NewsCard key={index} {...article} />

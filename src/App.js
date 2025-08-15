@@ -31,6 +31,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/sky-gaze" element={<Home />} />
           <Route path="/planets" element={<Planets />} />
           <Route path="/astronomy_topics" element={<AstronomyTopics />} />
           <Route path="/astronomy-topics/:topicId" element={<TopicDetail />} />

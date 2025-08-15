@@ -91,10 +91,7 @@ export default function AboutUs() {
         <p>
           Email: <a href="mailto:aptech.fpt@fe.edu.vn">aptech.fpt@fe.edu.vn</a>
         </p>
-        <p>
-          Address: 590 Cach Mang Thang 8 Street, Ward 11, District 3, Ho Chi
-          Minh City, Vietnam
-        </p>
+        <p>21Bis Hau Giang, Tan Son Nhat, Ho Chi Minh City, Viet Nam.</p>
         <p>
           Hotline: <a href="tel:+84931313329"> +84 931 313 329</a>
         </p>

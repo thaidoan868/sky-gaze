@@ -5,7 +5,7 @@
         object-fit: cover;
     }
 }
-h1 {
+h1.title {
     margin-top: 40px;
     color: white;
     font-size: 3em;
