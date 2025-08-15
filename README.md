@@ -25,11 +25,11 @@ You can view the complete project report here:
 Click below to explore the live version of our project:  
 [**Sky Gaze Website**](https://thaidoan868.github.io/sky-gaze/)
 
----
+
 
 ## 🎥 Demonstration Video
 
-_(Link coming soon)_
+[**Sky Gaze Introduction Video**](https://www.youtube.com/watch?v=P4wVIPhe3dM)
 
 ---
 
