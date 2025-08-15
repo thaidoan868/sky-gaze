@@ -19,6 +19,7 @@
     color: var(--text-white) !important;
     text-shadow: 0 0 10px var(--accent-cyan) !important;
     margin-bottom: 3rem !important;
+    font-size: 3rem !important;
 }
 
 .constellations-page .intro-container {
